@@ -1,0 +1,38 @@
+{
+  "accepted": true,
+  "created_utc": "2026-09-12T04:09:02.013063+00:00",
+  "scope": "Specified Q1 B0 nonlinear, temperature-independent moisture PDE and explicit input/parameter/position hulls.",
+  "correctly_rounded_required_C_values": 17357,
+  "required_C_values_total": 37800,
+  "remaining_unproved_C_values": 20443,
+  "previous_15122_certified_cells_retained": true,
+  "rounding_result_for_all_accepted_cells": "2.5500",
+  "all_1800_values_in_first_three_radius_columns_certified": true,
+  "existence_uniqueness_and_initial_incompatibility_handled": true,
+  "proof_basis": [
+    "Amann 1993 Theorems 14.4/14.6/15.5 with independently checked Q1 hypotheses",
+    "Monotone Robin heat semigroup yields a concave nonlinear potential subsolution",
+    "Positive-contact comparison permits clipping outside the positive inverse domain",
+    "Complete root identity coverage, finite sums and infinite tail, outward Arb arithmetic",
+    "Full independent 37800-value replay and exact single-bin checks, plus 987 direct exponential values"
+  ],
+  "original_candidate_summary_preserved": true,
+  "all_Q1_C_values_certified": false,
+  "all_questions_correct_rounding_certified": false,
+  "physical_experimental_accuracy_certified": false,
+  "certified_Q1_T_values_from_separate_acceptance": 37800,
+  "certified_Q1_T_plus_C_values": 55157,
+  "required_Q1_T_plus_C_values": 75600,
+  "this_count_is_output_coverage_not_elapsed_work_fraction": true,
+  "bindings_sha256": {
+    "RESEARCH/\\extension_physics_audit\\q1_C_linear_comparison_01\\independent_review_01\\handoff.json": "03a4ac87e9e1a25bc4b2d501261087ff72ab0a8681db88d3d7386c9ebb04ee58",
+    "RESEARCH/\\extension_physics_audit\\q1_C_linear_comparison_01\\independent_review_01\\computed_02\\summary.json": "92dd05b2c215739f9542a44fd64546fc2f698d034596ec594de0434a1d7c8fa9",
+    "RESEARCH/\\extension_physics_audit\\q1_existence_clipping_review_01\\handoff.json": "83d51a0c888a95ed487dfe93138f471adbbacf54ec5575279ca17663a4873c9a",
+    "RESEARCH/\\extension_physics_audit\\q1_C_linear_comparison_01\\actual_01\\products_sha256.json": "7026b5b8af352b7c40d21f2f1072d0524978412b0a9fe4c21bfc795db556c2c6",
+    "RESEARCH/\\extension_physics_audit\\q1_C_linear_comparison_01\\actual_01\\source_bindings.json": "dc595661134404b6a5fb2690b6d1a92f5a8309431fee46197162ebcf4da900ec",
+    "RESEARCH/\\extension_physics_audit\\q1_C_linear_comparison_01\\independent_review_01\\computed_02\\source_bindings.json": "5fc1d7ce700c4b7905976b68a4933a9f825896097a130f9752da5ba87651b55d",
+    "RESEARCH/\\extension_physics_audit\\q1_C_interior_certificate_01\\root_acceptance_03\\acceptance.json": "1099fc72c910477106e78fa5ed6c15e68751ee73ac8696b946a3b5f1a6f3c151",
+    "RESEARCH/\\extension_physics_audit\\q1_temperature_certificate_01\\root_acceptance_01\\acceptance.json": "d473198a307f27653d062da3c14f52dd9e354439a8cf413c521e45897bd30d2b",
+    "RESEARCH/\\work\\reconnect_20260912_1030\\accept_partial_C_linear.py": "2333b33a0535d26a594b1804dc490b6cebdd92306a19501ab315135497cb33f8"
+  }
+}

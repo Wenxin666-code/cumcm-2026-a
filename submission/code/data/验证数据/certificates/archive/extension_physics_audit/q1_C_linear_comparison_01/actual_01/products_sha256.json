@@ -1,0 +1,9 @@
+{
+  "all_query_bounds.jsonl.gz": "cd7e0827d7b7fccffbc1dda0b9221c3f5688ec7e92473b7482d3bd034b36bb13",
+  "roots\\J0_roots.json": "76ae200c79023a218b8a8287cee2a685a1591824314fb82cfad142d03e35e26a",
+  "roots\\Robin_roots.json": "6eb33b87d68b1686ff327983707a3e1d110dddb84577df2704455dfdf55b6e09",
+  "roots\\zero_free_intervals.jsonl.gz": "6f449e65557b359b7a95992cdb38f049425313b252a06940d878cc1989a1639a",
+  "source_bindings.json": "dc595661134404b6a5fb2690b6d1a92f5a8309431fee46197162ebcf4da900ec",
+  "summary.json": "6ce11afa5d8ba59938a984005c6f7215eda1b00c9cf1b2b5305850ef250c8873",
+  "tail_bound.json": "afcfedf4d4a95692bfe11f3614dd4e3f0946f8588286b771fa931bb7ad8778e7"
+}

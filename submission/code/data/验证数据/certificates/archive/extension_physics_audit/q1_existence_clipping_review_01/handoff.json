@@ -1,0 +1,34 @@
+{
+  "completed": true,
+  "existence_uniqueness_hypotheses_matched": true,
+  "clipped_comparison_valid": true,
+  "theorems": [
+    "Amann1993 Thm14.4",
+    "Amann1993 Thm14.6",
+    "Amann1993 Thm15.5"
+  ],
+  "reviewed_author_PDF_pages": [
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91
+  ],
+  "source_sha256": {
+    "存在唯一性与裁切屏障_独立审查.md": "68d0b2292c849414bfd1f6b71d96fb4892028f06f325b68cc1b6e1b2a39a8dd6",
+    "check_hypotheses.py": "42761bb0f1cb0c406155e96217b614dd9d49592801495dfb06e3b0186a260657",
+    "actual_01\\summary.json": "ba205f8c528b5f24dcf049a96758e4cb2b22477c0a8163bc089d6809186b654c",
+    "sources\\nlq.pdf": "bf0137b028ab498c6ad5284de5654f9c11e28b9983aca507a660019983e678b3",
+    "sources\\dynamic_II.pdf": "2c41beaee0957063175001aa01ecaa3aa845cf5b7324bf4ac5ed33bde2b2cc26"
+  },
+  "PDE_started": false
+}

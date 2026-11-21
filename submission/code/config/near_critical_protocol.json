@@ -1,0 +1,406 @@
+{
+  "type": "prospective_scenario_protocol_not_a_solver_or_execution_receipt",
+  "PDE_started": false,
+  "completed_nearcritical_scenarios": 0,
+  "summary_sha256": "9b787c017e700b63553ea481e569b68d79b5ce334e7af254b0616a7daf8c311b",
+  "builder_sha256": "3db9284402dd1f9d9b488b76f34584d946ade4bb96ac273c05237e45ab8adf29",
+  "input_source_hashes": {
+    "problem": "052d8014bff5727c019b72e44fdffaf5c145ce04050dd938baaf3527db331736",
+    "contract": "1650f64b8cc01788c21131b6bcadd052da30054dba67750ea84146759dd21afb",
+    "ambient": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+    "radius": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+    "executed_script": "65c2df1217b8e0c107ea4477159693c5c4abbba5fbc8e7f823d33878aee1cfe2",
+    "p23/metadata.json": "990346bc1d73964a7cba8d1a708947eb4b05e41533ab8aca697df11e67f04c30",
+    "p23/convergence.json": "a8e5c21e38f17d156a75ecf21d8871e08c9e739da8f396b3ffc5b8ee34e4a376",
+    "q4/metadata.json": "1b8ea62ba0edd61e2eb861d0b08a5f7c2e9c98f0966f20a4baa93f0ef3c320e6",
+    "q4/convergence.json": "350f2a404326c42d5a32aa145599d47c90db0bb915e021cd554a5142b21f1d36"
+  },
+  "physical_family": "Only effective Ceq(t)=alpha*Croom(t); original gas input is not multiplied",
+  "baseline_alpha": 1,
+  "alpha_critical": {
+    "threshold_exact_decimal": "0.15",
+    "base_tail_binary64": 0.04999041666666666,
+    "base_tail_exact_binary64_decimal": "0.04999041666666666217100356561786611564457416534423828125",
+    "critical_alpha_decimal_60digit": "3.00057511022946091646715230387207156129045126606926884974390",
+    "critical_alpha_using_printed_decimal": "3.00057511022946104677731368238392982352466654561188541466002",
+    "critical_alpha_float": 3.000575110229461
+  },
+  "scenarios": [
+    {
+      "case_id": "q_0p90",
+      "q_tail_over_threshold_exact": "0.90",
+      "alpha_exact_definition": "q * 0.15 / exact_binary64_base_tail",
+      "alpha_decimal_60digit": "2.70051759920651482482043707348486440516140613946234196476951",
+      "alpha_binary64": 2.7005175992065147,
+      "target_tail_exact_decimal": "0.1350",
+      "product_tail_binary64": 0.13499999999999998,
+      "product_tail_minus_exact_target": "-1.88737914186276611872017383575439453125E-17",
+      "observed_Ceq_min_binary64": 0.053011160472423886,
+      "observed_Ceq_max_binary64": 0.13570100936012738,
+      "tail_classification": "below",
+      "PDE_executed": false
+    },
+    {
+      "case_id": "q_0p99",
+      "q_tail_over_threshold_exact": "0.99",
+      "alpha_exact_definition": "q * 0.15 / exact_binary64_base_tail",
+      "alpha_decimal_60digit": "2.97056935912716630730248078083335084567754675340857616124646",
+      "alpha_binary64": 2.9705693591271665,
+      "target_tail_exact_decimal": "0.1485",
+      "product_tail_binary64": 0.14850000000000002,
+      "product_tail_minus_exact_target": "2.0872192862952942959964275360107421875E-17",
+      "observed_Ceq_min_binary64": 0.058312276519666285,
+      "observed_Ceq_max_binary64": 0.14927111029614012,
+      "tail_classification": "below",
+      "PDE_executed": false
+    },
+    {
+      "case_id": "q_0p999",
+      "q_tail_over_threshold_exact": "0.999",
+      "alpha_exact_definition": "q * 0.15 / exact_binary64_base_tail",
+      "alpha_decimal_60digit": "2.99757453511923145555068515156819948972916081480319958089416",
+      "alpha_binary64": 2.9975745351192313,
+      "target_tail_exact_decimal": "0.14985",
+      "product_tail_binary64": 0.14984999999999998,
+      "product_tail_minus_exact_target": "-1.6786572132332366891205310821533203125E-17",
+      "observed_Ceq_min_binary64": 0.058842388124390514,
+      "observed_Ceq_max_binary64": 0.15062812038974138,
+      "tail_classification": "below",
+      "PDE_executed": false
+    },
+    {
+      "case_id": "q_1",
+      "q_tail_over_threshold_exact": "1",
+      "alpha_exact_definition": "q * 0.15 / exact_binary64_base_tail",
+      "alpha_decimal_60digit": "3.00057511022946091646715230387207156129045126606926884974390",
+      "alpha_binary64": 3.000575110229461,
+      "target_tail_exact_decimal": "0.15",
+      "product_tail_binary64": 0.15000000000000002,
+      "product_tail_minus_exact_target": "2.220446049250313080847263336181640625E-17",
+      "observed_Ceq_min_binary64": 0.05890128941380433,
+      "observed_Ceq_max_binary64": 0.15077889928903043,
+      "tail_classification": "equal",
+      "PDE_executed": false
+    },
+    {
+      "case_id": "q_1p001",
+      "q_tail_over_threshold_exact": "1.001",
+      "alpha_exact_definition": "q * 0.15 / exact_binary64_base_tail",
+      "alpha_decimal_60digit": "3.00357568533969037738361945617594363285174171733533811859364",
+      "alpha_binary64": 3.0035756853396904,
+      "target_tail_exact_decimal": "0.15015",
+      "product_tail_binary64": 0.15015,
+      "product_tail_minus_exact_target": "5.684341886080801486968994140625E-18",
+      "observed_Ceq_min_binary64": 0.058960190703218125,
+      "observed_Ceq_max_binary64": 0.15092967818831945,
+      "tail_classification": "above",
+      "PDE_executed": false
+    },
+    {
+      "case_id": "q_1p01",
+      "q_tail_over_threshold_exact": "1.01",
+      "alpha_exact_definition": "q * 0.15 / exact_binary64_base_tail",
+      "alpha_decimal_60digit": "3.03058086133175552563182382691079227690335577872996153824134",
+      "alpha_binary64": 3.0305808613317553,
+      "target_tail_exact_decimal": "0.1515",
+      "product_tail_binary64": 0.1515,
+      "product_tail_minus_exact_target": "-4.2188474935755948536098003387451171875E-18",
+      "observed_Ceq_min_binary64": 0.05949030230794236,
+      "observed_Ceq_max_binary64": 0.1522866882819207,
+      "tail_classification": "above",
+      "PDE_executed": false
+    }
+  ],
+  "questions": [
+    "p23",
+    "q4"
+  ],
+  "proposed_initial_numerical_configurations": {
+    "p23": [
+      {
+        "N": 640,
+        "settings": {
+          "method": "BDF",
+          "rtol": 1e-11,
+          "atol_temperature_K": 1e-11,
+          "atol_moisture_C": 9.999999999999999e-14,
+          "max_step_s": 75.0,
+          "limit_initial_step": true
+        },
+        "status": "proposed_extra_spatial_level_not_a_claim_of_execution"
+      },
+      {
+        "N": 1280,
+        "settings": {
+          "method": "BDF",
+          "rtol": 1e-11,
+          "atol_temperature_K": 1e-11,
+          "atol_moisture_C": 9.999999999999999e-14,
+          "max_step_s": 75.0,
+          "limit_initial_step": true
+        },
+        "status": "configuration_inherited_only_new_alpha_run_not_executed"
+      },
+      {
+        "N": 2560,
+        "settings": {
+          "method": "BDF",
+          "rtol": 1e-11,
+          "atol_temperature_K": 1e-11,
+          "atol_moisture_C": 9.999999999999999e-14,
+          "max_step_s": 75.0,
+          "limit_initial_step": true
+        },
+        "status": "configuration_inherited_only_new_alpha_run_not_executed"
+      },
+      {
+        "N": 2560,
+        "settings": {
+          "method": "BDF",
+          "rtol": 1e-12,
+          "atol_temperature_K": 1e-12,
+          "atol_moisture_C": 1e-14,
+          "max_step_s": 75.0,
+          "limit_initial_step": true
+        },
+        "status": "configuration_inherited_only_new_alpha_run_not_executed"
+      }
+    ],
+    "q4": [
+      {
+        "N": 1280,
+        "settings": {
+          "method": "BDF",
+          "rtol": 1e-11,
+          "atol_temperature_K": 1e-10,
+          "atol_moisture_C": 9.999999999999999e-14,
+          "max_step_s": 600.0,
+          "limit_initial_step": true
+        },
+        "status": "proposed_extra_spatial_level_not_a_claim_of_execution"
+      },
+      {
+        "N": 2560,
+        "settings": {
+          "method": "BDF",
+          "rtol": 1e-11,
+          "atol_temperature_K": 1e-10,
+          "atol_moisture_C": 9.999999999999999e-14,
+          "max_step_s": 600.0,
+          "limit_initial_step": true
+        },
+        "status": "configuration_inherited_only_new_alpha_run_not_executed"
+      },
+      {
+        "N": 5120,
+        "settings": {
+          "method": "BDF",
+          "rtol": 1e-11,
+          "atol_temperature_K": 1e-10,
+          "atol_moisture_C": 9.999999999999999e-14,
+          "max_step_s": 600.0,
+          "limit_initial_step": true
+        },
+        "status": "configuration_inherited_only_new_alpha_run_not_executed"
+      },
+      {
+        "N": 5120,
+        "settings": {
+          "method": "BDF",
+          "rtol": 1e-12,
+          "atol_temperature_K": 1.0000000000000001e-11,
+          "atol_moisture_C": 1e-14,
+          "max_step_s": 600.0,
+          "limit_initial_step": true
+        },
+        "status": "configuration_inherited_only_new_alpha_run_not_executed"
+      }
+    ]
+  },
+  "baseline_reference_metadata": {
+    "p23": {
+      "metadata_sha256": "990346bc1d73964a7cba8d1a708947eb4b05e41533ab8aca697df11e67f04c30",
+      "N": 2560,
+      "settings": {
+        "method": "BDF",
+        "rtol": 1e-12,
+        "atol_temperature_K": 1e-12,
+        "atol_moisture_C": 1e-14,
+        "max_step_s": 75.0,
+        "limit_initial_step": true
+      },
+      "reported_time_h": 57.4796,
+      "convergence_sha256": "a8e5c21e38f17d156a75ecf21d8871e08c9e739da8f396b3ffc5b8ee34e4a376",
+      "existing_configurations": [
+        {
+          "N": 1280,
+          "settings": {
+            "method": "BDF",
+            "rtol": 1e-11,
+            "atol_temperature_K": 1e-11,
+            "atol_moisture_C": 9.999999999999999e-14,
+            "max_step_s": 75.0,
+            "limit_initial_step": true
+          },
+          "directory": "p23_N1280_rtol1e-11"
+        },
+        {
+          "N": 2560,
+          "settings": {
+            "method": "BDF",
+            "rtol": 1e-11,
+            "atol_temperature_K": 1e-11,
+            "atol_moisture_C": 9.999999999999999e-14,
+            "max_step_s": 75.0,
+            "limit_initial_step": true
+          },
+          "directory": "p23_N2560_rtol1e-11"
+        },
+        {
+          "N": 2560,
+          "settings": {
+            "method": "BDF",
+            "rtol": 1e-12,
+            "atol_temperature_K": 1e-12,
+            "atol_moisture_C": 1e-14,
+            "max_step_s": 75.0,
+            "limit_initial_step": true
+          },
+          "directory": "p23_N2560_rtol1e-12"
+        }
+      ]
+    },
+    "q4": {
+      "metadata_sha256": "1b8ea62ba0edd61e2eb861d0b08a5f7c2e9c98f0966f20a4baa93f0ef3c320e6",
+      "N": 5120,
+      "settings": {
+        "method": "BDF",
+        "rtol": 1e-12,
+        "atol_temperature_K": 1.0000000000000001e-11,
+        "atol_moisture_C": 1e-14,
+        "max_step_s": 600.0,
+        "limit_initial_step": true
+      },
+      "reported_time_h": 51.097,
+      "convergence_sha256": "350f2a404326c42d5a32aa145599d47c90db0bb915e021cd554a5142b21f1d36",
+      "existing_configurations": [
+        {
+          "N": 2560,
+          "settings": {
+            "method": "BDF",
+            "rtol": 1e-11,
+            "atol_temperature_K": 1e-10,
+            "atol_moisture_C": 9.999999999999999e-14,
+            "max_step_s": 600.0,
+            "limit_initial_step": true
+          },
+          "directory": "q4_N2560_rtol1e-11"
+        },
+        {
+          "N": 5120,
+          "settings": {
+            "method": "BDF",
+            "rtol": 1e-11,
+            "atol_temperature_K": 1e-10,
+            "atol_moisture_C": 9.999999999999999e-14,
+            "max_step_s": 600.0,
+            "limit_initial_step": true
+          },
+          "directory": "q4_N5120_rtol1e-11"
+        },
+        {
+          "N": 5120,
+          "settings": {
+            "method": "BDF",
+            "rtol": 1e-12,
+            "atol_temperature_K": 1.0000000000000001e-11,
+            "atol_moisture_C": 1e-14,
+            "max_step_s": 600.0,
+            "limit_initial_step": true
+          },
+          "directory": "q4_N5120_rtol1e-12"
+        }
+      ]
+    }
+  },
+  "numerical_state": {
+    "heat_state": "theta=T-Tref",
+    "Tref_K": 323.14591666666666,
+    "error_weight": "atol_T + rtol*abs(theta); changing to absolute T requires a separate check",
+    "Arrhenius_temperature": "absolute kelvin",
+    "all_initial_values_and_material_parameters": "unchanged current model contract",
+    "input_breakpoints": "all original environment and radius nodes, local interval clock"
+  },
+  "forcing": {
+    "environment_observed_s": [
+      0,
+      14400
+    ],
+    "environment_tail_t_strictly_gt_s": 14400,
+    "environment_tail_method": "separate piecewise-linear time means over 10800..14400 s, then multiply moisture potential by alpha",
+    "radius_observed_s": [
+      0,
+      259200
+    ],
+    "radius_tail_m": 0.01198,
+    "radius_tail_t_strictly_gt_s": 259200,
+    "at_exact_environment_last_node": "use measured endpoint, then restart with right-sided tail",
+    "above_radius_observation_event": "report event_s-259200 and the fixed-radius-tail assumption explicitly"
+  },
+  "common_field_criteria": {
+    "T_K_max_abs_difference": 1e-05,
+    "C_max_abs_difference": 1e-05,
+    "kind": "engineering comparison targets, not continuous PDE bounds",
+    "space": "all fine nodes of the piecewise-linear reconstruction at identical physical time and radius",
+    "formal_output_sampling": "preserve existing first-3h seconds and full-minute fields plus exact report/endpoints",
+    "new_early_diagnostic": "0..14400 s full seconds; time-continuous interpolant crossing check separately required",
+    "failure": "refine; retain accuracy=false until actual targets close"
+  },
+  "event_rule": {
+    "metric": "maximum over complete computed spatial reconstruction",
+    "exact_mathematical_threshold": "0.15",
+    "strictness": "strictly below, unrounded field",
+    "root_and_report": "report equality root separately from next empirically protected dry-side 0.0001h tick",
+    "first_event": "examine all computed continuous-time intervals including first 4h and jumps in forcing",
+    "q_equal_one": "retain exact mathematical alpha definition and record actual binary64 tail; rounded alpha multiplication is not exactly critical"
+  },
+  "execution_branches": {
+    "q_lt_1": "Check first4h then continue every prescribed configuration to computed first event and dry-side report; no fixed horizon substitutes for time.",
+    "q_ge_1": "First4h checks plus a justified lower-bound/comparison argument for the tail. A 4h checkpoint is proof input, never the claimed drying time.",
+    "q_ge_1_without_4h_lower_bound": "Do not conclude never attained; separate historical search from stable-tail criterion, mark nonreachability unresolved.",
+    "exact_critical": "Finite successful threshold crossing is not inferred from asymptotic approach. An endless numerical wait is not a proof.",
+    "hard_failure": "Preserve raw status; resume same settings if authorized and feasible. Never return a horizon or failure time as drying time."
+  },
+  "output_schema_required": [
+    "sources_and_settings_SHA",
+    "solver_completed",
+    "field_comparison_completed",
+    "field_accuracy_passed",
+    "first_computed_crossing_supported",
+    "root_time_s_or_null",
+    "strict_report_time_s_or_null",
+    "unrounded_report_maxC",
+    "maximum_position",
+    "first4h_history_checked",
+    "minimum_C_at4h",
+    "PDE_lower_bound_certified",
+    "late_nonattainment_condition_satisfied",
+    "observed_radius_coverage_exceeded_s",
+    "end_status"
+  ],
+  "allowed_end_status": [
+    "computed_finite_event",
+    "conditional_late_nonattainment",
+    "PDE_proved_nonattainment_with_evidence",
+    "no_crossing_through_observed_time_not_a_proof",
+    "unfinished",
+    "failed"
+  ],
+  "not_claimed": [
+    "calibrated material isotherm",
+    "physical gas humidity alpha scenario",
+    "probability/confidence interval",
+    "rigorous full-PDE crossing from grid comparison"
+  ],
+  "formal_release_ready": false
+}

@@ -1,0 +1,191 @@
+[
+  {
+    "file": "code/问题1.py",
+    "purpose": "组织问题1预热阶段的计算与结果导出。内容包括基准计算、磁盘轨迹计算、必要对照及结果表生成。绘图内容与数据生成：先调用问题1主流程生成预热温湿轨迹和高分辨率径向剖面，积分得到四环带净失水占比；补算均匀N=10240网格的B1表面潜热情景，再逐秒计算两种气相含水率解释下的条件露点和蒸汽压比。环境输入图的终点标记依赖问题2/3和4，缺少时自动调用这两条主流程。输出f02_inputs、f03_q1、vapor_compatibility各自的PDF与PNG。",
+    "inputs": "附件1中的环境数据、附件2及共享model.json；新建计算目录。",
+    "outputs": "预热阶段温度与含水率轨迹、关键对照记录及result1.xlsx。",
+    "sha256": "615160b67a285e886f97c0001d925c953dbb5543aeb6796356d132432e010c57",
+    "role": "主流程及研究程序",
+    "appendix_source_id": "P001"
+  },
+  {
+    "file": "code/问题2.py",
+    "purpose": "组织问题2固定几何域下的变物性热湿传递全过程。内容包括基准轨迹、径向细化、终点候选与结果导出。绘图内容与数据生成：调用或复用本次问题2/3主计算的细网格场和终点，自动整理前三小时温度、全程径向最大含水率、0.15阈值及代表时刻剖面。输出f04_p23.pdf与PNG；采用本次计算出的终点标记。",
+    "inputs": "两份题目附件和共享model.json；可复用同一计算目录中已完成的问题2/3共同任务。",
+    "outputs": "全过程温湿轨迹、细网格与终点资料、关键结果核验及result2.xlsx。",
+    "sha256": "e9a0f6eb35c19bb6ce7bbcc3e191b6fbd9a497cee107e6e8c470da3b2076a63d",
+    "role": "主流程及研究程序",
+    "appendix_source_id": "P002"
+  },
+  {
+    "file": "code/问题3.py",
+    "purpose": "组织问题3全域干燥终点判定。内容包括调用或复用问题2/3共同计算、提取终点资料并导出第三问结果。绘图内容与数据生成：与问题2共用同一求解轨迹、数据整理和f04_p23图；缺少同一输入及源码对应的计算时，自动调用问题2共同主流程。输出f04_p23.pdf与PNG。",
+    "inputs": "两份附件、共享model.json以及共同计算轨迹；没有轨迹时先执行共同求解。",
+    "outputs": "全域干燥终点及其温湿场、结果核验记录和result3.xlsx。",
+    "sha256": "00306167bbdad33a33c3dfb2e0d35b8e7a43f414efc8bdbb26597a1259f612c4",
+    "role": "主流程及研究程序",
+    "appendix_source_id": "P003"
+  },
+  {
+    "file": "code/问题4.py",
+    "purpose": "组织问题4耦合半径收缩的温湿传输计算。内容包括收缩主算例、终点细化、严格阈值数值判定与导出。绘图内容与数据生成：调用问题4主流程生成收缩域温湿场、半径和终点；实际求解N=640的11个单因素情景及2个非对角物性—几何算例；调用收缩运动学程序，求解β=-1、-0.5、0、0.5、1五组N=2560情景并提取最大含水率历史和事件终点。输出f05_q4、f06_factorial、nonaffine_kinematics各自的PDF与PNG。",
+    "inputs": "环境与半径观测附件、共享model.json和新计算目录。",
+    "outputs": "半径与温湿演化轨迹、干燥终点、关键对照资料和result4.xlsx。",
+    "sha256": "3ca77ed29a4161938ac496e0b1f30a05e970cf48b29b08eae39487af37470c29",
+    "role": "主流程及研究程序",
+    "appendix_source_id": "P004"
+  },
+  {
+    "file": "code/公共依赖.py",
+    "purpose": "提供四问共享的附件读取与插值、物性计算、径向网格、固定域及收缩模型、时间积分、轨迹记录、任务复用、工作簿导出和关键核验。七张论文图的绘制函数、公共样式、图专用计算及数据整理集中实现在本文件中；深度研究通过适配器调用其科学计算接口。",
+    "inputs": "主程序或研究适配器传入的参数、附件、模型配置及相应轨迹。",
+    "outputs": "求解状态与数值场、过程记录、导出工作簿或核验报告；具体输出由调用任务决定。",
+    "sha256": "c4441078607942a357e3563c04cf300270f5f3b54fd2aa2a9b3a02df9815ea88",
+    "role": "主流程及研究程序",
+    "appendix_source_id": "P005"
+  },
+  {
+    "file": "code/深度研究/二维模型.py",
+    "purpose": "二维有限体积和有限元。",
+    "inputs": "附件、主模型与二维配置。",
+    "outputs": "二维场、热量审计和事件结果。",
+    "sha256": "21c78ed4c572e526a90e23df93336393547205dd68b60b939b4c072fa4408c08",
+    "role": "主流程及研究程序",
+    "appendix_source_id": "P006"
+  },
+  {
+    "file": "code/深度研究/研究入口.py",
+    "purpose": "研究分支调度。",
+    "inputs": "分支及任务参数。",
+    "outputs": "所选研究任务。",
+    "sha256": "4b5188ca1dec67fd786a330b482fdc29a292c963c1f2b791fbaa46f5abc0f8bf",
+    "role": "主流程及研究程序",
+    "appendix_source_id": "P007"
+  },
+  {
+    "file": "code/深度研究/研究求解.py",
+    "purpose": "潜热和事件研究共用求解、记录、续算及验收。",
+    "inputs": "模型、附件、计划；续算另需本次计算记录。",
+    "outputs": "轨迹、检查点、守恒与验收记录。",
+    "sha256": "fa3742b544b1a5fef8dc3084d813213bdd87eafc283c6ce1818ceacca09381cc",
+    "role": "主流程及研究程序",
+    "appendix_source_id": "P008"
+  },
+  {
+    "file": "code/深度研究/事件覆盖.py",
+    "purpose": "首次事件覆盖及近临界矩阵。",
+    "inputs": "附件、模型、事件协议及共享研究资源。",
+    "outputs": "事件覆盖、轨迹及矩阵验收。",
+    "sha256": "22c233152ec41ff938711efa8ac98bd9ef8c91cd4fbffda9b9a2fa641c9273d9",
+    "role": "主流程及研究程序",
+    "appendix_source_id": "P009"
+  },
+  {
+    "file": "code/深度研究/收缩运动学.py",
+    "purpose": "非仿射运动学与收敛矩阵。",
+    "inputs": "附件、运动学配置及场景参数。",
+    "outputs": "收缩场、终点与收敛比较。",
+    "sha256": "10a1867997939f639443c7ad1ce0ae559a92296e95ec2e7c539d187b55dc0dbe",
+    "role": "主流程及研究程序",
+    "appendix_source_id": "P010"
+  },
+  {
+    "file": "code/深度研究/潜热矩阵.py",
+    "purpose": "潜热耦合20任务矩阵。",
+    "inputs": "附件、模型、潜热表及manifest。",
+    "outputs": "潜热轨迹、守恒记录和矩阵结果。",
+    "sha256": "daf24cfdbd654cf6fc5935c08c0b0e0489ea344bbdbcd0d9565101ad268c9d16",
+    "role": "主流程及研究程序",
+    "appendix_source_id": "P011"
+  },
+  {
+    "file": "code/深度研究/连续PDE.py",
+    "purpose": "原生轨迹、连续误差管与局部屏障。",
+    "inputs": "附件、模型；证明推进还需本次生成的原生轨迹。",
+    "outputs": "原生多项式轨迹、连续误差及推进记录。",
+    "sha256": "618d7c7248f1b1f27ae8152c60eda80681122041019a603e43bfc9ec50f2f32b",
+    "role": "主流程及研究程序",
+    "appendix_source_id": "P012"
+  },
+  {
+    "file": "code/深度研究/公共接口.py",
+    "purpose": "公共科学接口与资源路径适配。",
+    "inputs": "code/公共依赖.py、附件、共享配置和潜热参考数据。",
+    "outputs": "共享科学分区、资源路径与来源记录。",
+    "sha256": "bc27a13f5f7779b8e42ac23a3fda9a15dff9c605f3a0d10355c44827a4f2e753",
+    "role": "主流程及研究程序",
+    "appendix_source_id": "P013"
+  },
+  {
+    "file": "code/问题一舍入验证.py",
+    "purpose": "问题一谱证书与正确舍入验证",
+    "inputs": "谱参数、证书、附件1及result1；解析重建使用Arb。",
+    "outputs": "数据读回、数值字段配对、谱根、解析区间和直接指数复核。",
+    "sha256": "998370c126138204c7952a665f0d8caf79653316031d4345d6fa63cda446f547",
+    "role": "验证程序及公共接口",
+    "appendix_source_id": "P014"
+  },
+  {
+    "file": "code/晚期区间验证.py",
+    "purpose": "晚期半离散及连续区间验证",
+    "inputs": "精确初态、时间多项式、物性与区间证书；自产数据可由轨迹生成。",
+    "outputs": "半离散误差管、连续屏障、根区间、指定时刻上界和局部轨迹。",
+    "sha256": "8f8c97ebe65373255f3ecabd08a3ed529c0af1b6b2a033b4c1d42aaeb3d68e94",
+    "role": "验证程序及公共接口",
+    "appendix_source_id": "P015"
+  },
+  {
+    "file": "code/时间界限验证.py",
+    "purpose": "充分时间上界与累计下屏障",
+    "inputs": "主模型配置、环境与半径附件，以及上下界证据。",
+    "outputs": "形状筛选、逐箱上界、下屏障与高精度交叉检查。",
+    "sha256": "79c3449cfc68700af7e7fa05a9148b57d3c1df2e5fef52210ec7f1d6eb04e578",
+    "role": "验证程序及公共接口",
+    "appendix_source_id": "P016"
+  },
+  {
+    "file": "code/一维GLL验证.py",
+    "purpose": "一维独立GLL及有限体积对照",
+    "inputs": "模型配置、附件、九组GLL数组；重新配对需未舍入FV场。",
+    "outputs": "方法检查、独立GLL场、共同位置与时间上的场差。",
+    "sha256": "db2c663eac7f92979e2ca91d9a527b5d09ac856e16c484f44b0cbd80c4569f73",
+    "role": "验证程序及公共接口",
+    "appendix_source_id": "P017"
+  },
+  {
+    "file": "code/二维验证.py",
+    "purpose": "二维制造解、完整场与生产验证",
+    "inputs": "附件、模型、制造解配置，或粗细网格完整场。",
+    "outputs": "制造解、实际FE/FV场、连续重构差、生产计划和汇总。",
+    "sha256": "f7e7e3af7ed8dbeb8284398eba9ddb42423b037aa0597d0e965ce72a9fab2570",
+    "role": "验证程序及公共接口",
+    "appendix_source_id": "P018"
+  },
+  {
+    "file": "code/输入与假设验证.py",
+    "purpose": "环境平台与解释性假设验证",
+    "inputs": "环境与半径附件、模型参数；汇总另需完整情景轨迹。",
+    "outputs": "平台识别、代数核验、单因素与交叉情景、网格容差及干侧时刻比较。",
+    "sha256": "06a3b11f184be55a99d7446b35a1ed7b26888da1f47ad6f606c31841acf9dfcb",
+    "role": "验证程序及公共接口",
+    "appendix_source_id": "P019"
+  },
+  {
+    "file": "code/一维FV验证.py",
+    "purpose": "一维有限体积制造解及算子验证",
+    "inputs": "主模型、解析制造解与试验参数。",
+    "outputs": "三物性制造解、守恒结构与固定半径退化回归。",
+    "sha256": "11f4cdc3e3c8508891632f282e93b8f0e6f1bdbb170d4b1f412a35354bf488a5",
+    "role": "验证程序及公共接口",
+    "appendix_source_id": "P020"
+  },
+  {
+    "file": "code/验证公共接口.py",
+    "purpose": "验证资源、公共读写与运行记录接口",
+    "inputs": "包内数据、已有主程序与研究模块、指定输出路径。",
+    "outputs": "路径定位、JSON/CSV/压缩日志、数组读取、任务分派、数据及来源身份核对。",
+    "sha256": "ef079cb8d2d40c603a8aa2b963f6ff9d842c8433ff16629982a8f0ee23a6b221",
+    "role": "验证程序及公共接口",
+    "appendix_source_id": "P021"
+  }
+]

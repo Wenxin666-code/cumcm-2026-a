@@ -1,0 +1,197 @@
+{
+  "completed": true,
+  "passed": true,
+  "meaning_of_passed": "All listed numerical checks and both precisely stated late conditional proofs passed; this is not a certification of the original full-time coupled PDE.",
+  "cases": [
+    {
+      "case": "p23",
+      "candidate_N": 2560,
+      "candidate_settings": {
+        "method": "BDF",
+        "rtol": 1e-12,
+        "atol_temperature_K": 1e-12,
+        "atol_moisture_C": 1e-14,
+        "max_step_s": 75.0,
+        "limit_initial_step": true
+      },
+      "equality_root_s": 206926.41503769616,
+      "reported_time_s": 206926.56,
+      "reported_time_h": 57.4796,
+      "reported_unrounded_max_C": 0.14999995778057287,
+      "matched_tolerance_spatial_root_difference_s": 0.05360393735463731,
+      "same_fine_grid_time_root_difference_s": 3.6048004403710365e-07,
+      "empirical_report_allowance_s": 0.05360429783468135,
+      "spatial_T_difference_K": 1.871170525191701e-06,
+      "spatial_C_difference": 1.5121832944997582e-06,
+      "time_T_difference_K": 9.799805411603302e-10,
+      "time_C_difference": 1.7255796791459943e-10,
+      "comparison_sampling": "Union of physical 21 fixed radii plus true surface at every second to 3h and every minute thereafter, and exact spatial maximum of piecewise-linear reconstruction differences over all radial-node unions at every minute.",
+      "gauss16_moisture_balance_abs": 1.318944953254686e-13,
+      "gauss16_heat_rate_balance_relative": 6.510095863846722e-13,
+      "gauss8_16_moisture_flux_difference": 0.0,
+      "observer_identity": {
+        "accepted_step_hash_identical": true,
+        "equality_root_bitwise_identical": true,
+        "all_output_times_bitwise_identical": true,
+        "all_compact_T_bitwise_identical": true,
+        "all_compact_C_bitwise_identical": true
+      },
+      "conditional_initial_grid_N": 1280,
+      "late_checkpoint_s": "206880",
+      "conditional_ODE_root_interval_s_decimal": [
+        "206926.36143229020289582069112467218655851583",
+        "206926.36143505841382066311214988769861720073"
+      ],
+      "conditional_ODE_root_width_s": 2.768210924842421e-06,
+      "conditional_ODE_transversality": {
+        "possible_active_nodes": [
+          0
+        ],
+        "derivative_interval_per_s_decimal": [
+          "-2.9124989900386806540930797923906388431217710E-7",
+          "-2.9123932328940981395864414317680595456378770E-7"
+        ],
+        "strictly_negative_verified": true
+      },
+      "conditional_continuous_root_interval_s_decimal": [
+        "206926.31045170860547744091214017064545450246",
+        "206926.41252819704470158047086949876984616344"
+      ],
+      "conditional_continuous_root_width_s": 0.10207648843922414,
+      "original_report_time_s_decimal": "206926.92",
+      "original_report_conditional_C_interval_decimal": [
+        "0.14999982227704012432598305706307270422603265",
+        "0.14999985236493378857940043270717154571718479"
+      ],
+      "fine_global_root_inside_old_conditional_continuous_interval": false,
+      "continuous_state_tube_closed": true,
+      "continuous_event_bracketed": true,
+      "continuous_max_eta_per_s": "1.2917787703552608855258165960705841257849407E-7",
+      "continuous_min_C": "0.052549462545246270096821296928370651343031985",
+      "continuous_min_D": "3.0686923689430404463021803359623681333908987E-12",
+      "continuous_min_Robin_derivative": "8.9871890518970374519582798003889204235104469E-9",
+      "continuous_max_upper_radial_gradient_over_x": "-0.072341364060294352813295715292854009677651232",
+      "continuous_final_amplitude": "0.0000063279657493843724094152300622062365526531672",
+      "continuous_amplitude_cap": "0.0001",
+      "candidate_tick_under_original_late_conditions": [
+        "0.14999992724032879482438619636745191471196939",
+        "0.14999995709703256172322845040007650837635213"
+      ],
+      "conditional_continuous_conditions": [
+        "Exact isothermal temperature T=T_tail at the late initial time; not merely numerically close.",
+        "Continuous initial moisture equals the unique clamped C2 cubic spline through the saved checkpoint; exact nonlinear Robin surface derivative.",
+        "Bounds apply to regular solutions of this scalar uniformly parabolic late problem; original early evolution is not enclosed.",
+        "Frozen binary64 input, derived tail mean, grid and material constants treated as exact reals. Decimal problem inputs and tail-mean computation roundoff are not enclosed."
+      ],
+      "original_coupled_global_PDE_endpoint_certified": false,
+      "candidate_full_evolution_certified_by_late_certificate": false
+    },
+    {
+      "case": "q4",
+      "candidate_N": 5120,
+      "candidate_settings": {
+        "method": "BDF",
+        "rtol": 1e-12,
+        "atol_temperature_K": 1.0000000000000001e-11,
+        "atol_moisture_C": 1e-14,
+        "max_step_s": 600.0,
+        "limit_initial_step": true
+      },
+      "equality_root_s": 183948.8411061099,
+      "reported_time_s": 183949.2,
+      "reported_time_h": 51.097,
+      "reported_unrounded_max_C": 0.14999981573442364,
+      "matched_tolerance_spatial_root_difference_s": 0.00046928462688811123,
+      "same_fine_grid_time_root_difference_s": 5.629277438856661e-05,
+      "empirical_report_allowance_s": 0.0005255774012766778,
+      "spatial_T_difference_K": 7.172368441388244e-07,
+      "spatial_C_difference": 1.0498798874714055e-06,
+      "time_T_difference_K": 1.4375132195709739e-09,
+      "time_C_difference": 2.3451818265129987e-10,
+      "comparison_sampling": "Union of physical 21 fixed radii plus true surface at every second to 3h and every minute thereafter, and exact spatial maximum of piecewise-linear reconstruction differences over all radial-node unions at every minute.",
+      "gauss16_moisture_balance_abs": 5.144329406903125e-12,
+      "gauss16_heat_rate_balance_relative": 3.1082055202667883e-13,
+      "gauss8_16_moisture_flux_difference": 4.440892098500626e-16,
+      "observer_identity": {
+        "accepted_step_hash_identical": true,
+        "equality_root_bitwise_identical": true,
+        "all_output_times_bitwise_identical": true,
+        "all_compact_T_bitwise_identical": true,
+        "all_compact_C_bitwise_identical": true
+      },
+      "conditional_initial_grid_N": 2560,
+      "late_checkpoint_s": "183900",
+      "conditional_ODE_root_interval_s_decimal": [
+        "183948.83638749434558949076161627212555723862",
+        "183948.83663946421530377835192762168211189772"
+      ],
+      "conditional_ODE_root_width_s": 0.00025196986971428757,
+      "conditional_ODE_transversality": {
+        "possible_active_nodes": [
+          0
+        ],
+        "derivative_interval_per_s_decimal": [
+          "-5.1791086481791049962534927138678014654414414E-7",
+          "-5.0894483692326491650744520342619904121792833E-7"
+        ],
+        "strictly_negative_verified": true
+      },
+      "conditional_continuous_root_interval_s_decimal": [
+        "183948.83473609295852719153411895228102806990",
+        "183948.83829099481173177332375431143000193978"
+      ],
+      "conditional_continuous_root_width_s": 0.0035549018532045817,
+      "original_report_time_s_decimal": "183949.2",
+      "original_report_conditional_C_interval_decimal": [
+        "0.14999981245691746637098748309191300347945447",
+        "0.14999981429573287282700086548817703041241513"
+      ],
+      "fine_global_root_inside_old_conditional_continuous_interval": false,
+      "continuous_state_tube_closed": true,
+      "continuous_event_bracketed": true,
+      "continuous_max_eta_per_s": "7.5290751397821237115582452615529487688350938E-9",
+      "continuous_min_C": "0.052510002167638389399018767668401249832416411",
+      "continuous_min_D": "9.2854218936881968388455374923945014199313447E-12",
+      "continuous_min_Robin_derivative": "6.9427447872982169576049297837127011639955454E-9",
+      "continuous_max_upper_radial_gradient_over_x": "-0.096407817435039034401328632802125552492439670",
+      "continuous_final_amplitude": "3.8540567358726051116035882761210551895918039E-7",
+      "continuous_amplitude_cap": "0.0001",
+      "candidate_tick_under_original_late_conditions": [
+        "0.14999981245691746637098748309191300347945447",
+        "0.14999981429573287282700086548817703041241513"
+      ],
+      "conditional_continuous_conditions": [
+        "Exact isothermal temperature T=T_tail at the late initial time; not merely numerically close.",
+        "Continuous initial moisture equals the unique clamped C2 cubic spline through the saved checkpoint; exact nonlinear Robin surface derivative.",
+        "Bounds apply to regular solutions of this scalar uniformly parabolic late problem; original early evolution is not enclosed.",
+        "Frozen binary64 input, derived tail mean, grid and material constants treated as exact reals. Decimal problem inputs and tail-mean computation roundoff are not enclosed."
+      ],
+      "original_coupled_global_PDE_endpoint_certified": false,
+      "candidate_full_evolution_certified_by_late_certificate": false
+    }
+  ],
+  "source_sha256": {
+    "proofs/p23/weighted_conditional_certificate.json": "3d38ee6f540672c402b29b84ed53b957774df0c505e48f712c51cb4f7d91e7b8",
+    "continuous/p23/continuous_certificate.json": "2eefa48f4c67392b4227b885d0f34bfb29fa594b4cb0ccd2619fc06e66caa670",
+    "candidate/p23/endpoint.json": "d659a70931563b8a917e400b2ebbfb1940969cb12b4241cb0f09e1a388b3d70f",
+    "candidate/p23/metadata.json": "990346bc1d73964a7cba8d1a708947eb4b05e41533ab8aca697df11e67f04c30",
+    "balance/p23/balance.json": "99843ff1f79b1e3c09a0d0d5eb6d5326c393880fec3690388fe9896fe006b30c",
+    "validation/p23/convergence.json": "0130f7d9e69bbdac4b4cf65972ac7b190f61ad09beeb7af7b5547d1e4eb2f8b2",
+    "queries/p23_candidate_time_conditional_query.json": "7d4d1e2f65b7662c753d6546d9bb6a070b771da91a2396f4141ad76e8da13422",
+    "proofs/q4/weighted_conditional_certificate.json": "a81bfa5c81e750d5061b55ca6c112543d31b1196bb2d48761868c909b4153b09",
+    "continuous/q4/continuous_certificate.json": "cdc73fc0965e46c1e0bd11273647f595f2329fc42441a5f66fe231a6f73df436",
+    "candidate/q4/endpoint.json": "79051253923c41fe53651ba95375a172190940af2f9d7de2e127dabd81a9a80a",
+    "candidate/q4/metadata.json": "1b8ea62ba0edd61e2eb861d0b08a5f7c2e9c98f0966f20a4baa93f0ef3c320e6",
+    "balance/q4/balance.json": "d62deb1953cf62d3468451aff64cd3a603398a3cbf54c07375ab4c3e8e6400c6",
+    "validation/q4/convergence.json": "9df6e55373d64bd766790c24e193a0be28667495c54d6b20e1e0adc65d9abadb",
+    "queries/q4_candidate_time_conditional_query.json": "fc0bdcd427b49dba483ef5c463472a106189a9346d4bc35acef751a1d9287733"
+  },
+  "summary_source_sha256": "205c867427e6322cf42e75e3d3bfea9a8b993cf07f5fdc373dc9b158aa3ed871",
+  "unclosed_global_proof_links": [
+    "No validated continuous or semidiscrete error tube from the original t=0 data to the late checkpoint.",
+    "The conditional continuous initial profile is the specified clamped C2 spline on the older checkpoint grid, not the finest global candidate.",
+    "Exact late isothermality defines the conditional IVP. For nonzero temperature uncertainty, a valid temperature-gradient/coupled stability enclosure remains required.",
+    "Frozen binary64 constants and the derived environmental tail mean are exact parameters of the conditional problem; decimal-to-binary and tail-mean roundoff are outside its enclosure.",
+    "Physical-model, end-face, input-interpolation, material-parameter and kinematic uncertainty are not covered by these numerical proofs."
+  ]
+}

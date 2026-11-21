@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "analytic_bilinear_reproduction_error": 1.1102230246251565e-16,
+  "fine_interior_node_peak": 1.0,
+  "same_example_shared_coarse_node_difference": 0.0,
+  "random_convex_combination_trials": 500,
+  "largest_corner_bound_excess": 0.0,
+  "mathematical_reason": "A bilinear value is a convex combination of the four corner values. Therefore |difference| is bounded by the largest corner magnitude when both reconstructions are bilinear on that same rectangle.",
+  "positive_affine_weight_max_difference": 5.551115123125783e-17,
+  "moving_families_checked": 9,
+  "scope": "Interpolation algebra checks, no PDE integration or arbitrary nonlinear-map claim.",
+  "source_sha256": "73a61abbfe8aef9d1550e204a34f13434113e861cdba016504a13000ad72cb78",
+  "frozen_source_sha256": "100db3320e42d070d5bd93ac6012889abf8a2cc1588ebe14f8658669b21c00b8"
+}

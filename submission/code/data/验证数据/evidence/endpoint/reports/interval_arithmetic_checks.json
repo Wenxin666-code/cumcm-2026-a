@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "exact_Fraction_operation_checks": 4000,
+  "Cauchy_Taylor_direct_100_digit_checks": 400,
+  "precision": 44,
+  "source_sha256": {
+    "check_interval_arithmetic.py": "154e8ed4b5b05126b3fbd9d439d01cc153a1abe13bf1f004d188f3e67f14cd49",
+    "decimal_bounds.py": "0f61e5f6442fe9f3721178d8de294c2e853763aa07041bb284c34727a4b2f4a8"
+  },
+  "scope": "Tests supplement the explicit outward-arithmetic and analytic-remainder argument; no global PDE verification."
+}

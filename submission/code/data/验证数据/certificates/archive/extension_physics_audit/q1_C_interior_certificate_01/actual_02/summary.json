@@ -1,0 +1,43 @@
+{
+  "evaluated_required_C_values": 37800,
+  "conditional_unique_bin_candidates": 6435,
+  "uncertified_remaining": 31365,
+  "candidate_count_by_radius": [
+    544,
+    542,
+    535,
+    524,
+    509,
+    489,
+    465,
+    438,
+    407,
+    373,
+    337,
+    298,
+    257,
+    216,
+    174,
+    133,
+    95,
+    60,
+    30,
+    9,
+    0
+  ],
+  "changed_vs_selected": [],
+  "all_37800_C_correct_rounding_certified": false,
+  "independent_mathematical_review_completed": false,
+  "existence_uniqueness_theorem_fully_matched": false,
+  "partial_candidates_accepted": false,
+  "conditional_solution_comparison_criterion": "Ceq_min<=C<=C0, continuous original initial trace, positive-time regularity; clipped W used only in its positive-difference contact region.",
+  "minimum_C_bin_margin": {
+    "time_s": 60,
+    "radius_index": 17,
+    "exact_margin": "885092842201749351822079073575255113006322238022473527040123193123555711022806196187956071289209/987411727815726434343034519784024520948835772729141899634234116314096788696215281953737729896014151680000"
+  },
+  "elapsed_s": 3.4530000000013388,
+  "PDE_started": false,
+  "original_sources_modified": false,
+  "query_specific_valid_kappa_and_exact_erfc": true
+}

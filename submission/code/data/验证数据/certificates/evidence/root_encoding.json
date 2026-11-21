@@ -1,0 +1,71 @@
+{
+  "records": [
+    {
+      "path": "evidence/temperature_J0_roots.json.xz",
+      "original_role_path": "RESEARCH/extension_physics_audit/q1_temperature_certificate_01/actual_01/J0_roots.json",
+      "original_sha256": "ea9d1d7bb59cd3c51c26e4d10c69ef0b10bf915f48557a5e44c87b9a72b9cbaa",
+      "decoded_sha256": "ea9d1d7bb59cd3c51c26e4d10c69ef0b10bf915f48557a5e44c87b9a72b9cbaa",
+      "compressed_sha256": "354a594cbc3e4a5f84df7520517d5c89a3aa29a945c3abe6e801529413d87123",
+      "compressed_bytes": 50232,
+      "decoded_bytes_exact": true,
+      "original_gzip_header_included": null
+    },
+    {
+      "path": "evidence/temperature_Robin_roots.json.xz",
+      "original_role_path": "RESEARCH/extension_physics_audit/q1_temperature_certificate_01/actual_01/Robin_roots.json",
+      "original_sha256": "c0b4621708f6d1872c6af6a066a896d67a13850c9f39004cd91fbf5397610b43",
+      "decoded_sha256": "c0b4621708f6d1872c6af6a066a896d67a13850c9f39004cd91fbf5397610b43",
+      "compressed_sha256": "623c05c6e58138671aedae5d0f51e8a16f1f97e48f35ac55fa7f95d7c2ce5bf4",
+      "compressed_bytes": 56256,
+      "decoded_bytes_exact": true,
+      "original_gzip_header_included": null
+    },
+    {
+      "path": "evidence/moisture_J0_roots.json.xz",
+      "original_role_path": "RESEARCH/extension_physics_audit/q1_C_linear_comparison_01/actual_01/roots/J0_roots.json",
+      "original_sha256": "76ae200c79023a218b8a8287cee2a685a1591824314fb82cfad142d03e35e26a",
+      "decoded_sha256": "76ae200c79023a218b8a8287cee2a685a1591824314fb82cfad142d03e35e26a",
+      "compressed_sha256": "013007c9251a58a03fc60b2f9a04c3aa1f69bc185ee4b7853ee992d7e7af5ee4",
+      "compressed_bytes": 146200,
+      "decoded_bytes_exact": true,
+      "original_gzip_header_included": null
+    },
+    {
+      "path": "evidence/moisture_Robin_roots.json.xz",
+      "original_role_path": "RESEARCH/extension_physics_audit/q1_C_linear_comparison_01/actual_01/roots/Robin_roots.json",
+      "original_sha256": "6eb33b87d68b1686ff327983707a3e1d110dddb84577df2704455dfdf55b6e09",
+      "decoded_sha256": "6eb33b87d68b1686ff327983707a3e1d110dddb84577df2704455dfdf55b6e09",
+      "compressed_sha256": "c276cd6c36410b3e99f14fa018669aaec3e5d0697855cb0f3bb3c529bcec2fc0",
+      "compressed_bytes": 128656,
+      "decoded_bytes_exact": true,
+      "original_gzip_header_included": null
+    }
+  ],
+  "mathematical_verification_rerun": false,
+  "gap_projections": [],
+  "external_gap_projection_records": [
+    {
+      "count": 10176,
+      "compressed_sha256": "885d24ff9a50123af7e3280aa344cfcb07828b1b4c3668293267147975f0c5e4",
+      "uncompressed_csv_sha256": "8fa08877b9775cecceb9c58883f3b9e655ef4924252933b8fc42e5e9afb84528",
+      "original_log_sha256": "f0d32c72cfcfbf8ae7dc6fb489f370abc1934665335597ee162c7d1065db1ad2",
+      "exact_gap_endpoints_preserved": true,
+      "all_original_interval_signs_checked": true,
+      "full_Arb_value_intervals_in_submission": false,
+      "reconstruction": "Evaluate J0 on each exact gap with the bound 256-bit Arb root kernel; full frozen generator and original log SHA are retained.",
+      "research_archive_filename": "temperature_zero_free_gaps.csv.xz"
+    },
+    {
+      "count": 19627,
+      "compressed_sha256": "ed2065e4f6f4a6eb3a9d0ba97ba8f1c5be3a1031ce08f33f42f0beeced132393",
+      "uncompressed_csv_sha256": "b64bff78761fa9a32b37b7aae8ac7eec5a77b79d32b3ec32d28084b02b397ff8",
+      "original_log_sha256": "6f449e65557b359b7a95992cdb38f049425313b252a06940d878cc1989a1639a",
+      "exact_gap_endpoints_preserved": true,
+      "all_original_interval_signs_checked": true,
+      "full_Arb_value_intervals_in_submission": false,
+      "reconstruction": "Evaluate J0 on each exact gap with the bound 256-bit Arb root kernel; full frozen generator and original log SHA are retained.",
+      "research_archive_filename": "moisture_zero_free_gaps.csv.xz"
+    }
+  ],
+  "complete_gap_logs_in_submission": false
+}

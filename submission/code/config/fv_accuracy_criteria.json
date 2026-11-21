@@ -1,0 +1,17 @@
+{
+  "schema": "fv-complete-reconstruction-engineering-targets-v1",
+  "approved_for_final_use": true,
+  "spatial": {
+    "max_T_difference_K": 0.00001,
+    "max_C_difference": 0.00001
+  },
+  "time_settings": {
+    "max_T_difference_K": 0.00001,
+    "max_C_difference": 0.00001
+  },
+  "coverage": "Every prescribed exactly shared saved physical time, complete nested bilinear reconstructions at all fine nodes; full first1801 integer seconds plus complete common minute samples and explicitly separate unshared endpoint rows.",
+  "time_settings_change": "All three tolerances divided by10 AND max_step60s reduced to30s; not a tolerance-only change.",
+  "root_difference": "Report separately in seconds; no dimensionless field threshold is applied to roots.",
+  "interpretation": "Fixed engineering inter-grid/inter-setting targets. Failure must remain accuracy_passed=false in the final report. These are neither continuous-PDE error bounds nor guarantees that every four-decimal string is identical.",
+  "integration_policy": "Completion of the approved FV matrix/comparisons and evaluation of these fixed criteria is mandatory. A false FV accuracy outcome is retained and reported, never renamed PASS; higher-order FE evidence is reported independently and cannot relabel FV as meeting the target."
+}

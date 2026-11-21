@@ -1,0 +1,19 @@
+name: Archive checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-archive:
+    runs-on: windows-latest
+    steps:
+      - name: Enable long archive paths
+        run: git config --global core.longpaths true
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify archived files and entry points
+        run: python -B tools/check_archive.py

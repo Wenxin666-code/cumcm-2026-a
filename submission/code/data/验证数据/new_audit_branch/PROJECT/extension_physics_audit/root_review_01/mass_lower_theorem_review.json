@@ -1,0 +1,44 @@
+{
+  "passed_for_declared_conditional_theorem": true,
+  "root_actual_replay_exit_code": 0,
+  "replay_only_argv_differs": true,
+  "independent_numeric_crosschecks": [
+    {
+      "material": "P23",
+      "Taylor_interval_contains_independent_Decimal90_value": true,
+      "tail_initial_order_exact_rationally_checked": true,
+      "positive_finite_time_tail_amplitude": "4063243793/10000000000"
+    },
+    {
+      "material": "P4",
+      "Taylor_interval_contains_independent_Decimal90_value": true,
+      "tail_initial_order_exact_rationally_checked": true,
+      "positive_finite_time_tail_amplitude": "17401609/31250000"
+    }
+  ],
+  "root_analytical_review": {
+    "cumulative_transform_and_moving_Robin_dynamic_boundary": "Accepted by direct integration in fixed material xi and y=xi^2/2.",
+    "comparison": "At a positive maximum of v-M-epsilon*t the y slopes coincide, eliminating the quasilinear D argument difference; the second derivative and positive D make the interior derivative negative.",
+    "axis": "v(0,t)=M(0,t)=0 excludes positive maxima at the degenerate endpoint without division by y.",
+    "outer_boundary": "At a right-end maximum w_y>=0; w_t+(hm/R)w_y<=-epsilon excludes it.",
+    "initial_and_breakpoints": "Continuous trace and piecewise classical positive-time equations suffice for the argument; no initial Robin compatibility is assumed. Apply segmentwise with continuous state.",
+    "global_drying_criterion": "M/y at the axis bounds only center C. Center>.15 suffices to exclude every-location strict drying; no arbitrary differentiation or radial monotonicity is used.",
+    "tail_transfer": "A uniform lower bound on M/y from the early quadratic barrier bounds the new cumulative tail barrier initially; no whole-field pointwise lower bound is asserted.",
+    "bound_scope": "D bound applies at the barrier slope, not at all possible actual C for arbitrarily high alpha. Original no-source heat maximum principle supplies the T bound.",
+    "strict_positive_exponential": "For each finite real time exp(-lambda*t)>0; floating underflow is not used for nonreachability."
+  },
+  "conclusion": "For the declared regular solution class of the original fixed/affine no-latent 1D model, alpha>=exact critical excludes whole-domain C<.15 at every finite time, including the first4h.",
+  "PDE_existence_proved": false,
+  "new_latent_model_covered": false,
+  "two_dimensional_model_covered": false,
+  "formal_alpha1_drying_time_error_certified": false,
+  "PDE_started": false,
+  "source_sha256": {
+    "boundary\\math\\results\\mass_lower_constants.json": "c17b8059414a7cc677237f11dac715623538af01e18517f86652dae36d1250d9",
+    "root_review_01\\mass_lower_replay\\mass_lower_constants.json": "4d0e79a766401f686cda93effe5a30b2513bc7205e5485af0ec0f6d7b7b0ca41",
+    "boundary\\math\\累计水分下屏障_条件证明草稿.md": "1c1833d8b8be5a58205fb38f9951b969048b8cb0a4a24ded73010b4e558bfd6c",
+    "boundary\\code\\certify_mass_lower_barrier.py": "0fae81d73bcd6a084ce0eac35598cae8a627061f8ae0a240e162028279a349ca",
+    "LOCAL_HOME\\Documents\\ChatGPT\\国赛\\ver2\\package\\config\\model.json": "1650f64b8cc01788c21131b6bcadd052da30054dba67750ea84146759dd21afb",
+    "review_mass_lower_theorem.py": "1426b91e2e431d8b84744c86f8d5c20dc8fc6b8cf3d8b9463c0b782f687a9a5c"
+  }
+}

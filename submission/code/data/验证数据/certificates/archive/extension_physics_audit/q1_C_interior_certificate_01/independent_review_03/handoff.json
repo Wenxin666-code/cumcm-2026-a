@@ -1,0 +1,15 @@
+{
+  "completed": true,
+  "passed": true,
+  "accepted_partial_Q1_C_bins": 15122,
+  "remaining_C_bins": 22678,
+  "full_Q1_C_passed": false,
+  "files_sha256": {
+    "ver2\\extension_physics_audit\\q1_C_interior_certificate_01\\independent_review_03\\verify.py": "68841577dc0d7be0db399f763fc9086141cc59a8c2bd133c142320896dfef239",
+    "ver2\\extension_physics_audit\\q1_C_interior_certificate_01\\independent_review_03\\独立复核报告.md": "d0ea3f8b04738d535847d13329442761a615648886558ce449f18c09ecd47b08",
+    "ver2\\extension_physics_audit\\q1_C_interior_certificate_01\\independent_review_03\\computed_01\\summary.json": "4ec3924e7ada23c444fabd5e1ebbb588c4e8fa0b400a24f0795a8a04b18cd025",
+    "ver2\\extension_physics_audit\\q1_C_interior_certificate_01\\independent_review_03\\computed_01\\source_bindings_supplement.json": "5da1c0d34b4f2cf73307e906c1c62a4dcf9993590a709f541f06c3410ec55086",
+    "ver2\\extension_physics_audit\\q1_C_interior_certificate_01\\independent_review_03\\computed_01\\time_barrier_replay.json": "3409e4c44d83a4aeabdfc3739b937d006a75d1f4e110eab284e419e71d6a24a3",
+    "ver2\\extension_physics_audit\\q1_existence_clipping_review_01\\handoff.json": "83d51a0c888a95ed487dfe93138f471adbbacf54ec5575279ca17663a4873c9a"
+  }
+}

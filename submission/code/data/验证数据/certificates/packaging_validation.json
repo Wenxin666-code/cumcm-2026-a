@@ -1,0 +1,158 @@
+{
+  "completed": true,
+  "passed": true,
+  "tests": [
+    {
+      "name": "full_readback",
+      "expected_success": true,
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "runtime_load",
+      "expected_success": true,
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "original_log_conversion_rebuild",
+      "expected_success": true,
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "source_sha_rejected",
+      "expected_success": false,
+      "exit_code": 1,
+      "passed": true
+    },
+    {
+      "name": "historical_inventory_binding_rejected",
+      "expected_success": false,
+      "exit_code": 1,
+      "passed": true
+    },
+    {
+      "name": "missing_root_rejected",
+      "expected_success": false,
+      "exit_code": 1,
+      "passed": true
+    },
+    {
+      "name": "escaping_manifest_rejected",
+      "expected_success": false,
+      "exit_code": 1,
+      "passed": true
+    },
+    {
+      "name": "wrong_bin_rejected",
+      "expected_success": false,
+      "exit_code": 1,
+      "passed": true
+    },
+    {
+      "name": "missing_query_rejected",
+      "expected_success": false,
+      "exit_code": 1,
+      "passed": true
+    },
+    {
+      "name": "wrong_external_input_rejected",
+      "expected_success": false,
+      "exit_code": 1,
+      "passed": true
+    },
+    {
+      "name": "wrong_selected_q1_rejected",
+      "expected_success": false,
+      "exit_code": 1,
+      "passed": true
+    },
+    {
+      "name": "existing_output_rejected",
+      "expected_success": false,
+      "exit_code": 1,
+      "passed": true
+    },
+    {
+      "name": "cancelled_mode_not_dispatchable",
+      "expected_success": false,
+      "exit_code": 2,
+      "passed": true
+    },
+    {
+      "name": "wrong_exact_log_rejected",
+      "expected_success": false,
+      "exit_code": 1,
+      "passed": true
+    },
+    {
+      "name": "missing_explicit_runtime_rejected",
+      "expected_success": false,
+      "exit_code": 1,
+      "passed": true
+    }
+  ],
+  "full_compact_rows_read": 75600,
+  "accepted_Q1_T_bins": 37800,
+  "accepted_Q1_C_bins": 17357,
+  "original_log_conversion_rebuilt_bytes_identical": true,
+  "root_tables_read": {
+    "temperature": 256,
+    "moisture": 768
+  },
+  "full_gap_logs_rechecked": false,
+  "runtime_load": {
+    "completed": true,
+    "kernel_load_smoke_passed": true,
+    "PDE_started": false,
+    "certificate_regeneration_started": false,
+    "runtime": {
+      "python_flint": "0.9.0",
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "precision_bits": 256,
+      "actual_imports": [
+        {
+          "package": "flint",
+          "file": "__init__.py",
+          "sha256": "51b38d54b85e213a7ae1e801f9d6e9fec6e31aa25d28f57732df12dc0f1d0948"
+        },
+        {
+          "package": "numpy",
+          "file": "__init__.py",
+          "sha256": "a6958cb364663b7acce81ccfd58eeb65a2b34d5376157f924777b97211a73be4"
+        },
+        {
+          "package": "scipy",
+          "file": "__init__.py",
+          "sha256": "a11ad8a1eaf423d32a0d3dd6c9be6c7be86068321f043dacd2d555a49418b92f"
+        }
+      ],
+      "bound_archived_function_sources": [
+        {
+          "path": "archive/extension_physics_audit/q1_temperature_certificate_01/code/certify_heat.py",
+          "packaged_sha256": "91409851b8ed978d9e958aa3babc3939f4918cdf78b507a5bc59409ca0bb07e9",
+          "historical_original_sha256": "603f117d9487f451a1460936bf1529eae6397c9cb8db03b5228e0213ba75b9b5"
+        },
+        {
+          "path": "archive/extension_physics_audit/pde_arb_kirchhoff_01/code/arb_kirchhoff.py",
+          "packaged_sha256": "c24849b27a4edd902d3c82591e70de98f17e73eb1a80f5cac29c08f05aaec471",
+          "historical_original_sha256": "c24849b27a4edd902d3c82591e70de98f17e73eb1a80f5cac29c08f05aaec471"
+        },
+        {
+          "path": "archive/extension_physics_audit/q1_C_interior_certificate_01/code/bessel_probe.py",
+          "packaged_sha256": "6187fcc848c12d7da9d74bfa82d76a321172f6d58b404580c5c4c545d0104115",
+          "historical_original_sha256": "6187fcc848c12d7da9d74bfa82d76a321172f6d58b404580c5c4c545d0104115"
+        }
+      ],
+      "module_setup_bypassed_explicitly": true,
+      "historical_execution_identity_not_rewritten": true
+    }
+  },
+  "PDE_started": false,
+  "full_analytic_certificate_regeneration_run_this_packaging_turn": false,
+  "default_cancelled_chain_dispatch_possible": false,
+  "initial_internal_builder_failure_preserved": "First source collection stopped on an unnormalized relative source path; fixed before archive freeze. First negative-fixture copy later hit Windows path length; retained as failed packaging fixture and retried in a shorter new fixture path. No numerical or proof execution was involved.",
+  "scope": "Delivery packaging validation only. Existing mathematical acceptance is inherited by separately preserved historical records."
+}

@@ -1,0 +1,149 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "case": "p23",
+      "method": "continuous first slab",
+      "passed": true,
+      "all_recomputed_proof_values_identical": true,
+      "guards": {
+        "passed": true,
+        "case": "p23",
+        "N": 1280,
+        "window_s_decimal": [
+          "206880",
+          "206928.92000000001280568540096282958984375"
+        ],
+        "report_time_s_decimal": "206926.92",
+        "report_inside_covered_window": true,
+        "all_time_interfaces_same_binary_time_and_full_state": true,
+        "thermal_theta_zero_at_all_stored_interfaces": true,
+        "ambient_constants_identical_across_slabs": true,
+        "centre_polynomial_time_derivative_upper_per_s": "-2.9123773466019402692972163385297326419668872E-7",
+        "all_nodal_polynomial_time_derivative_upper_per_s": "-2.3711938270662625035642877061065283193305705E-8",
+        "lower_barrier_maximum_nonincreasing": true,
+        "continuous_spline_interface_identity": {
+          "verified": true,
+          "reason": "The right endpoint polynomial equals y_new by its exact algebraic definition; this is bitwise the next y_old. At each shared exact time the affine radius, Ce, T and material constants coincide. The fixed strictly diagonally dominant clamped spline matrix and exact Robin slope therefore have identical defining right-hand sides. Uniqueness gives equality of the entire spatial spline, its first and second spatial derivatives; this is stronger than equality only at nodes.",
+          "shared_exact_radius_fraction": [
+            "5764607523034235/288230376151711744",
+            "5764607523034235/288230376151711744",
+            "5764607523034235/288230376151711744",
+            "5764607523034235/288230376151711744",
+            "5764607523034235/288230376151711744",
+            "5764607523034235/288230376151711744",
+            "5764607523034235/288230376151711744",
+            "5764607523034235/288230376151711744",
+            "5764607523034235/288230376151711744",
+            "5764607523034235/288230376151711744",
+            "5764607523034235/288230376151711744",
+            "5764607523034235/288230376151711744",
+            "5764607523034235/288230376151711744",
+            "5764607523034235/288230376151711744",
+            "5764607523034235/288230376151711744",
+            "5764607523034235/288230376151711744",
+            "5764607523034235/288230376151711744",
+            "5764607523034235/288230376151711744",
+            "5764607523034235/288230376151711744",
+            "5764607523034235/288230376151711744",
+            "5764607523034235/288230376151711744",
+            "5764607523034235/288230376151711744",
+            "5764607523034235/288230376151711744",
+            "5764607523034235/288230376151711744",
+            "5764607523034235/288230376151711744",
+            "5764607523034235/288230376151711744"
+          ]
+        },
+        "parameter_scope": "Frozen binary64 input, derived tail mean, grid and material constants treated as exact reals. Decimal problem inputs and tail-mean computation roundoff are not enclosed.",
+        "local_radau_sha256": "dfe06eff23d74111433bac4b1bf601713a44e7937d9446914169d43108f89c2a",
+        "endpoint_sha256": "e617a61d8019baed0ec20bd430156fb5198e11191f0a2898a36ab43abf813a42",
+        "guard_source_sha256": "6a142b847e18958109ab4c7f423d51a01f03d0b66cb5c7fcbf9694e00c7ab4f4"
+      },
+      "full_window_recomputed": false,
+      "conditional_continuous_late_PDE_certified": false,
+      "original_global_t0_error_certified": false
+    },
+    {
+      "case": "q4",
+      "method": "continuous first slab",
+      "passed": true,
+      "all_recomputed_proof_values_identical": true,
+      "guards": {
+        "passed": true,
+        "case": "q4",
+        "N": 2560,
+        "window_s_decimal": [
+          "183900",
+          "183951.2000000000116415321826934814453125"
+        ],
+        "report_time_s_decimal": "183949.2",
+        "report_inside_covered_window": true,
+        "all_time_interfaces_same_binary_time_and_full_state": true,
+        "thermal_theta_zero_at_all_stored_interfaces": true,
+        "ambient_constants_identical_across_slabs": true,
+        "centre_polynomial_time_derivative_upper_per_s": "-5.1341252385199878731311617012214781272123898E-7",
+        "all_nodal_polynomial_time_derivative_upper_per_s": "-3.1724811021140117227542239337180432290402268E-8",
+        "lower_barrier_maximum_nonincreasing": true,
+        "continuous_spline_interface_identity": {
+          "verified": true,
+          "reason": "The right endpoint polynomial equals y_new by its exact algebraic definition; this is bitwise the next y_old. At each shared exact time the affine radius, Ce, T and material constants coincide. The fixed strictly diagonally dominant clamped spline matrix and exact Robin slope therefore have identical defining right-hand sides. Uniqueness gives equality of the entire spatial spline, its first and second spatial derivatives; this is stronger than equality only at nodes.",
+          "shared_exact_radius_fraction": [
+            "3458764513820541/288230376151711744",
+            "3458764513820541/288230376151711744",
+            "3458764513820541/288230376151711744",
+            "3458764513820541/288230376151711744",
+            "3458764513820541/288230376151711744",
+            "3458764513820541/288230376151711744",
+            "3458764513820541/288230376151711744",
+            "3458764513820541/288230376151711744",
+            "3458764513820541/288230376151711744",
+            "3458764513820541/288230376151711744",
+            "3458764513820541/288230376151711744",
+            "3458764513820541/288230376151711744",
+            "3458764513820541/288230376151711744",
+            "3458764513820541/288230376151711744",
+            "3458764513820541/288230376151711744",
+            "3458764513820541/288230376151711744",
+            "3458764513820541/288230376151711744",
+            "3458764513820541/288230376151711744",
+            "3458764513820541/288230376151711744",
+            "3458764513820541/288230376151711744",
+            "3458764513820541/288230376151711744",
+            "3458764513820541/288230376151711744",
+            "3458764513820541/288230376151711744",
+            "3458764513820541/288230376151711744",
+            "3458764513820541/288230376151711744",
+            "3458764513820541/288230376151711744",
+            "3458764513820541/288230376151711744",
+            "3458764513820541/288230376151711744"
+          ]
+        },
+        "parameter_scope": "Frozen binary64 input, derived tail mean, grid and material constants treated as exact reals. Decimal problem inputs and tail-mean computation roundoff are not enclosed.",
+        "local_radau_sha256": "8c13912d4a5bd4977fa91df238ad4dc0cf5347843964cfb731c50bda96c9896e",
+        "endpoint_sha256": "3f56e62b21feb6e4fdf70ef4efcf196a32addfbd06907a1696eabfd2256c3027",
+        "guard_source_sha256": "6a142b847e18958109ab4c7f423d51a01f03d0b66cb5c7fcbf9694e00c7ab4f4"
+      },
+      "full_window_recomputed": false,
+      "conditional_continuous_late_PDE_certified": false,
+      "original_global_t0_error_certified": false
+    }
+  ],
+  "source_bindings": {
+    "model_and_all_manifest_proof_objects_match": true,
+    "manifest_bound_extension_sources_match": true,
+    "actual_loaded_mathematical_modules_match_bundle": true,
+    "actual_loaded_source_sha256": {
+      "verify_small_bundle.py": "1aa984f5f397e094fa3828aff7ac6ce391d2a13cb1dcfe14f28f583e9cbcd8ea",
+      "endpoint_study.py": "1e3eade30eba0dcda184731531103da72a400439fad1ae56254b380cc1316dd2",
+      "weighted_local_certificate.py": "9af3fd154963600c5e8b1c7123111a832017f9545fb8d8cf400162e90de2d1ec",
+      "certificate_guards.py": "6a142b847e18958109ab4c7f423d51a01f03d0b66cb5c7fcbf9694e00c7ab4f4",
+      "decimal_bounds.py": "0f61e5f6442fe9f3721178d8de294c2e853763aa07041bb284c34727a4b2f4a8",
+      "continuous_late_barrier.py": "a64b0de0a8661118ef1eb81e9dbbd760abdca87285a978bf69c2e1b58d2f3dad",
+      "continuous_late_spline.py": "d4087ce4954c2bc4c982418810eff23328910dd818ef0731348facb89a7c6704",
+      "continuous_late_meanvalue.py": "c28c0b6412e92a47dcb3eaa2bd982c8941cea87f382eb9b5f9bb72935515c4fa"
+    }
+  },
+  "pass_scope": "Exact proof-value replay plus guards. Full continuous mode also requires state closure and event bracketing; first-slab mode verifies only that slab.",
+  "bundle_inventory_sha256": "c75b50ee3e92d320c44db354d6d57df6ea3d0350e813b3c967adf1c8f4e65f7b",
+  "verifier_source_sha256": "1aa984f5f397e094fa3828aff7ac6ce391d2a13cb1dcfe14f28f583e9cbcd8ea"
+}

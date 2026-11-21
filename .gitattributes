@@ -1,0 +1,12 @@
+# 归档材料按原字节保存，避免换行转换破坏SHA-256核验
+submission/** -text
+*.pdf binary
+*.xlsx binary
+*.npz binary
+*.xz binary
+*.png binary
+*.jpg binary
+/README.md text eol=lf
+/docs/*.md text eol=lf
+/tools/*.py text eol=lf
+/.github/workflows/*.yml text eol=lf

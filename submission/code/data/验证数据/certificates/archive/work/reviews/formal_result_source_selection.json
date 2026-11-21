@@ -1,0 +1,185 @@
+{
+  "passed": true,
+  "recorded_utc": "2026-09-11T07:58:57.886562+00:00",
+  "scope": "Source binding after completed all-cell readback; Q1 75600 cells directly rechecked in this invocation. No PDE solve or source/workbook mutation.",
+  "formal_selection": {
+    "q1": "N10240 complete both-field tight trajectory; unchanged four-decimal workbook bytes",
+    "p23": "N2560 complete tight trajectory",
+    "q4": "N5120 complete tight trajectory"
+  },
+  "workbooks": {
+    "result2.xlsx": {
+      "sha256": "c552dd167e163a20146aa47d8580a0157d98e61a5b502d93f3893de2b92b2560",
+      "bytes": 27465421
+    },
+    "result3.xlsx": {
+      "sha256": "5dc924c273c142a98260880e2e11d2640ba858a477492df1c5c8a0f26a5a713e",
+      "bytes": 340071
+    },
+    "result4.xlsx": {
+      "sha256": "4ef7b16d4cb5d7f8262ef09a75a3e04ef116bfdae7367e92da33b51f50b5580d",
+      "bytes": 281017
+    },
+    "result1.xlsx": {
+      "sha256": "54f10f2fb90344b5dff6d0fb012d39c8c6c7c4093ad5561bfd27daba1a5b8010",
+      "bytes": 395209
+    }
+  },
+  "q1_selected_files": {
+    "summary.json": {
+      "sha256": "d5950e7b4dbb7ab89529498e359bff63f75724ab0c76a069d9966225111897c0",
+      "bytes": 8397
+    },
+    "metadata.json": {
+      "sha256": "b2231c02a60152b8cda20a742fe0f1fd478ec552149ce11e33fc8491aa7fcdff",
+      "bytes": 19238
+    },
+    "solution.npz": {
+      "sha256": "829ce09365269a05f1a9303b2cc93b0d29489f754545a493b051407f9fc2ebf5",
+      "bytes": 475020
+    },
+    "grid_profiles.npz": {
+      "sha256": "435fe15eea0a98235dbe7f2028b5718a6dc181abf54e7e75bc7a0841c5ee91df",
+      "bytes": 746563
+    },
+    "storage_audit.json": {
+      "sha256": "df85ca150ad28a55982d5c21b5bd9d6103fc6dfcfe502ef642933bac8cea3abb",
+      "bytes": 38540
+    },
+    "run_status.json": {
+      "sha256": "b2c968e48c6067f73c6cb7607c71354fcd97661860c7a752e5a18be4ec60559f",
+      "bytes": 1976
+    }
+  },
+  "p23_q4_selected_export_sources": {
+    "result2.xlsx": {
+      "data\\q2_fixed_grid_1s_chunks\\q2_1s_000.npz": {
+        "sha256": "2c6a8dc7f1c9edde1fc75da47adcb3f76b05438029fabec8b58de5b8cc8d0dc3",
+        "bytes": 2983273
+      },
+      "data\\q2_fixed_grid_1s_chunks\\q2_1s_001.npz": {
+        "sha256": "64e935c03c9ffa60330631df467ddd1e1a8edd985c498151bcb881d9843888d4",
+        "bytes": 2699219
+      },
+      "data\\q2_fixed_grid_1s_chunks\\q2_1s_002.npz": {
+        "sha256": "e8a6cf7092aaeca1d7d6b7301b3b229de05549c4fd093a00c637d3c56a0909cd",
+        "bytes": 2237032
+      },
+      "data\\q2_fixed_grid_1s_chunks\\q2_1s_003.npz": {
+        "sha256": "f0d1f195caee514a80ae4718d54b84a8bdf0abbafcbd140e6a07f73a8cc2f7d4",
+        "bytes": 1634355
+      },
+      "data\\q2_fixed_grid_1s_chunks\\q2_1s_004.npz": {
+        "sha256": "7bb0ef279e74ad910c29e9e44628702ab7e9ee010cc1ff85aadcec3fb852b018",
+        "bytes": 1516148
+      },
+      "data\\q2_fixed_grid_1s_chunks\\q2_1s_005.npz": {
+        "sha256": "af9be5fcb6440ad01a5f3b5272792ba87cfc34ff27ce47ac67270cba5386176a",
+        "bytes": 1500398
+      },
+      "data\\q2_fixed_grid_1s_chunks\\q2_1s_006.npz": {
+        "sha256": "4e97bc7504586642b673212c8af8f1a5260c25f61387b02d244cd5167fa3e73e",
+        "bytes": 1493898
+      },
+      "data\\q2_fixed_grid_1s_chunks\\q2_1s_007.npz": {
+        "sha256": "79ca27d6faa16b4921863ea2b3a039a64f9cfa41565dba009371c13de48ceaa7",
+        "bytes": 1492318
+      },
+      "data\\q2_fixed_grid_1s_chunks\\q2_1s_008.npz": {
+        "sha256": "7a31b228d24980b10b1c79a1988243bbc3570f88e3fe5febf8dbbe7f1a3018d7",
+        "bytes": 1489210
+      },
+      "data\\q2_fixed_grid_1s_chunks\\q2_1s_009.npz": {
+        "sha256": "2a58073e5b4ab947b71868dc54c50c881f9cb4fee45cc3a17bb2524d6644e099",
+        "bytes": 1487275
+      },
+      "data\\q2_fixed_grid_1s_chunks\\q2_1s_010.npz": {
+        "sha256": "28d0ac2475b18e87c00bdd6a2c55298c588801227795dfd31b1dd4d9971545bd",
+        "bytes": 1486465
+      },
+      "data\\q2_fixed_grid_1s_chunks\\q2_1s_011.npz": {
+        "sha256": "4e25493b3007b9328a159b2240f96158c44d57a04e5a8d5b4a9ee2420fad2a39",
+        "bytes": 1486195
+      },
+      "data\\q2_fixed_grid_1s_chunks\\q2_1s_012.npz": {
+        "sha256": "f421646c1bf8a74a43246e266f977dddb68dda2cf8098873c7a32a78f4dca0f9",
+        "bytes": 1487351
+      },
+      "data\\q2_fixed_grid_1s_chunks\\q2_1s_013.npz": {
+        "sha256": "6c2df39fc07f244d601bb86fbb2386c0df4f1ac0f1f6fde1d240cc5353af2add",
+        "bytes": 1486348
+      },
+      "data\\q2_fixed_grid_1s_chunks\\q2_1s_014.npz": {
+        "sha256": "e01161abd306bcb1f37fd6fc302ab1799dc04b9590a88efd887124c623effe9e",
+        "bytes": 1486879
+      },
+      "data\\q2_fixed_grid_1s_chunks\\q2_1s_015.npz": {
+        "sha256": "8da297f3acd06b77ca8b6c8c12d0d8dda796bd80c18eda8430d8ec3f7be962d1",
+        "bytes": 1487577
+      },
+      "data\\q2_fixed_grid_1s_chunks\\q2_1s_016.npz": {
+        "sha256": "b5f27af9df8d2e6e6172de72c5520346807b00687d59e8221488c11de9a0f38a",
+        "bytes": 1488110
+      },
+      "data\\q2_fixed_grid_1s_chunks\\q2_1s_017.npz": {
+        "sha256": "c12048e76462db6c3d6dbddf45e19479dcb2306bf58f25e5a2912ccd76709f98",
+        "bytes": 1488748
+      },
+      "data\\q2_fixed_grid_1s_chunks\\q2_1s_018.npz": {
+        "sha256": "11692290f303dd32f397e1b87f9ad2a4ef0897590c15c962fbb8d404e086259a",
+        "bytes": 1488533
+      },
+      "data\\q2_fixed_grid_1s_chunks\\q2_1s_019.npz": {
+        "sha256": "9bd3032babc17c38211db8be588e29acb7e47b5b313d3b8548649032b18a2590",
+        "bytes": 238796
+      },
+      "endpoint.json": {
+        "sha256": "d659a70931563b8a917e400b2ebbfb1940969cb12b4241cb0f09e1a388b3d70f",
+        "bytes": 765
+      }
+    },
+    "result3.xlsx": {
+      "data\\q3_fixed_grid_60s.npz": {
+        "sha256": "7c8968c359c4223fc5bafe6e1219d234e19efd558381a4bd92df259bb69b788a",
+        "bytes": 601618
+      },
+      "endpoint.json": {
+        "sha256": "d659a70931563b8a917e400b2ebbfb1940969cb12b4241cb0f09e1a388b3d70f",
+        "bytes": 765
+      }
+    },
+    "result4.xlsx": {
+      "result4_candidate_data.npz": {
+        "sha256": "a8cb2ee907b700e68fd5a5ef1a11b976225ac0cb4097d22496932b85a9fc77c6",
+        "bytes": 393734
+      },
+      "endpoint.json": {
+        "sha256": "79051253923c41fe53651ba95375a172190940af2f9d7de2e127dabd81a9a80a",
+        "bytes": 766
+      }
+    }
+  },
+  "full_readback_report": {
+    "sha256": "49c29d82d2352929a79fdc61cd8923fd2333e06a84482c04d48d4d96772b96a8",
+    "bytes": 1222
+  },
+  "full_readback_checker": {
+    "sha256": "c3d2affdec6d103281c0f78962f978397b677638a344f20420f011f21a42afc6",
+    "bytes": 3791
+  },
+  "full_readback_counts": {
+    "numeric": 8882283,
+    "outside_blanks": 21066
+  },
+  "q1_cells_directly_rechecked_now": 75600,
+  "historical_export_manifest": {
+    "sha256": "885733e9e437dd2a9b2f0eb4db88afb70b3b330ec5af43e8c9efde3befea076d",
+    "bytes": 6322
+  },
+  "historical_export_manifest_preserved": true,
+  "q1_history_note": "result1.xlsx was originally copied from the baseline export; its bytes are retained because every cell also matches the newly selected tight trajectory. The original export log is not relabeled.",
+  "generator": {
+    "sha256": "a37c42f03a2dbabf7f1b0ed72fdf4c44f04e58f29da3cd1536da3e34d81b6273",
+    "bytes": 4979
+  }
+}

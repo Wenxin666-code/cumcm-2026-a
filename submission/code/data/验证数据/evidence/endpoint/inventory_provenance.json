@@ -1,0 +1,38 @@
+{
+  "scope": "Packaging index. Mathematical proof_manifest and continuous source bindings are retained byte-for-byte and checked by verify_small_bundle.",
+  "original_inventory_sha256": "ebfae64be59f39de25708d9ccfe4f4cfe9cd663da32af7b8415738caa81aed17",
+  "original_inventory_file": "bundle_inventory_original.json",
+  "original_inventory_discrepancies": [
+    {
+      "path": "code/diagnose_continuous_points.py",
+      "recorded_sha256": "21fb4b0b7d9e0390f07c3326a9b40150def28b51e438a8a06062a5d6f41b6bfe",
+      "present": false,
+      "bound_mathematical_proof_source": false
+    },
+    {
+      "path": "code/memory_snapshot.py",
+      "recorded_sha256": "179695c84a06bac2c1854b69bf3478c72ba0ce758afe02284dbecb064e1c84bc",
+      "present": false,
+      "bound_mathematical_proof_source": false
+    },
+    {
+      "path": "code/reproduce_endpoint.py",
+      "recorded_sha256": "bc4e731490b8645867f766dd6ed4ebbdbfdce2fe4787ab38266efe0089042494",
+      "packaged_sha256": "55b384a94cb23a3d4cf7a449e90a735800f5ac233ff2ad8cd41fc7c12a67151e",
+      "bound_mathematical_proof_source": false
+    },
+    {
+      "path": "code/spatial_residuals.py",
+      "recorded_sha256": "44da94f035a921e96648f28f9af2917fbb1dc4332d2410e0a2f1f38896bc61e1",
+      "present": false,
+      "bound_mathematical_proof_source": false
+    },
+    {
+      "path": "code/summarize_endpoint.py",
+      "recorded_sha256": "205c867427e6322cf42e75e3d3bfea9a8b993cf07f5fdc373dc9b158aa3ed871",
+      "present": false,
+      "bound_mathematical_proof_source": false
+    }
+  ],
+  "proof_parameters_initial_snapshots_and_mathematical_source_hashes_changed": false
+}

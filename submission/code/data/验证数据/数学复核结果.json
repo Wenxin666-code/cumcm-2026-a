@@ -1,0 +1,260 @@
+{
+  "passed": true,
+  "entry": "reproduce_math.py",
+  "entry_sha256": "fd950b45b18c2296ac7549896c8c3119bdd3ad5d5d32a4654797c648436bb8ce",
+  "mathematical_files_inventory_sha256": "be0fb5ae3cbd348bdb846414206ecb6d6566c866450438190386f7c14169df3f",
+  "Q1": {
+    "evidence_files_sha256_checked": 107,
+    "stored_outward_interval_rows_checked": 75600,
+    "accepted_temperature_bins": 37800,
+    "accepted_moisture_bins": 17357,
+    "unproved_moisture_bins": 20443,
+    "selected_binary64_projection_and_workbook_check": {
+      "passed": true,
+      "all_75600_selected_binary64_values_recovered": true,
+      "all_75600_bins_match_current_result1": true,
+      "current_result1_sha256": "54f10f2fb90344b5dff6d0fb012d39c8c6c7c4093ad5561bfd27daba1a5b8010",
+      "container_sha256": "419fcb56aedee5c0da7c52ccf5ffb286fee35ed01d2f6b64cd4373b1b59119e9",
+      "original_solution_npz_recreated": false,
+      "PDE_solved": false,
+      "scope": "Exact selected values recovered from bound certificate hex fields; new NPZ container."
+    },
+    "selected_radius_Arb_hulls_equal_archived_parameters": true,
+    "Arb_kernel_load": {
+      "completed": true,
+      "kernel_load_smoke_passed": true,
+      "PDE_started": false,
+      "certificate_regeneration_started": false,
+      "runtime": {
+        "python_flint": "0.9.0",
+        "numpy": "2.1.3",
+        "scipy": "1.15.3",
+        "precision_bits": 256,
+        "actual_imports": [
+          {
+            "package": "flint",
+            "file": "__init__.py",
+            "sha256": "51b38d54b85e213a7ae1e801f9d6e9fec6e31aa25d28f57732df12dc0f1d0948"
+          },
+          {
+            "package": "numpy",
+            "file": "__init__.py",
+            "sha256": "39c42db027548f958e096e8babe3fa0e3e773d24aa39eb6363fc0e3abbec34b1"
+          },
+          {
+            "package": "scipy",
+            "file": "__init__.py",
+            "sha256": "185913aa107512fafd5cf89dfd452a8719b45a6eba833e2dcee2cbfd18b4bbe5"
+          }
+        ],
+        "bound_archived_function_sources": [
+          {
+            "path": "archive/extension_physics_audit/q1_temperature_certificate_01/code/certify_heat.py",
+            "packaged_sha256": "91409851b8ed978d9e958aa3babc3939f4918cdf78b507a5bc59409ca0bb07e9",
+            "historical_original_sha256": "603f117d9487f451a1460936bf1529eae6397c9cb8db03b5228e0213ba75b9b5"
+          },
+          {
+            "path": "archive/extension_physics_audit/pde_arb_kirchhoff_01/code/arb_kirchhoff.py",
+            "packaged_sha256": "c24849b27a4edd902d3c82591e70de98f17e73eb1a80f5cac29c08f05aaec471",
+            "historical_original_sha256": "c24849b27a4edd902d3c82591e70de98f17e73eb1a80f5cac29c08f05aaec471"
+          },
+          {
+            "path": "archive/extension_physics_audit/q1_C_interior_certificate_01/code/bessel_probe.py",
+            "packaged_sha256": "6187fcc848c12d7da9d74bfa82d76a321172f6d58b404580c5c4c545d0104115",
+            "historical_original_sha256": "6187fcc848c12d7da9d74bfa82d76a321172f6d58b404580c5c4c545d0104115"
+          }
+        ],
+        "module_setup_bypassed_explicitly": true,
+        "historical_execution_identity_not_rewritten": true
+      }
+    },
+    "complete_analytic_field_certificates_recomputed_in_this_check": false,
+    "complete_root_gap_reconstruction_executed_in_this_check": false
+  },
+  "endpoint": {
+    "source_bindings_and_exact_snapshots": {
+      "passed": true,
+      "source_bindings": {
+        "model_and_all_manifest_proof_objects_match": true,
+        "manifest_bound_extension_sources_match": true,
+        "actual_loaded_mathematical_modules_match_bundle": true,
+        "actual_loaded_source_sha256": {
+          "verify_small_bundle.py": "1aa984f5f397e094fa3828aff7ac6ce391d2a13cb1dcfe14f28f583e9cbcd8ea",
+          "endpoint_study.py": "1e3eade30eba0dcda184731531103da72a400439fad1ae56254b380cc1316dd2",
+          "weighted_local_certificate.py": "9af3fd154963600c5e8b1c7123111a832017f9545fb8d8cf400162e90de2d1ec",
+          "certificate_guards.py": "6a142b847e18958109ab4c7f423d51a01f03d0b66cb5c7fcbf9694e00c7ab4f4",
+          "decimal_bounds.py": "0f61e5f6442fe9f3721178d8de294c2e853763aa07041bb284c34727a4b2f4a8",
+          "continuous_late_barrier.py": "a64b0de0a8661118ef1eb81e9dbbd760abdca87285a978bf69c2e1b58d2f3dad",
+          "continuous_late_spline.py": "d4087ce4954c2bc4c982418810eff23328910dd818ef0731348facb89a7c6704",
+          "continuous_late_meanvalue.py": "c28c0b6412e92a47dcb3eaa2bd982c8941cea87f382eb9b5f9bb72935515c4fa"
+        }
+      },
+      "cases": {
+        "p23": {
+          "weighted_root_interval_s_decimal": [
+            "206926.36143229020289582069112467218655851583",
+            "206926.36143505841382066311214988769861720073"
+          ],
+          "continuous_root_interval_s_decimal": [
+            "206926.31045170860547744091214017064545450246",
+            "206926.41252819704470158047086949876984616344"
+          ],
+          "exact_initial_snapshot_sha256": "dfe06eff23d74111433bac4b1bf601713a44e7937d9446914169d43108f89c2a",
+          "constants_sha256": "d719db61bb43ef89805921bd71ad0bf99d2c0439aa30610915d9af6f9843119c"
+        },
+        "q4": {
+          "weighted_root_interval_s_decimal": [
+            "183948.83638749434558949076161627212555723862",
+            "183948.83663946421530377835192762168211189772"
+          ],
+          "continuous_root_interval_s_decimal": [
+            "183948.83473609295852719153411895228102806990",
+            "183948.83829099481173177332375431143000193978"
+          ],
+          "exact_initial_snapshot_sha256": "8c13912d4a5bd4977fa91df238ad4dc0cf5347843964cfb731c50bda96c9896e",
+          "constants_sha256": "cc765cf96a5a5d0332885f0ec8c339b3f2cb6e4ade770cf582d23f854685680d"
+        }
+      },
+      "scope": "Frozen exact initial snapshots, source bindings and stored certificate fields.",
+      "proof_values_recomputed": false,
+      "original_global_t0_error_certified": false
+    },
+    "weighted_full_window_cases": [
+      {
+        "case": "p23",
+        "passed": true,
+        "all_proof_values_identical": true,
+        "root_interval_s_decimal": [
+          "206926.36143229020289582069112467218655851583",
+          "206926.36143505841382066311214988769861720073"
+        ],
+        "guards_passed": true,
+        "original_global_t0_error_certified": false
+      },
+      {
+        "case": "q4",
+        "passed": true,
+        "all_proof_values_identical": true,
+        "root_interval_s_decimal": [
+          "183948.83638749434558949076161627212555723862",
+          "183948.83663946421530377835192762168211189772"
+        ],
+        "guards_passed": true,
+        "original_global_t0_error_certified": false
+      }
+    ],
+    "continuous_first_slab_cases": [
+      {
+        "case": "p23",
+        "passed": true,
+        "all_recomputed_proof_values_identical": true,
+        "guards_passed": true,
+        "full_window_recomputed": false
+      },
+      {
+        "case": "q4",
+        "passed": true,
+        "all_recomputed_proof_values_identical": true,
+        "guards_passed": true,
+        "full_window_recomputed": false
+      }
+    ],
+    "original_mathematical_proof_manifest_sha256": "706eb89dffe2893548dc5e2bc44c193b3d683dfb59d3358a382cc3336096522b",
+    "packaging_inventory_provenance": "evidence/endpoint/inventory_provenance.json"
+  },
+  "full_initial_upper": {
+    "passed": true,
+    "PDE_solved": false,
+    "all_98304_rows_regenerated": true,
+    "all_output_csv_hashes_match": true,
+    "all_scientific_summary_fields_match": true,
+    "separate_runtime_fields": [
+      "argv",
+      "python_version",
+      "wall_s"
+    ],
+    "Decimal100_all_bin_crosscheck_passed": true,
+    "Decimal100_is_second_outward_proof": false,
+    "rows": [
+      {
+        "name": "P23_certified_bins.csv",
+        "rows": 65536,
+        "sha256": "78c1d6f6753f77d024b000835cb6416d7b9b5fc019b213b1e0f58484f1d50e6b",
+        "byte_identical_to_bound_output": true
+      },
+      {
+        "name": "P4_certified_bins.csv",
+        "rows": 32768,
+        "sha256": "50d4527b95ca95777b4b7333c349ab62009a517db82c9542925e82e26d63a165",
+        "byte_identical_to_bound_output": true
+      }
+    ]
+  },
+  "critical_scenario_lower": {
+    "passed": true,
+    "PDE_solved": false,
+    "all_scientific_summary_fields_match": true,
+    "separate_runtime_fields": [
+      "argv",
+      "python_version"
+    ],
+    "rows": [
+      {
+        "material": "P23",
+        "passed": true,
+        "center_C_at4h_lower": "0.725099172470305020238395260403895163092357009930513620775639",
+        "tail_positive_amplitude_V0": "0.406324379300000000000000000000000000000000000000000000000000",
+        "Decimal90_crosscheck_passed": true,
+        "tail_initial_order_exact_rationally_checked": true
+      },
+      {
+        "material": "P4",
+        "passed": true,
+        "center_C_at4h_lower": "0.925801984119664069299244616393535901867763504802121703782213",
+        "tail_positive_amplitude_V0": "0.556851488000000000000000000000000000000000000000000000000000",
+        "Decimal90_crosscheck_passed": true,
+        "tail_initial_order_exact_rationally_checked": true
+      }
+    ],
+    "crosscheck_source_sha256": "1426b91e2e431d8b84744c86f8d5c20dc8fc6b8cf3d8b9463c0b782f687a9a5c",
+    "crosscheck_adapter_sha256": "fd950b45b18c2296ac7549896c8c3119bdd3ad5d5d32a4654797c648436bb8ce",
+    "crosscheck_method": "Independent Decimal90 exp and exact rational inequalities, transcribed from the bound review source into this portable adapter.",
+    "Decimal90_is_second_outward_proof": false,
+    "PDE_existence_proved": false,
+    "scope": "Conditional q>=1 lower-barrier constants for the declared B0 fixed/affine one-dimensional model."
+  },
+  "executed_modes": [
+    "verify",
+    "q1-runtime",
+    "endpoint-weighted",
+    "endpoint-first-slab",
+    "upper-full",
+    "lower-full"
+  ],
+  "available_explicit_reconstruction_modes": [
+    "q1-roots",
+    "q1-regenerate",
+    "endpoint-full"
+  ],
+  "runtime": {
+    "upper": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "other_checks": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]"
+  },
+  "PDE_solved_in_these_checks": false,
+  "executed_entry_sha256_by_mode": {
+    "verify": "fd950b45b18c2296ac7549896c8c3119bdd3ad5d5d32a4654797c648436bb8ce",
+    "endpoint-weighted": "8b5e3ad799288f7a607109bebd4c34e8e4a99b15fd0f5c652e2b30f2b373315f",
+    "endpoint-first-slab": "8b5e3ad799288f7a607109bebd4c34e8e4a99b15fd0f5c652e2b30f2b373315f",
+    "upper-full": "8b5e3ad799288f7a607109bebd4c34e8e4a99b15fd0f5c652e2b30f2b373315f",
+    "q1-runtime": "8b5e3ad799288f7a607109bebd4c34e8e4a99b15fd0f5c652e2b30f2b373315f",
+    "lower-full": "fd950b45b18c2296ac7549896c8c3119bdd3ad5d5d32a4654797c648436bb8ce"
+  },
+  "source_report_sha256": {
+    "verify": "2cbadbf396254144f94deea491412661e82c74dea1790672709279f72b7562a6",
+    "q1-runtime": "97cf4b1e86b8f957c58d6cedf3600e42653f944f1cba9ddc63352b5b2d5da112",
+    "endpoint-weighted": "3fcc1d4f23a0e10275791b4825fe7f8919812da15528733068c65b7e89404945",
+    "endpoint-first-slab": "d95fb7812d64324c72cec9553d421f8b8a2c35326d14914b048de9707e9cd5dd",
+    "upper-full": "fb1dff2c59fb1a4f78c678be946979e0b354c735e48b91d8047826907e724ffe",
+    "lower-full": "8def516bcc030a2b8e7154f825be6045753b2d4cbd0382bd537ea4c992f20b99"
+  }
+}

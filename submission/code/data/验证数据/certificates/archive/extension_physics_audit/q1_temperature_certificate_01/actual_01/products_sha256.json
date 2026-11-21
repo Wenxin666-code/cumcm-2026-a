@@ -1,0 +1,13 @@
+{
+  "ambiguous.json": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+  "changed_vs_selected.json": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+  "input_semantics.json": "0252f77ca7f49af0fddab0774ab812b27c31027e7c6433e84d32c5f3c6ffc421",
+  "J0_roots.json": "ea9d1d7bb59cd3c51c26e4d10c69ef0b10bf915f48557a5e44c87b9a72b9cbaa",
+  "parameters.json": "a9476c36369f3a81d7f1fbcd6661278be0671592fdcf0f144e42c0e26e204d3f",
+  "Robin_roots.json": "c0b4621708f6d1872c6af6a066a896d67a13850c9f39004cd91fbf5397610b43",
+  "source_bindings.json": "a7ea1d71dd098c8ea722d58c1e853fa184f56e8d70396de834eadcd342b22c48",
+  "summary.json": "2b780ecff055df8ca2e11995d0762f1ea582035c3d9b18db11e1feea593c8e1b",
+  "tail_bound.json": "cc61401dd843c3a6d3fe154242e07cfe4864e8e2decb81fd7043a316ffc53748",
+  "temperature_intervals.jsonl.gz": "db5a99db1a683869df7cb23a718fd7636a4dffee720194a0f2be462b8158a0a4",
+  "zero_free_intervals.jsonl.gz": "f0d32c72cfcfbf8ae7dc6fb489f370abc1934665335597ee162c7d1065db1ad2"
+}

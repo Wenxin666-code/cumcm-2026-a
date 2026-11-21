@@ -1,0 +1,158 @@
+{
+  "review_passed_for_original_P23_scope": true,
+  "checks": {
+    "recorded_four_source_hashes_match": true,
+    "all_arrays_finite": true,
+    "all_slabs_positive_length": true,
+    "all_time_interfaces_bitwise_continuous": true,
+    "all_state_interfaces_bitwise_continuous": true,
+    "initial_saved_temperature_exactly_tail": true,
+    "saved_xi_matches_reconstructed_grid": true,
+    "positive_grid_weights_and_spacings": true,
+    "all_cauchy_disks_avoid_zero": true,
+    "whole_assumed_C_box_positive": true,
+    "positive_thermal_properties_on_positive_C": true,
+    "positive_T_box": true,
+    "constant_environment_after_observations": true,
+    "threshold_above_equilibrium": true,
+    "cooperative_numerator_lower_positive_in_all_recorded_slabs": true,
+    "finite_dimensional_only_flags_explicit": true,
+    "all_assumed_initial_boxes_fit_declared_caps": true,
+    "reviewed_files_unchanged": true
+  },
+  "issues": [
+    {
+      "id": "provenance_binding",
+      "severity": "record-completeness",
+      "invalidates_current_reviewed_P23_formula": false,
+      "finding": "The original certificate directly hashes only kernel, interval helper, local NPZ and config. Inputs, moving/vendor/relative sources and exact grid/property constants need an externally bound proof-object manifest.",
+      "response": "Producing agent acknowledged and is adding bind_certificate.py without editing the reviewed original kernel."
+    },
+    {
+      "id": "fourth_scenario_wording",
+      "severity": "interpretation",
+      "invalidates_current_reviewed_P23_formula": false,
+      "finding": "Scenario 4 has tube_cap_satisfied=true but conditional_semidiscrete_event_enclosed=false. Its state tube closes; the current time window fails to enclose the event and cannot prove the reported tick dry.",
+      "response": "Producing agent acknowledged separate state_tube_closed, event_bracketed and report_strict labels."
+    },
+    {
+      "id": "radius_series_domain_guard",
+      "severity": "generalization-guard",
+      "invalidates_current_reviewed_P23_formula": false,
+      "finding": "radius_scale_series uses a geometric remainder requiring |R1/R0|<1 but has no explicit guard. P23 is constant-radius and satisfies it; reuse on another geometry must check this condition."
+    }
+  ],
+  "mathematical_review": {
+    "outward_rounding": "Exact binary input conversion and correctly rounded Decimal arithmetic/exp followed by adjacent-context endpoints enclose each operation. Integer powers use repeated interval multiplication, not Decimal noninteger power.",
+    "Cauchy": "For complex |u|<=64, |q-q0|<=s<q0. Hence q has no zero, |exp(-a/q-b/T)|<=exp(a/(q0-s)-b/T). Cauchy coefficient bounds sum to B*64^-11/(1-1/64) on [0,1]. The recurrence encloses retained coefficients.",
+    "residual_product_remainder": "Exact radius scale times flux-tail plus radius-scale-tail times the retained flux polynomial covers the product remainder, including its cross term.",
+    "comparison": "Off-diagonal C derivatives are positive on the full declared C/T rectangle. The signed upper bound on derivative along uniform C shifts gives both upper and lower barriers; the negative-shift integral reverses direction. No joint T/C cooperativity is required.",
+    "temperature_gain": "Uniform C shifts preserve neighbor differences, so the thermal forcing bound may use |q_j-q_i| without 2*cap. Independent positive-conductivity heat maximum principle maintains the conditional temperature box.",
+    "cap_bootstrap": "mu>=0 and eta>=0 make each comparison radius nondecreasing. A final radius below cap closes the local first-exit argument on all slabs.",
+    "event": "Outward strict signs at selected decimal rational times, together with nonincrease of the nodal maximum above equilibrium, enclose equality crossings. Bisection midpoints need not themselves be interval objects because each chosen point is subsequently enclosed.",
+    "scope": "The result begins at t=206880 with prescribed checkpoint errors. Zero T error describes the exact tail-temperature invariant subspace; the saved initial relative-temperature array is actually zero. No full-history or spatial/PDE certification follows."
+  },
+  "case": "p23",
+  "N": 1280,
+  "slabs": 27,
+  "polynomials_independently_domain_checked": 34587,
+  "minimum_Cauchy_disk_margin": "0.052646510789214648994776088719266900119858609",
+  "maximum_Cauchy_relative_variation": "0.00024875733312115294069002938807314537937705579",
+  "minimum_C_in_whole_assumed_tube": "0.052639462562211628132584756067713932400473716",
+  "initial_C_max": 0.15001350540676936,
+  "scenarios": [
+    {
+      "initial_C_error_bound": "0",
+      "initial_T_error_bound_K": "0",
+      "checkpoint_s": "206880",
+      "last_time_s": "206928.92000000001280568540096282958984375",
+      "final_C_error_bound": "5.9334076915608085750450147074971048440634463E-10",
+      "tube_cap_satisfied": true,
+      "conditional_semidiscrete_event_enclosed": true,
+      "root_interval_s_decimal": [
+        "206926.35964119834679362212286003596587349970",
+        "206926.36322647141664935362552578691710893664"
+      ],
+      "root_interval_width_s": 0.0035852730698557314,
+      "production_report_C_interval_decimal": [
+        "0.14999983678411580248743940080423930167557661",
+        "0.14999983785785811041794408896600494826764083"
+      ],
+      "production_report_conditionally_strictly_dry": true
+    },
+    {
+      "initial_C_error_bound": "1E-9",
+      "initial_T_error_bound_K": "0",
+      "checkpoint_s": "206880",
+      "last_time_s": "206928.92000000001280568540096282958984375",
+      "final_C_error_bound": "1.1044605520973662074983158441254630290548161E-8",
+      "tube_cap_satisfied": true,
+      "conditional_semidiscrete_event_enclosed": true,
+      "root_interval_s_decimal": [
+        "206926.32795222599021050426984684536184735690",
+        "206926.39502326802888957824167376730047532654"
+      ],
+      "root_interval_width_s": 0.06707104203867907,
+      "production_report_C_interval_decimal": [
+        "0.14999982728815351841131921608722206433134189",
+        "0.14999984735382039449406427368302218561187555"
+      ],
+      "production_report_conditionally_strictly_dry": true
+    },
+    {
+      "initial_C_error_bound": "1E-8",
+      "initial_T_error_bound_K": "1E-12",
+      "checkpoint_s": "206880",
+      "last_time_s": "206928.92000000001280568540096282958984375",
+      "final_C_error_bound": "1.0510864448908138117824554874623881588513424E-7",
+      "tube_cap_satisfied": true,
+      "conditional_semidiscrete_event_enclosed": true,
+      "root_interval_s_decimal": [
+        "206926.04698616343766784505104337668063212520",
+        "206926.68566732351720194985409074377450051092"
+      ],
+      "root_interval_width_s": 0.6386811600795341,
+      "production_report_C_interval_decimal": [
+        "0.14999974182210531093445265271531940803071668",
+        "0.14999993281986860197093083705492484191250076"
+      ],
+      "production_report_conditionally_strictly_dry": true
+    },
+    {
+      "initial_C_error_bound": "1E-7",
+      "initial_T_error_bound_K": "1E-9",
+      "checkpoint_s": "206880",
+      "last_time_s": "206928.92000000001280568540096282958984375",
+      "final_C_error_bound": "0.0000010483760177004023485598477689611490304083615",
+      "tube_cap_satisfied": true,
+      "conditional_semidiscrete_event_enclosed": false,
+      "root_interval_s_decimal": null,
+      "root_interval_width_s": null,
+      "production_report_C_interval_decimal": [
+        "0.14999888480023660309052001035499536473937349",
+        "0.15000078984173730981486347941524888520384395"
+      ],
+      "production_report_conditionally_strictly_dry": false
+    }
+  ],
+  "source_sha256": {
+    "endpoint_study.py": "1e3eade30eba0dcda184731531103da72a400439fad1ae56254b380cc1316dd2",
+    "decimal_bounds.py": "0f61e5f6442fe9f3721178d8de294c2e853763aa07041bb284c34727a4b2f4a8",
+    "local_radau.npz": "dfe06eff23d74111433bac4b1bf601713a44e7937d9446914169d43108f89c2a",
+    "model.json": "1650f64b8cc01788c21131b6bcadd052da30054dba67750ea84146759dd21afb"
+  },
+  "certificate_sha256": "71eb455ac5245ce94518a0ca1b2e59c71bdd751b2ef3e66ed7808f12fc167247",
+  "audit_program_sha256": "48bb2e8724978d23d6eb135eeb6f5f3e63481d9db288707245eb265cbfe8877f",
+  "additional_current_dependency_sha256": {
+    "inputs/附件/附件1.xlsx": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+    "inputs/附件/附件2.xlsx": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+    "package/code/solvers/moving_model.py": "0d2b448345c228afb05c774aa50efbe0f2d9b303cefce13c184f18cd233d1019",
+    "package/code/solvers/relative_temperature.py": "b94e109d31a2fb8ad55c2848ad3c30002199dd80a33e8de17da61c7e670dd535",
+    "package/code/solvers/_vendor_host2_model.py": "d834d3ddee0edb3740b378462f9b8250f01a03cb4f5754ba350264ded9b4f2dd"
+  },
+  "official_arithmetic_reference": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.exp",
+  "independent_full_certificate_reexecution_claimed": false,
+  "formal_proof_assistant_verification_claimed": false,
+  "scope": "Source-level mathematical review plus actual array continuity/domain/provenance checks; no solver modifications or numerical proximity used as proof.",
+  "created_at_utc": "2026-09-11T05:33:28.054413+00:00"
+}

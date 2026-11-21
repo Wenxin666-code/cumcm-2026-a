@@ -1,0 +1,172 @@
+{
+  "completed": true,
+  "passed": true,
+  "independent_review_of_Q1_B0_temperature_certificate_passed": true,
+  "all_questions_correct_rounding_certified": false,
+  "nonlinear_moisture_certified": false,
+  "PDE_started": false,
+  "original_proof_files_modified": false,
+  "source_sha256": "0e9aa8546ffd7ae20fef70c793e64360ffe58736cbdc2b6bfc6a74399878814b",
+  "certificate_source_sha256": "603f117d9487f451a1460936bf1529eae6397c9cb8db03b5228e0213ba75b9b5",
+  "actual_summary_sha256": "2b780ecff055df8ca2e11995d0762f1ea582035c3d9b18db11e1feea593c8e1b",
+  "product_manifest_sha256": "91eb0fb6ae8af977e3d252ed5051dc3097e1c3bfea0b8834789fc286ba1d202d",
+  "source_manifest_sha256": "a7ea1d71dd098c8ea722d58c1e853fa184f56e8d70396de834eadcd342b22c48",
+  "theory_review_sha256": "6401ff934fc332ad469600f621a2f6be35f793fad633d524b042f81228d07c8b",
+  "trusted_runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "python_executable": "WORKSPACE/\\A题研究\\work\\host1\\.venv\\Scripts\\python.exe",
+    "flint_version": "0.9.0",
+    "flint_import": "RESEARCH/\\work\\strict_runtime\\pythonlibs\\flint\\__init__.py",
+    "precision_bits": 256
+  },
+  "root_checks": {
+    "J0_roots": 256,
+    "Robin_roots": 256,
+    "zero_exclusion_leaves": 10176,
+    "exact_gap_coverage_from_zero_to_last_J0_root": true,
+    "all_values_recomputed_and_equal_stored_interval_endpoints": true,
+    "all_existence_signs_and_nonzero_derivatives_verified": true,
+    "Robin_identity_basis": "H strictly increases across each proved J0 zero-free interval, exactly one root for every Bi in its positive hull."
+  },
+  "all_output_records": {
+    "required_values": 37800,
+    "all_coordinates_and_unique_bins_verified": true,
+    "all_selected_source_hex_and_bins_match": true,
+    "minimum_margin_C": "159025223576324536903133245307087417641020737481553719835145506469031/113078212145816597093331040047546785012958969400039613319782796882727665664000",
+    "minimum_margin_decimal_illustration": 1.4063294825643188e-09,
+    "closest_time_s": 736,
+    "closest_radius_index": 5,
+    "maximum_width_C": "811773021/36893488147419103232",
+    "maximum_width_decimal_illustration": 2.2003151823333025e-11
+  },
+  "tail_recomputed_equal": true,
+  "tail_upper_exact": "37377166100920272918882219728348018091397248482376798504189033081397920472603/1386334847060407429789207092071541851718218537687908287585239790307310653902812811519987203052069789048695605480701785914487078912",
+  "tail_upper_decimal_illustration": 2.6961138703376773e-53,
+  "direct_history_replay": {
+    "profiles": 65,
+    "values": 1365,
+    "times_s": [
+      1,
+      2,
+      59,
+      60,
+      61,
+      119,
+      120,
+      121,
+      180,
+      181,
+      240,
+      241,
+      300,
+      301,
+      360,
+      361,
+      420,
+      421,
+      480,
+      481,
+      540,
+      541,
+      600,
+      601,
+      660,
+      661,
+      720,
+      721,
+      736,
+      780,
+      781,
+      840,
+      841,
+      900,
+      901,
+      960,
+      961,
+      1020,
+      1021,
+      1080,
+      1081,
+      1140,
+      1141,
+      1200,
+      1201,
+      1260,
+      1261,
+      1320,
+      1321,
+      1380,
+      1381,
+      1440,
+      1441,
+      1500,
+      1501,
+      1560,
+      1561,
+      1620,
+      1621,
+      1680,
+      1681,
+      1740,
+      1741,
+      1799,
+      1800
+    ],
+    "all_unique_bins_match": true,
+    "all_intervals_overlap": true,
+    "uses_original_recurrence": false,
+    "uses_original_root_generation": false,
+    "root_intervals_recomputed_from_proof_records": true
+  },
+  "negative_gate_fixtures": [
+    {
+      "name": "changed_bin",
+      "actually_rejected": true,
+      "exception": "false reported unique bin"
+    },
+    {
+      "name": "reversed_interval",
+      "actually_rejected": true,
+      "exception": "invalid positive output interval"
+    },
+    {
+      "name": "missing_first_time",
+      "actually_rejected": true,
+      "exception": "wrong/missing output coordinate"
+    },
+    {
+      "name": "wrong_radius",
+      "actually_rejected": true,
+      "exception": "wrong nominal radius"
+    },
+    {
+      "name": "missing_exclusion_leaf",
+      "actually_rejected": true,
+      "exception": "gap/overlap in zero exclusion coverage"
+    },
+    {
+      "name": "duplicate_root_index",
+      "actually_rejected": true,
+      "exception": "missing/duplicate root index"
+    },
+    {
+      "name": "interval_crossing_half_step",
+      "actually_rejected": true,
+      "exception": "interval crosses rounding boundary"
+    },
+    {
+      "name": "false_source_sha",
+      "actually_rejected": true,
+      "exception": "source SHA mismatch"
+    },
+    {
+      "name": "zero_tail_substitution",
+      "actually_rejected": true,
+      "exception": "tail mismatch"
+    }
+  ],
+  "all_original_source_and_product_hashes_unchanged": true,
+  "elapsed_seconds": 1.973365300000296,
+  "scope": "Mathematical/interval-arithmetic review of the specified Q1 B0 linear radial heat equation and declared exact-data hull at 1800x21 outputs. No proof of measurement accuracy, physical closure, nonlinear C, P23/Q4, or release compliance.",
+  "trusted_computing_base": "Correct Python/Fraction and FLINT/Arb implementation on the source-bound installed runtime; no independent formal verification of that library implementation."
+}

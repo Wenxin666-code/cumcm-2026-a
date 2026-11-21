@@ -1,0 +1,35 @@
+{
+  "accepted": true,
+  "created_utc": "2026-09-12T03:52:31.450847+00:00",
+  "scope": "Q1 B0 temperature-independent nonlinear moisture PDE; explicit model/input/position hulls.",
+  "correctly_rounded_required_C_values": 15122,
+  "required_C_values_total": 37800,
+  "remaining_unproved_C_values": 22678,
+  "all_1800_axis_values_correctly_rounded": true,
+  "rounding_result_for_all_accepted_cells": "2.5500",
+  "existence_uniqueness_and_initial_incompatibility_handled": true,
+  "proof_basis": [
+    "Amann1993 Thm14.4/14.6/15.5 and explicit data/structural matching",
+    "Positive-contact comparison for clipped analytic lower barriers",
+    "Arb outward parameter/function arithmetic and independent 384bit full replay",
+    "Every accepted interval lies within one exact HALF_UP bin"
+  ],
+  "original_candidate_summary_preserved": true,
+  "transitive_import_manifest_omission_explicitly_supplemented": true,
+  "all_Q1_C_values_certified": false,
+  "all_questions_correct_rounding_certified": false,
+  "physical_experimental_accuracy_certified": false,
+  "certified_Q1_T_values_from_separate_acceptance": 37800,
+  "certified_Q1_T_plus_C_values": 52922,
+  "required_Q1_T_plus_C_values": 75600,
+  "this_count_is_output_coverage_not_elapsed_work_fraction": true,
+  "bindings_sha256": {
+    "RESEARCH/\\extension_physics_audit\\q1_C_interior_certificate_01\\independent_review_03\\handoff.json": "ea623bb8c7deb234839b9e8214c19449d0c0d31eb99b084ada6a12912212c6ca",
+    "RESEARCH/\\extension_physics_audit\\q1_C_interior_certificate_01\\independent_review_03\\computed_01\\summary.json": "4ec3924e7ada23c444fabd5e1ebbb588c4e8fa0b400a24f0795a8a04b18cd025",
+    "RESEARCH/\\extension_physics_audit\\q1_existence_clipping_review_01\\handoff.json": "83d51a0c888a95ed487dfe93138f471adbbacf54ec5575279ca17663a4873c9a",
+    "RESEARCH/\\extension_physics_audit\\q1_C_interior_certificate_01\\actual_03\\products_sha256.json": "a882379d697b72aaafa6494c2529ae5279f977ac935e2d612766247ac3df03b2",
+    "RESEARCH/\\extension_physics_audit\\q1_C_interior_certificate_01\\actual_03_import_closure_supplement.json": "a2cf5fc8eb7252866efb46528aa0e9322aa6337d7478a17bac60b93dccc0a4a1",
+    "RESEARCH/\\extension_physics_audit\\q1_temperature_certificate_01\\root_acceptance_01\\acceptance.json": "d473198a307f27653d062da3c14f52dd9e354439a8cf413c521e45897bd30d2b",
+    "RESEARCH/\\work\\reconnect_20260912_1030\\accept_partial_C03.py": "a58ce37d2e2155fe7ebc7199b17bff6db1b414adb6c0516074fef1e704bb196d"
+  }
+}

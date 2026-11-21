@@ -1,0 +1,59 @@
+{
+  "scope": "Independent review source and small reports archived byte-identically. Historical scripts retain their original project-relative layouts; see README before rerunning. They do not replace the full interval residual proofs.",
+  "files": [
+    {
+      "name": "endpoint_certificate_review.py",
+      "original_sha256": "48bb2e8724978d23d6eb135eeb6f5f3e63481d9db288707245eb265cbfe8877f",
+      "archived_sha256": "48bb2e8724978d23d6eb135eeb6f5f3e63481d9db288707245eb265cbfe8877f",
+      "byte_identical": true
+    },
+    {
+      "name": "endpoint_certificate_review.json",
+      "original_sha256": "b44917a353d360be99d9bc7b269e8f496a49a6c51ee925b9fc9763be946b04ee",
+      "archived_sha256": "b44917a353d360be99d9bc7b269e8f496a49a6c51ee925b9fc9763be946b04ee",
+      "byte_identical": true
+    },
+    {
+      "name": "endpoint_certificate_review.md",
+      "original_sha256": "af264150eec59b91567d8e71f06859f238c79f444bc010f229a777262f2ec4d2",
+      "archived_sha256": "af264150eec59b91567d8e71f06859f238c79f444bc010f229a777262f2ec4d2",
+      "byte_identical": true
+    },
+    {
+      "name": "continuous_spline_review.py",
+      "original_sha256": "2bdb18fa49ddb2c1286e64350f5f017235ed82fadaf5d462f35506d3cb574885",
+      "archived_sha256": "2bdb18fa49ddb2c1286e64350f5f017235ed82fadaf5d462f35506d3cb574885",
+      "byte_identical": true
+    },
+    {
+      "name": "continuous_spline_review.json",
+      "original_sha256": "a652a3dc729007a6cae473fc1dd0c1da0a64ac68c82475589f751d00b8a98441",
+      "archived_sha256": "a652a3dc729007a6cae473fc1dd0c1da0a64ac68c82475589f751d00b8a98441",
+      "byte_identical": true
+    },
+    {
+      "name": "finest_balance_observer_review.py",
+      "original_sha256": "e95472fed2b84ac17b8db332d306526c87c711f1543a3bb6717a6bbb1013d5ca",
+      "archived_sha256": "e95472fed2b84ac17b8db332d306526c87c711f1543a3bb6717a6bbb1013d5ca",
+      "byte_identical": true
+    },
+    {
+      "name": "finest_balance_observer_review.json",
+      "original_sha256": "8b47bff45c71b313acb8a606d0a46ab7138b36a6ef512e5caa917006e1c5e134",
+      "archived_sha256": "8b47bff45c71b313acb8a606d0a46ab7138b36a6ef512e5caa917006e1c5e134",
+      "byte_identical": true
+    },
+    {
+      "name": "continuous_certificate_consistency_review.py",
+      "original_sha256": "d4c575f8a16f1b2af47b00df32c00556418c3381dbe0902c73909e12bae742ef",
+      "archived_sha256": "d4c575f8a16f1b2af47b00df32c00556418c3381dbe0902c73909e12bae742ef",
+      "byte_identical": true
+    },
+    {
+      "name": "continuous_certificate_consistency_review.json",
+      "original_sha256": "814fd06935ab6bfede89df13b291619992c573c66977d3fec1929c3ccb6cd6be",
+      "archived_sha256": "814fd06935ab6bfede89df13b291619992c573c66977d3fec1929c3ccb6cd6be",
+      "byte_identical": true
+    }
+  ]
+}

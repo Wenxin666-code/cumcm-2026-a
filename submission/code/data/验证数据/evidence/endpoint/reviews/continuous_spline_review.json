@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "quantities_enclosed": 1536,
+  "spatial_cells": 16,
+  "meanvalue_rectangles": 64,
+  "largest_interval_width": "2.27094845886931227829685807E-17",
+  "source_sha256": {
+    "continuous_late_spline.py": "d4087ce4954c2bc4c982418810eff23328910dd818ef0731348facb89a7c6704",
+    "continuous_late_barrier.py": "a64b0de0a8661118ef1eb81e9dbbd760abdca87285a978bf69c2e1b58d2f3dad",
+    "decimal_bounds.py": "0f61e5f6442fe9f3721178d8de294c2e853763aa07041bb284c34727a4b2f4a8",
+    "endpoint_study.py": "1e3eade30eba0dcda184731531103da72a400439fad1ae56254b380cc1316dd2",
+    "continuous_late_meanvalue.py": "c28c0b6412e92a47dcb3eaa2bd982c8941cea87f382eb9b5f9bb72935515c4fa"
+  },
+  "test": "Known time-dependent quadratic satisfies the exact clamped axis/Robin conditions and is reproduced by the C2 spline; independently check value, time derivative, first derivative, radial Laplacian and axis regular limit.",
+  "scope": "Independent analytic kernel audit only; not a completed all-window PDE certificate or an inherited-profile error bound.",
+  "structural_review": [
+    "Tridiagonal boundary/interior equations and Robin slope influence were checked algebraically.",
+    "Near-axis polynomial division identity was independently expanded and verified.",
+    "First-cell zero linear coefficient is an exact consequence of the clamped axis condition; interval coefficient noise is not a nonzero physical slope."
+  ],
+  "open_requirements": [
+    "All-time state and boundary barrier inequalities.",
+    "Continuous reconstruction agreement at every time interface.",
+    "Verified first-threshold argument or an explicitly proved true-maximum monotonicity condition.",
+    "Explicit scope of exact frozen floating constants and missing inherited initial/temperature-gradient error."
+  ]
+}

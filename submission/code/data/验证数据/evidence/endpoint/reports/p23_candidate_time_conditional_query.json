@@ -1,0 +1,27 @@
+{
+  "completed": true,
+  "case": "p23",
+  "certificate_initial_grid_N": 1280,
+  "candidate_N": 2560,
+  "query_time_s_decimal": "206926.56",
+  "inside_covered_window": true,
+  "true_maximum_interval_under_stated_conditions": [
+    "0.14999992724032879482438619636745191471196939",
+    "0.14999995709703256172322845040007650837635213"
+  ],
+  "strictly_dry_under_stated_late_conditions": true,
+  "does_not_certify_candidate_full_evolution": true,
+  "conditions": [
+    "Exact isothermal temperature T=T_tail at the late initial time; not merely numerically close.",
+    "Continuous initial moisture equals the unique clamped C2 cubic spline through the saved checkpoint; exact nonlinear Robin surface derivative.",
+    "Bounds apply to regular solutions of this scalar uniformly parabolic late problem; original early evolution is not enclosed.",
+    "Frozen binary64 input, derived tail mean, grid and material constants treated as exact reals. Decimal problem inputs and tail-mean computation roundoff are not enclosed."
+  ],
+  "scope": "Query uses the original specified late C2-spline initial profile. The finest global candidate has a different inherited initial state; this result must not be relabelled as its global error certificate.",
+  "source_sha256": {
+    "continuous_certificate.json": "2eefa48f4c67392b4227b885d0f34bfb29fa594b4cb0ccd2619fc06e66caa670",
+    "candidate_endpoint.json": "d659a70931563b8a917e400b2ebbfb1940969cb12b4241cb0f09e1a388b3d70f",
+    "local_radau.npz": "dfe06eff23d74111433bac4b1bf601713a44e7937d9446914169d43108f89c2a",
+    "query_continuous_certificate.py": "5ee8b45b0a72f99359a3aef93643f579558c9958761d23e378e20266314c2f0e"
+  }
+}

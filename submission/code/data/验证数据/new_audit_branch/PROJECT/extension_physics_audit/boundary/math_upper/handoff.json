@@ -1,0 +1,57 @@
+{
+  "completed_assistant_conditional_theorem_draft": true,
+  "numerical_outward_bounds_passed": true,
+  "all_98304_exported_bins_verified": true,
+  "PDE_started": false,
+  "PDE_existence_proved": false,
+  "new_latent_B1_covered": false,
+  "formal_alpha1_narrow_error_enclosed": false,
+  "independent_full_manuscript_and_code_review_passed": false,
+  "safe_integer_hours": {
+    "P23": 332,
+    "P4": 763
+  },
+  "conditional_Cmax_upper_exact": "0.149",
+  "files": {
+    "code/certify_mass_upper.py": {
+      "bytes": 12681,
+      "sha256": "b98adeb763832ed6bb2a418d4110b02f2409738558d329f7f6b744d55d24cde6"
+    },
+    "code/rational_bounds.py": {
+      "bytes": 3389,
+      "sha256": "dfaa87da337029e8047391e4de06ffed566d9cc0d6c3ae0cab9bc156b98a0189"
+    },
+    "code/verify_upper_outputs.py": {
+      "bytes": 3837,
+      "sha256": "c420509bab054f348fa76b3d3bbce3af8ccb39db5881ab70f65e70fe396958ad"
+    },
+    "help_checks.json": {
+      "bytes": 457,
+      "sha256": "0b7e195633d5eebf2fe9e608dbb5ca949cf6510fe19f4bfea707d6bf60ecaf30"
+    },
+    "README.md": {
+      "bytes": 2361,
+      "sha256": "26184186266cbbbbc94614760ba23402057b1e61090dfb15abc794e4580af318"
+    },
+    "results/mass_upper_summary.json": {
+      "bytes": 63357,
+      "sha256": "dcf4930935b0874a70fae4f99e4f5ff4d013fe15fbc01c57681849c3b727dc02"
+    },
+    "results/P23_certified_bins.csv": {
+      "bytes": 34394208,
+      "sha256": "78c1d6f6753f77d024b000835cb6416d7b9b5fc019b213b1e0f58484f1d50e6b"
+    },
+    "results/P4_certified_bins.csv": {
+      "bytes": 17216275,
+      "sha256": "50d4527b95ca95777b4b7333c349ab62009a517db82c9542925e82e26d63a165"
+    },
+    "results/serialized_schedule_audit.json": {
+      "bytes": 1310,
+      "sha256": "9efb4dc816a47f85889306594bed967818c78832f9563eb254bd1195a2307ca9"
+    },
+    "全初值上屏障_条件定理与粗界.md": {
+      "bytes": 12524,
+      "sha256": "59cff2af91c68e821b0d36eddba1c57822dc1bc6db4e452383f8659cfb87b850"
+    }
+  }
+}

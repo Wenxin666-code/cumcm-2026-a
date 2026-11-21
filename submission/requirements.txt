@@ -1,0 +1,11 @@
+# 整个支撑包运行环境：Windows 64位，Python 3.12。
+# 包含四问求解、深度研究、结果导出和图/PDF资料处理的直接依赖。
+# python-flint用于连续PDE局部屏障的Arb区间运算。
+numpy==2.5.3
+scipy==1.18.1
+openpyxl==3.1.5
+XlsxWriter==3.2.9
+matplotlib==3.11.1
+Pillow==12.3.0
+pypdf==6.18.0
+python-flint==0.9.0

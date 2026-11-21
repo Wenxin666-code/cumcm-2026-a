@@ -1,0 +1,14 @@
+{
+  "completed": true,
+  "passed": true,
+  "partial_correct_rounding_Q1_C": 17357,
+  "unproven_remaining_Q1_C": 20443,
+  "full_Q1_C_certified": false,
+  "files_sha256": {
+    "verify.py": "279cc971280433966f37c01c146b99a8a8c55da768665c2deddf9f96036cd2c3",
+    "独立复核报告.md": "a30590bb19830abaf3384936d80d4ce6eb3cbe9cdfd42ef6b4486b66c76e30cd",
+    "computed_02\\summary.json": "92dd05b2c215739f9542a44fd64546fc2f698d034596ec594de0434a1d7c8fa9",
+    "computed_02\\source_bindings.json": "5fc1d7ce700c4b7905976b68a4933a9f825896097a130f9752da5ba87651b55d",
+    "computed_02\\direct_exponential_profiles.json": "9601d434b353eb58e2df045fa087a61e5387399d710af876e8ac1c73d2dfa44b"
+  }
+}

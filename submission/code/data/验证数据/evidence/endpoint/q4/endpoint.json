@@ -1,0 +1,14 @@
+{
+  "equality_root_s": 183948.83648092244,
+  "equality_root_h": 51.09689902247845,
+  "spatial_root_difference_s": 0.003008474945090711,
+  "time_tolerance_root_difference_s": 0.004207610996672884,
+  "engineering_margin_s": 0.007216085941763595,
+  "reported_time_s": 183949.2,
+  "reported_time_h": 51.097,
+  "reported_max_C": 0.1499998133600209,
+  "strict_reconstructed_field_dry": true,
+  "continuous_space_maximum": "exact maximum of the piecewise-linear reconstructed radial field occurs at a node",
+  "continuous_PDE_error_certified": false,
+  "interpretation": "Equality crossing is the infimum of later strictly dry times; report adds empirical mesh/time allowance and rounds to dry side."
+}

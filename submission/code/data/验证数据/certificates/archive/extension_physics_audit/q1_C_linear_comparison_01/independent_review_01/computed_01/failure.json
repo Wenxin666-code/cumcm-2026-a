@@ -1,0 +1,6 @@
+{
+  "completed": false,
+  "passed": false,
+  "exception": "ValueError('missing product')",
+  "PDE_started": false
+}

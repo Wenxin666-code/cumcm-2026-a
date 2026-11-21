@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+~$*
+/work/
+/checks/
+/计算工作/
+/A题计算结果/
+/.pytest_cache/
+/.ruff_cache/

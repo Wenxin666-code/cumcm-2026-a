@@ -1,0 +1,62 @@
+{
+  "label": "P1_E64",
+  "case": "P1",
+  "elements": 64,
+  "samples_sha256": "7f17b882767f7cee1724d0eb995b0ba518f3d077329ca42a5a0035cb5e75654a",
+  "local_record_sha256": "9a8fb621502a00302061c8d88775aa4e07cc0304f47e0e4e2fa4e4b234359061",
+  "local_record_matches_report_hash": false,
+  "source_record": {
+    "label": "P1_E64",
+    "case": "P1",
+    "elements": 64,
+    "nodes": 193,
+    "degree": 3,
+    "radial_element_power": 2,
+    "created_at_utc": "2026-09-11T03:07:02.241077+00:00",
+    "wall_seconds": 0.7268142001703382,
+    "method": "Independent P3 GLL lumped-mass weak form in s=(r/R)^2; independent sparse BDF wrapper",
+    "settings": {
+      "rtol": 1e-10,
+      "atol_T_K": 1e-10,
+      "atol_C": 1e-12,
+      "max_step_s": 75
+    },
+    "reference_file": "work/runs/final_model/q1/tight/solution.npz",
+    "source_hashes_before": {
+      "inputs/附件/附件1.xlsx": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "inputs/附件/附件2.xlsx": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+      "package/config/model.json": "d9f249ab28bb8f8ff221a8549bb7e1217dbbac667bea6f78092c582ef2103bdd",
+      "independent_fem_program": "4010f38347bc1e653bd19f4a61c459c1d1872b2d1cde17ef0ffd648716a30d99",
+      "reference_file": "f833f97dfd3e99c5d9bfc32b24745bb3504ec86ad04c263e30eed56c8f0fc605"
+    },
+    "source_hashes_after": {
+      "inputs/附件/附件1.xlsx": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "inputs/附件/附件2.xlsx": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+      "package/config/model.json": "d9f249ab28bb8f8ff221a8549bb7e1217dbbac667bea6f78092c582ef2103bdd",
+      "independent_fem_program": "4010f38347bc1e653bd19f4a61c459c1d1872b2d1cde17ef0ffd648716a30d99",
+      "reference_file": "f833f97dfd3e99c5d9bfc32b24745bb3504ec86ad04c263e30eed56c8f0fc605"
+    },
+    "samples_sha256": "7f17b882767f7cee1724d0eb995b0ba518f3d077329ca42a5a0035cb5e75654a",
+    "reference_event_root_s": null,
+    "event_root_s": null,
+    "event_root_h": null,
+    "event_difference_s": null,
+    "event_global_polynomial_max_C": null,
+    "event_nodal_max_C": null,
+    "event_definition": "First decreasing maximum of the full piecewise-cubic interpolant crossing 0.15; all real interior derivative roots are checked. Equality infimum, not earliest attained strict time.",
+    "max_T_difference_to_reference_K": 4.881758286501281e-08,
+    "max_C_difference_to_reference": 1.5198215610467969e-06,
+    "comparison_rows": 10,
+    "comparison_radii": 21,
+    "minimum_sampled_polynomial_C": 1.5102346036690057,
+    "maximum_sampled_polynomial_C": 2.550018246547997,
+    "maximum_sampled_C_overshoot_above_initial": 1.8246547996980667e-05,
+    "all_sampled_fields_finite": true,
+    "no_clipping_or_limiter_used": true,
+    "steps": 1908,
+    "nfev": 3875,
+    "limitations": "Cubic GLL discretization is not a general positivity/monotonicity theorem; diagnostic extrema are checked at saved early and full-timespan samples. Agreement with FV alone is not proof."
+  },
+  "recomputed_max_T_to_stored_reference_K": 4.881758286501281e-08,
+  "recomputed_max_C_to_stored_reference": 1.5198215610467969e-06
+}

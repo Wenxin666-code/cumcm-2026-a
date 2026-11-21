@@ -1,0 +1,541 @@
+{
+  "schema_version": 1,
+  "scope": "Portable readback and optional analytic reconstruction; no default PDE or canceled full-radius execution.",
+  "files": [
+    {
+      "path": "archive/extension_physics_audit/pde_arb_kirchhoff_01/code/arb_kirchhoff.py",
+      "bytes": 2870,
+      "sha256": "c24849b27a4edd902d3c82591e70de98f17e73eb1a80f5cac29c08f05aaec471"
+    },
+    {
+      "path": "archive/extension_physics_audit/pde_dissipative_certificate_01/code/dissipative_tube.py",
+      "bytes": 5816,
+      "sha256": "e55d611c237d9fa10ea9dce367841ffa1f449d9f2df3d0df8b2e1775ab4ad45b"
+    },
+    {
+      "path": "archive/extension_physics_audit/pde_dissipative_certificate_03/code/full_chain.py",
+      "bytes": 20884,
+      "sha256": "cfff1fa6c6ddd155623b3d6b42cb2a42040c2427c4df801354cba6c67bef358a"
+    },
+    {
+      "path": "archive/extension_physics_audit/pde_full_initial_certificate/code/exact_polynomial.py",
+      "bytes": 6817,
+      "sha256": "c32561bc7dfd90d0d869d7d07f67698994e49ebe1a27658cbe8fafd7f1349f1f"
+    },
+    {
+      "path": "archive/extension_physics_audit/pde_full_initial_certificate/code/mass_tube.py",
+      "bytes": 11649,
+      "sha256": "3c7fe58abb7341bc8d68a004e10a70d4d4b422d97db814e73cc7b6df123e647f"
+    },
+    {
+      "path": "archive/extension_physics_audit/pde_full_initial_certificate/code/rational_bounds_frozen.py",
+      "bytes": 3389,
+      "sha256": "dfaa87da337029e8047391e4de06ffed566d9cc0d6c3ae0cab9bc156b98a0189"
+    },
+    {
+      "path": "archive/extension_physics_audit/pde_full_initial_certificate/q1_dense_recovery_01/code/dense_storage.py",
+      "bytes": 7333,
+      "sha256": "864ced8540ffa225b6dba5217471da6ec2db72fe0d1609bf3466619d939c66b2"
+    },
+    {
+      "path": "archive/extension_physics_audit/pde_full_initial_certificate/q1_dense_recovery_01/code/linear_reference.py",
+      "bytes": 4085,
+      "sha256": "aaa637bc0e51871196d47293f469127cd3242bdbc970de7aa3e73a0315763775"
+    },
+    {
+      "path": "archive/extension_physics_audit/pde_full_initial_certificate/q1_dense_recovery_01/code/moisture_producer.py",
+      "bytes": 14187,
+      "sha256": "22d60feb96f2fff983f1a011c1960f03f4758612613c73ab562cd5bf6994bcaf"
+    },
+    {
+      "path": "archive/extension_physics_audit/pde_localized_C_01/check_gaussian_barrier.py",
+      "bytes": 2905,
+      "sha256": "f5e8e919769b80e299a6917f9a1f261f0e8a5cda3ab4f8621e1de20cb2dc96d1"
+    },
+    {
+      "path": "archive/extension_physics_audit/pde_localized_C_01/check_local_kernel.py",
+      "bytes": 3044,
+      "sha256": "2c4a491a4d5b7f0a3dfc4e0dcb5364990b8b7219904a1ca3c3607076b97fbd22"
+    },
+    {
+      "path": "archive/extension_physics_audit/pde_localized_C_01/freeze_two_steps.py",
+      "bytes": 2462,
+      "sha256": "af6a2f3f0f07c8e320b68edf6f827401148f524bbfeb4935ba3ec665bdfca941"
+    },
+    {
+      "path": "archive/extension_physics_audit/pde_localized_C_01/local_kernel.py",
+      "bytes": 5794,
+      "sha256": "d49858e07251cb525297a53532a5f25613154d65110cb34b8956aa0b03dffad7"
+    },
+    {
+      "path": "archive/extension_physics_audit/pde_localized_C_01/native_full_two_steps_width16_01/sources.json",
+      "bytes": 11152,
+      "sha256": "9888d1fe995b5cfe06d6197cdcc5585e424554f728e82e1e34ee7c0ed34941f9"
+    },
+    {
+      "path": "archive/extension_physics_audit/pde_localized_C_01/native_full_two_steps_width16_01/step_0.json",
+      "bytes": 14408,
+      "sha256": "edf06dc981deeca27189c6ddea7295c0690b733ff10790f6bdd0da19cd39dedc"
+    },
+    {
+      "path": "archive/extension_physics_audit/pde_localized_C_01/native_full_two_steps_width16_01/step_1.json",
+      "bytes": 15024,
+      "sha256": "9848b0394695ca1f0c85c49e7d7f38d5b37ae93be899274e26f7cf95a377c0ef"
+    },
+    {
+      "path": "archive/extension_physics_audit/pde_localized_C_01/native_full_two_steps_width16_01/summary.json",
+      "bytes": 2524,
+      "sha256": "744e038b34b986cd5fb4450e693b520898658b9d4c5cc99ccb87484510e9c25b"
+    },
+    {
+      "path": "archive/extension_physics_audit/pde_localized_C_01/readback_local.py",
+      "bytes": 10323,
+      "sha256": "855fd6860003c59746b20639005632be4502ab7f42c367e87c2c2c0d2695a0bd"
+    },
+    {
+      "path": "archive/extension_physics_audit/pde_localized_C_01/run_native_local.py",
+      "bytes": 11621,
+      "sha256": "c89376e86197996a7a074ae57673e08db833f0cd950a60a5ffce3a4d7ccd8ec1"
+    },
+    {
+      "path": "archive/extension_physics_audit/pde_localized_C_01/run_native_local_v2.py",
+      "bytes": 11692,
+      "sha256": "6f73329c196cff88b6f66007c6946c71d72e832b1a094b9d1075768c4899aab4"
+    },
+    {
+      "path": "archive/extension_physics_audit/pde_localized_C_to1s_01/cancelled_handoff_01/handoff.json",
+      "bytes": 23746,
+      "sha256": "34bbe55739b682d434a0b6d6a4773d236df5c640e7ec3b83f7254f343e5c1844"
+    },
+    {
+      "path": "archive/extension_physics_audit/pde_localized_C_to1s_01/cancelled_handoff_01/交接摘要.md",
+      "bytes": 1131,
+      "sha256": "97c062519c848a26d504879e611588f70f5b0002299a640feffcf7ae6f45dd5c"
+    },
+    {
+      "path": "archive/extension_physics_audit/pde_localized_C_to1s_01/check_chain.py",
+      "bytes": 7507,
+      "sha256": "ac1e7f1578aa2e2cc9c07e1dba05a01f75a32b9794b9fcbe69a19fe416146aae"
+    },
+    {
+      "path": "archive/extension_physics_audit/pde_localized_C_to1s_01/finish_report.py",
+      "bytes": 6926,
+      "sha256": "1e6b1b7aa3f7d4d85632b11571983b7ea823e3023639ba61f302dbf33f626560"
+    },
+    {
+      "path": "archive/extension_physics_audit/pde_localized_C_to1s_01/inheritance.py",
+      "bytes": 7446,
+      "sha256": "2f209cac4ed8e4a1f6a15bdc31b590c479cef08729f11f08ad0c035ec0d8b8a8"
+    },
+    {
+      "path": "archive/extension_physics_audit/pde_localized_C_to1s_01/local_kernel.py",
+      "bytes": 769,
+      "sha256": "10d21294ec662287a2dbd74a36a7972957ad74bbbc34f1ad1e605999da797f84"
+    },
+    {
+      "path": "archive/extension_physics_audit/pde_localized_C_to1s_01/local_kernel_base.py",
+      "bytes": 5794,
+      "sha256": "d49858e07251cb525297a53532a5f25613154d65110cb34b8956aa0b03dffad7"
+    },
+    {
+      "path": "archive/extension_physics_audit/pde_localized_C_to1s_01/run_to1s.py",
+      "bytes": 15412,
+      "sha256": "1e8743e0f44890643d395e90e84d695e5baa9ca63c22e5f553028c5a41bea296"
+    },
+    {
+      "path": "archive/extension_physics_audit/pde_localized_C_to1s_01/stream_readback_to1s.py",
+      "bytes": 14807,
+      "sha256": "71a6614dcd04a7b10be834cddbd81ae45260194cccb4a43c4990d87e5e5eb7ab"
+    },
+    {
+      "path": "archive/extension_physics_audit/pde_pointwise_certificate_01/code/pointwise_kernel02.py",
+      "bytes": 10976,
+      "sha256": "a38b36e2cf698e11da85e81bc4137e952181032ccc22d2a6a8c1f3b0ede361d4"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_C_interior_certificate_01/actual_01/parameters.json",
+      "bytes": 16143,
+      "sha256": "747040518e32de377084ec9b64ad7b743bbe576b60ce72c11219e906d3c4be13"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_C_interior_certificate_01/actual_01/products_sha256.json",
+      "bytes": 371,
+      "sha256": "76af69132614a8c887b7dc8186683af81be7fc3188864298e60391eed645c0b3"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_C_interior_certificate_01/actual_01/source_bindings.json",
+      "bytes": 25581,
+      "sha256": "98f4b806e1c6d97b63e31f2f7bb04b1cb0d01611d88a8cb72b9dc7f9fb39fa02"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_C_interior_certificate_01/actual_01/summary.json",
+      "bytes": 1154,
+      "sha256": "8cd3faed8b313991248f5a0af05abfe2d971b80b3187b2a8213058d4f79b4378"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_C_interior_certificate_01/actual_02/parameters.json",
+      "bytes": 16143,
+      "sha256": "747040518e32de377084ec9b64ad7b743bbe576b60ce72c11219e906d3c4be13"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_C_interior_certificate_01/actual_02/products_sha256.json",
+      "bytes": 463,
+      "sha256": "d9e2c896fe69a6f5e23cec7a2e5883a0300a474f31e6e53bccbaa68ca99a56dd"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_C_interior_certificate_01/actual_02/source_bindings.json",
+      "bytes": 25583,
+      "sha256": "e8a5a3bf18404c20fd972a60b73f704221dce351db0171d89cfeabcb621a548d"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_C_interior_certificate_01/actual_02/summary.json",
+      "bytes": 1210,
+      "sha256": "ab5bbc6333a330b9e29796363c38a77bd2d500081be76e2d2d6b123cdc7abb6d"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_C_interior_certificate_01/actual_03/products_sha256.json",
+      "bytes": 282,
+      "sha256": "f418fb08830bdb52700a0c17ff64cce4d873721d76884c40a9454cf8f8ca19d6"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_C_interior_certificate_01/actual_03/source_bindings.json",
+      "bytes": 26422,
+      "sha256": "fa90fbbfd866038fcbe18ff99af952754b06596797c554ad40c75861fb9b6065"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_C_interior_certificate_01/actual_03/summary.json",
+      "bytes": 1484,
+      "sha256": "fadf34a7113ff54d52d9daff190c9ed4f12c219ee358c1ff4c305482d40b606c"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_C_interior_certificate_01/actual_03_import_closure_supplement.json",
+      "bytes": 1218,
+      "sha256": "0c28e89282230e5e62fd9361c91455e19b629f2525cdacdc04150975f6bdfec6"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_C_interior_certificate_01/code/bessel_probe.py",
+      "bytes": 1639,
+      "sha256": "6187fcc848c12d7da9d74bfa82d76a321172f6d58b404580c5c4c545d0104115"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_C_interior_certificate_01/code/certify_bessel03.py",
+      "bytes": 3887,
+      "sha256": "a96d4052e0e83c864ecf2a6a1b0825636cdfc18cfee133aecaf620da89689fbe"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_C_interior_certificate_01/code/certify_interior.py",
+      "bytes": 7418,
+      "sha256": "b4c0fd85635f68b06a82ce89d659b578c4c7a395a4a54d41d4f47e17779770bd"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_C_interior_certificate_01/code/certify_interior02.py",
+      "bytes": 8435,
+      "sha256": "b277137f3f6d2f586e13f8695a2ec3a0c88898704d0ba51fbf4a0375e56c459e"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_C_interior_certificate_01/code/prepare_tight_variant.py",
+      "bytes": 2102,
+      "sha256": "8f824b35e810fa7cf74e0f01371d7255ce3ddf98e8a79a2baf53fd9bfee48f30"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_C_interior_certificate_01/independent_review_03/computed_01/source_bindings_supplement.json",
+      "bytes": 29019,
+      "sha256": "cb27badadc0ec1d2b18ab507c0b66945695898a636f94fb29989cca0f612471c"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_C_interior_certificate_01/independent_review_03/computed_01/summary.json",
+      "bytes": 1679,
+      "sha256": "87fafc243e34385f75337c3859c0612260bf94f081bdcc5ae3279c4dc506d08d"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_C_interior_certificate_01/independent_review_03/handoff.json",
+      "bytes": 1251,
+      "sha256": "e62354e0955a5aee72ceadea6022a7c7dbfd5ce450ec942a85076dfa654e865a"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_C_interior_certificate_01/independent_review_03/verify.py",
+      "bytes": 13894,
+      "sha256": "68841577dc0d7be0db399f763fc9086141cc59a8c2bd133c142320896dfef239"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_C_interior_certificate_01/independent_review_03/独立复核报告.md",
+      "bytes": 2641,
+      "sha256": "d0ea3f8b04738d535847d13329442761a615648886558ce449f18c09ecd47b08"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_C_interior_certificate_01/root_acceptance_03/acceptance.json",
+      "bytes": 2486,
+      "sha256": "ace06e60f77bae626dab524ea793ffa46fbdccf2a8183408124274f7591ba028"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_C_interior_certificate_01/解析内层屏障_推导与验收范围.md",
+      "bytes": 4312,
+      "sha256": "431b49fda08f64587750f593e857b661a50e7425e9303f66990c140d805f2ff6"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_C_linear_comparison_01/actual_01/products_sha256.json",
+      "bytes": 671,
+      "sha256": "c4850b89cfc5d3d721b38eaad07d395704198ae5353eb836f664833084ec87b2"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_C_linear_comparison_01/actual_01/source_bindings.json",
+      "bytes": 27442,
+      "sha256": "9de9e41956db584693188a970dd02dbb1c01c4bc85d873416499e41dc3ff2661"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_C_linear_comparison_01/actual_01/summary.json",
+      "bytes": 780,
+      "sha256": "8de2ddd4b23921e4c1146a81ebc08c00e357578700e48170595ccaad84b82978"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_C_linear_comparison_01/actual_01/tail_bound.json",
+      "bytes": 539,
+      "sha256": "f474f23949ad593d8d70d8fbe4cbd00fc416246c89d68da46004f6b5b1cc568f"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_C_linear_comparison_01/code/certify_linear_lower.py",
+      "bytes": 5934,
+      "sha256": "5dddd1cb8098a8ed94502bdb2653827eb6943bee2072e1742fd1fbd5267c3854"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_C_linear_comparison_01/independent_review_01/computed_01/failure.json",
+      "bytes": 116,
+      "sha256": "8b878ee9776c28027a0a4f9f35dd59f74484942db89df3e9ce5c0fd724987a13"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_C_linear_comparison_01/independent_review_01/computed_02/source_bindings.json",
+      "bytes": 30836,
+      "sha256": "e9c50ad12a7dde3dc680608362994ae722446374e0e5bdd921eae1a651feb7b3"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_C_linear_comparison_01/independent_review_01/computed_02/summary.json",
+      "bytes": 2526,
+      "sha256": "d5bec7ea351202101cbb159177f7a9e4247271b626e94abae10cc1da2bcb9f53"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_C_linear_comparison_01/independent_review_01/handoff.json",
+      "bytes": 689,
+      "sha256": "8c9b76a8c779bfd1b288e470b1e7dfdb0bd0bfafed935985185cc6b717532445"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_C_linear_comparison_01/independent_review_01/verify.py",
+      "bytes": 12708,
+      "sha256": "279cc971280433966f37c01c146b99a8a8c55da768665c2deddf9f96036cd2c3"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_C_linear_comparison_01/independent_review_01/独立复核报告.md",
+      "bytes": 4040,
+      "sha256": "a30590bb19830abaf3384936d80d4ce6eb3cbe9cdfd42ef6b4486b66c76e30cd"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_C_linear_comparison_01/root_acceptance_01/acceptance.json",
+      "bytes": 3022,
+      "sha256": "9bbfb4fb88cae4c9567f2ecb60a1b9b62bb2b39c66f9678af55998fa5742758f"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_existence_clipping_review_01/actual_01/summary.json",
+      "bytes": 6069,
+      "sha256": "29983e91883b4243ace6f46dd2b21f308415c2bc38bd38130108e3b8503e7281"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_existence_clipping_review_01/check_hypotheses.py",
+      "bytes": 2951,
+      "sha256": "42761bb0f1cb0c406155e96217b614dd9d49592801495dfb06e3b0186a260657"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_existence_clipping_review_01/handoff.json",
+      "bytes": 911,
+      "sha256": "48bc3137a4c1ff348766bf7205c43238bec6e4f62678e3e8078b4fe93caf2931"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_existence_clipping_review_01/存在唯一性与裁切屏障_独立审查.md",
+      "bytes": 10178,
+      "sha256": "68d0b2292c849414bfd1f6b71d96fb4892028f06f325b68cc1b6e1b2a39a8dd6"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_temperature_certificate_01/actual_01/ambiguous.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_temperature_certificate_01/actual_01/input_semantics.json",
+      "bytes": 146139,
+      "sha256": "99615e4f4b3c399de50879408587c1f1f9019fe3575eed3cb515935717cb67bf"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_temperature_certificate_01/actual_01/parameters.json",
+      "bytes": 6427,
+      "sha256": "08df19a24c8ee0e6f716f2d7375b19828c00047ce978bb53dfca6a208c92f614"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_temperature_certificate_01/actual_01/products_sha256.json",
+      "bytes": 1024,
+      "sha256": "632d1f5a79020dbe1f0e0f7fe2180e013bc2df8ee7e300c0405aba00ec387ca2"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_temperature_certificate_01/actual_01/source_bindings.json",
+      "bytes": 25008,
+      "sha256": "323258711066fce158080bc4e2bcf46a84f47c39abba83904aa1b8a10e9eda48"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_temperature_certificate_01/actual_01/summary.json",
+      "bytes": 1631,
+      "sha256": "be7b6fa4f2cfb211aa3bfd8bc9fade7d608ac7a5f7c5b00b54324a1aeeb37676"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_temperature_certificate_01/actual_01/tail_bound.json",
+      "bytes": 1746,
+      "sha256": "b7e6aad076ff06d2f0e6dde191f8864c20a40f83091778c274996097c1d8a0ba"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_temperature_certificate_01/code/certify_heat.py",
+      "bytes": 14417,
+      "sha256": "91409851b8ed978d9e958aa3babc3939f4918cdf78b507a5bc59409ca0bb07e9"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_temperature_certificate_01/independent_review_01/computed_01/summary.json",
+      "bytes": 5345,
+      "sha256": "4c270eafe74c8086148ab0cd74eb72fcbc5a6a6944e2b187549b74902ece1023"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_temperature_certificate_01/independent_review_01/handoff.json",
+      "bytes": 812,
+      "sha256": "65e400cedca3d7c942b0e800acd683b2e146656f3853a725ad3e5ce2344900a5"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_temperature_certificate_01/independent_review_01/verify.py",
+      "bytes": 15923,
+      "sha256": "0e9aa8546ffd7ae20fef70c793e64360ffe58736cbdc2b6bfc6a74399878814b"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_temperature_certificate_01/independent_review_01/独立复核报告.md",
+      "bytes": 5597,
+      "sha256": "2a8e8336790d7d4e5510269a3f8a5ac606354db68e9dbee153f2ff96387b55f4"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_temperature_certificate_01/root_acceptance_01/acceptance.json",
+      "bytes": 2738,
+      "sha256": "af0d804ec776aa68b48b497d338d2ab7f9969c6468d55c02870ce98f34f8d8e6"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_temperature_certificate_01/root_acceptance_01/认证摘要.md",
+      "bytes": 818,
+      "sha256": "bc81e335d0b73f514273ff0be2330b9a42cb9aa5430cd4580cc8699384a21b99"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_temperature_spectral_review_01/check_input_and_rational_tail.py",
+      "bytes": 4915,
+      "sha256": "acb71afc514714c375f985c00795d61a333089805d145996b619b162a886c36d"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_temperature_spectral_review_01/exact_check_01/summary.json",
+      "bytes": 28107,
+      "sha256": "4faef524bc299d4d76feb0b5989c5304785d300f78918e6fedb2882f38a7a288"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_temperature_spectral_review_01/handoff.json",
+      "bytes": 872,
+      "sha256": "c2231df4de591955e1d0197a740208dff2beaa4960f1a666a1f84ae52eadb1b7"
+    },
+    {
+      "path": "archive/extension_physics_audit/q1_temperature_spectral_review_01/独立数学审查.md",
+      "bytes": 9733,
+      "sha256": "6401ff934fc332ad469600f621a2f6be35f793fad633d524b042f81228d07c8b"
+    },
+    {
+      "path": "archive/inputs/附件/附件1.xlsx",
+      "bytes": 16586,
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7"
+    },
+    {
+      "path": "archive/package/code/solvers/radial_core.py",
+      "bytes": 7288,
+      "sha256": "3348246a05aa74411dc334d95d07f338ac5273ee82556721b85a224aed4fb4bd"
+    },
+    {
+      "path": "archive/package/code/solvers/solve_q1.py",
+      "bytes": 10471,
+      "sha256": "a2a17eb5de0a965a2791e9cd0474f46f27b1b14d0dc7370ab0e74d5dec05cb4f"
+    },
+    {
+      "path": "archive/package/config/model.json",
+      "bytes": 9694,
+      "sha256": "f69b80469e856d3c4a5a3ba0cad923ab6497744b7f319bb5283cc66433ab4f23"
+    },
+    {
+      "path": "archive/work/reviews/formal_result_source_selection.json",
+      "bytes": 7168,
+      "sha256": "092b277226f3908cb2a047d9380c179468686139ebb5525d71f51ec0c9e94a9f"
+    },
+    {
+      "path": "archive_inventory.json",
+      "bytes": 56183,
+      "sha256": "259fd40550144d025e94798a80ad7feb38cf8ae51e0e4e8ad1b2b505174f5ea5"
+    },
+    {
+      "path": "compact_intervals.py",
+      "bytes": 6432,
+      "sha256": "b72a7ce2f7a497132c26ebc391c051d6bf56bec84545161bc8298e1adf93c7f4"
+    },
+    {
+      "path": "evidence/conversion_receipt.json",
+      "bytes": 3093,
+      "sha256": "91f020fb7d27bb3e98636dbcee4f9e8bc193e4a078e744f576fe95b46452fa80"
+    },
+    {
+      "path": "evidence/moisture_J0_roots.json.xz",
+      "bytes": 146200,
+      "sha256": "013007c9251a58a03fc60b2f9a04c3aa1f69bc185ee4b7853ee992d7e7af5ee4"
+    },
+    {
+      "path": "evidence/moisture_outward.csv.xz",
+      "bytes": 264008,
+      "sha256": "2c5016c18bbea76987422d9241bb084dad2af86c787ba898f7e42295a26bf7ed"
+    },
+    {
+      "path": "evidence/moisture_Robin_roots.json.xz",
+      "bytes": 128656,
+      "sha256": "c276cd6c36410b3e99f14fa018669aaec3e5d0697855cb0f3bb3c529bcec2fc0"
+    },
+    {
+      "path": "evidence/root_encoding.json",
+      "bytes": 3978,
+      "sha256": "06175ff5b193d2f9359c2978331b04c70817a833a156d492368b97cd7dcb3576"
+    },
+    {
+      "path": "evidence/temperature_J0_roots.json.xz",
+      "bytes": 50232,
+      "sha256": "354a594cbc3e4a5f84df7520517d5c89a3aa29a945c3abe6e801529413d87123"
+    },
+    {
+      "path": "evidence/temperature_outward.csv.xz",
+      "bytes": 579736,
+      "sha256": "e065b2673ea9481301fbf1578868799aa23013c5d314a7a1ad97debf73057bbd"
+    },
+    {
+      "path": "evidence/temperature_Robin_roots.json.xz",
+      "bytes": 56256,
+      "sha256": "623c05c6e58138671aedae5d0f51e8a16f1f97e48f35ac55fa7f95d7c2ce5bf4"
+    },
+    {
+      "path": "packaging_validation.json",
+      "bytes": 5054,
+      "sha256": "17599326e37cd860c8b3f5e955e6b7cdda814eac6cdc4f4e9624ad4c6a3433ab"
+    },
+    {
+      "path": "portable_reconstruction.py",
+      "bytes": 12700,
+      "sha256": "e0bc319e4e0738221750485bf02f6a5922330b33484a70897ec36c686e8c38b6"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5866,
+      "sha256": "8068afbd0f1817adf5cc2e8af52810facb9be515068d5077d94a9434efa15b65"
+    },
+    {
+      "path": "reproduce_certificates.py",
+      "bytes": 11744,
+      "sha256": "7f748ad9e28e50abe4269e8cbb2f0112bcb53472a6bd70bcc4624ab1b3397057"
+    }
+  ]
+}

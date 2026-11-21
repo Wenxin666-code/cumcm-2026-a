@@ -1,0 +1,64 @@
+{
+  "completed": true,
+  "all_intervals_examined": 75600,
+  "mathematical_certification_rerun": false,
+  "pde_started": false,
+  "records": [
+    {
+      "name": "temperature",
+      "rows": 37800,
+      "certified_bins": 37800,
+      "original_log_sha256": "db5a99db1a683869df7cb23a718fd7636a4dffee720194a0f2be462b8158a0a4",
+      "original_exact_projection_sha256": "a69532a82a59c4e8d019004e2dd158d22734657ae535add0f418f4aff2cce8f6",
+      "path": "evidence/temperature_outward.csv.xz",
+      "compressed_sha256": "e065b2673ea9481301fbf1578868799aa23013c5d314a7a1ad97debf73057bbd",
+      "uncompressed_csv_sha256": "105ea52f626e45dfe31256d220d65fda58c7f115520b6fd74f014638e922367e",
+      "compressed_bytes": 579736,
+      "decimal_places_histogram": {
+        "12": 37800
+      },
+      "maximum_added_width_exact": "1796718870810109/900719925474099200000000000",
+      "all_original_intervals_contained": true,
+      "all_claimed_bins_preserved": true,
+      "original_log_byte_lossless": false,
+      "pde_started": false,
+      "description": "Integer/Fraction outward rounding of each original exact interval; full diagnostic logs retained in research archive.",
+      "original_role_path": "RESEARCH/extension_physics_audit/q1_temperature_certificate_01/actual_01/temperature_intervals.jsonl.gz",
+      "readback": {
+        "rows": 37800,
+        "certified_bins": 37800,
+        "selected_bin_mismatches": 0,
+        "all_compact_claims_verified": true
+      }
+    },
+    {
+      "name": "moisture",
+      "rows": 37800,
+      "certified_bins": 17357,
+      "original_log_sha256": "cd7e0827d7b7fccffbc1dda0b9221c3f5688ec7e92473b7482d3bd034b36bb13",
+      "original_exact_projection_sha256": "efba8154071b66814fcda82f972c87c6d8c68e1f25e27e86f19ecca9a7232e06",
+      "path": "evidence/moisture_outward.csv.xz",
+      "compressed_sha256": "2c5016c18bbea76987422d9241bb084dad2af86c787ba898f7e42295a26bf7ed",
+      "uncompressed_csv_sha256": "2958203714e6accd9c0404b36febe3b122c5e5989b22262930f917d4a9ff1aed",
+      "compressed_bytes": 264008,
+      "decimal_places_histogram": {
+        "12": 37800
+      },
+      "maximum_added_width_exact": "30411342901002577120002828561895197645743192416015143951421345863958567902261071/15206732108458468578381089789906607773181312320355318607567934656900866322202624000000000000",
+      "all_original_intervals_contained": true,
+      "all_claimed_bins_preserved": true,
+      "original_log_byte_lossless": false,
+      "pde_started": false,
+      "description": "Integer/Fraction outward rounding of each original exact interval; full diagnostic logs retained in research archive.",
+      "original_role_path": "RESEARCH/extension_physics_audit/q1_C_linear_comparison_01/actual_01/all_query_bounds.jsonl.gz",
+      "readback": {
+        "rows": 37800,
+        "certified_bins": 17357,
+        "selected_bin_mismatches": 0,
+        "all_compact_claims_verified": true
+      }
+    }
+  ],
+  "archive_exact_projection_not_in_submission": true,
+  "frozen_original_logs_unchanged": true
+}

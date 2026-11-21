@@ -1,0 +1,28 @@
+{
+  "completed": true,
+  "mathematical_derivation_supported_under_stated_conditions": true,
+  "finite_mode_computation_checked": false,
+  "all_output_rounding_certified": false,
+  "PDE_started": false,
+  "artifacts": {
+    "独立数学审查.md": {
+      "sha256": "6401ff934fc332ad469600f621a2f6be35f793fad633d524b042f81228d07c8b",
+      "bytes": 9733
+    },
+    "check_input_and_rational_tail.py": {
+      "sha256": "acb71afc514714c375f985c00795d61a333089805d145996b619b162a886c36d",
+      "bytes": 4915
+    },
+    "exact_check_01/summary.json": {
+      "sha256": "9aed7cc8bd486e86d20b8d1c9dd78500f704baf8708c7209138c3057bb22200d",
+      "bytes": 28930
+    }
+  },
+  "primary_sources": [
+    "https://dlmf.nist.gov/10.2",
+    "https://dlmf.nist.gov/10.6",
+    "https://dlmf.nist.gov/10.9#E1",
+    "https://dlmf.nist.gov/10.21#i",
+    "https://dlmf.nist.gov/10.22"
+  ]
+}

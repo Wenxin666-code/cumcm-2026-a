@@ -1,0 +1,230 @@
+{
+  "contract": {
+    "path": "RESEARCH/\\package\\config\\model.json",
+    "sha256": "1650f64b8cc01788c21131b6bcadd052da30054dba67750ea84146759dd21afb"
+  },
+  "ambient": {
+    "path": "RESEARCH/\\inputs\\附件\\附件1.xlsx",
+    "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7"
+  },
+  "radius": {
+    "path": "RESEARCH/\\inputs\\附件\\附件2.xlsx",
+    "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af"
+  },
+  "original_solve_q1": {
+    "path": "RESEARCH/\\package\\code\\solvers\\solve_q1.py",
+    "sha256": "a2a17eb5de0a965a2791e9cd0474f46f27b1b14d0dc7370ab0e74d5dec05cb4f"
+  },
+  "radial_core": {
+    "path": "RESEARCH/\\package\\code\\solvers\\radial_core.py",
+    "sha256": "3348246a05aa74411dc334d95d07f338ac5273ee82556721b85a224aed4fb4bd"
+  },
+  "entry": {
+    "path": "RESEARCH/\\extension_physics_audit\\pde_full_initial_certificate\\q1_dense_recovery_01\\code\\moisture_producer.py",
+    "sha256": "22d60feb96f2fff983f1a011c1960f03f4758612613c73ab562cd5bf6994bcaf"
+  },
+  "storage": {
+    "path": "RESEARCH/\\extension_physics_audit\\pde_full_initial_certificate\\q1_dense_recovery_01\\code\\dense_storage.py",
+    "sha256": "864ced8540ffa225b6dba5217471da6ec2db72fe0d1609bf3466619d939c66b2"
+  },
+  "summary": {
+    "path": "SCRATCH/\\q1_dense_recovery_formal_01\\summary.json",
+    "sha256": "e248b6c41a5fcbf577abd12040ecdedbdd1ebd7e91178779df832914dbc6e111"
+  },
+  "status": {
+    "path": "SCRATCH/\\q1_dense_recovery_formal_01\\status.json",
+    "sha256": "e248b6c41a5fcbf577abd12040ecdedbdd1ebd7e91178779df832914dbc6e111"
+  },
+  "source_receipt": {
+    "path": "SCRATCH/\\q1_dense_recovery_formal_01\\formal_source_acceptance.json",
+    "sha256": "606a3410b2d3e26ad2928cd2eb7e1cc01f19a7c3d6b0ac848daebfbaf085c36d"
+  },
+  "full_chain": {
+    "path": "RESEARCH/\\extension_physics_audit\\pde_dissipative_certificate_03\\code\\full_chain.py",
+    "sha256": "cfff1fa6c6ddd155623b3d6b42cb2a42040c2427c4df801354cba6c67bef358a"
+  },
+  "exact_polynomial": {
+    "path": "RESEARCH/\\extension_physics_audit\\pde_full_initial_certificate\\code\\exact_polynomial.py",
+    "sha256": "c32561bc7dfd90d0d869d7d07f67698994e49ebe1a27658cbe8fafd7f1349f1f"
+  },
+  "mass_tube": {
+    "path": "RESEARCH/\\extension_physics_audit\\pde_full_initial_certificate\\code\\mass_tube.py",
+    "sha256": "3c7fe58abb7341bc8d68a004e10a70d4d4b422d97db814e73cc7b6df123e647f"
+  },
+  "rational_bounds_frozen": {
+    "path": "RESEARCH/\\extension_physics_audit\\pde_full_initial_certificate\\code\\rational_bounds_frozen.py",
+    "sha256": "dfaa87da337029e8047391e4de06ffed566d9cc0d6c3ae0cab9bc156b98a0189"
+  },
+  "dissipative_tube": {
+    "path": "RESEARCH/\\extension_physics_audit\\pde_dissipative_certificate_01\\code\\dissipative_tube.py",
+    "sha256": "e55d611c237d9fa10ea9dce367841ffa1f449d9f2df3d0df8b2e1775ab4ad45b"
+  },
+  "linear_reference": {
+    "path": "RESEARCH/\\extension_physics_audit\\pde_full_initial_certificate\\q1_dense_recovery_01\\code\\linear_reference.py",
+    "sha256": "aaa637bc0e51871196d47293f469127cd3242bdbc970de7aa3e73a0315763775"
+  },
+  "dense_storage": {
+    "path": "RESEARCH/\\extension_physics_audit\\pde_full_initial_certificate\\q1_dense_recovery_01\\code\\dense_storage.py",
+    "sha256": "864ced8540ffa225b6dba5217471da6ec2db72fe0d1609bf3466619d939c66b2"
+  },
+  "dense/index.json": {
+    "path": "SCRATCH/\\q1_dense_recovery_formal_01\\dense\\index.json",
+    "sha256": "a9490df33c40d8a62efc4b3af4454c6d53b9d1679dd7aa5c9d6540e1535d5b35"
+  },
+  "grid.npz": {
+    "path": "SCRATCH/\\q1_dense_recovery_formal_01\\grid.npz",
+    "sha256": "3246c2e3bc13a07965e0a946dbd290686b2e2bd2b9538ebc4c104786148ff50c"
+  },
+  "solution.npz": {
+    "path": "SCRATCH/\\q1_dense_recovery_formal_01\\solution.npz",
+    "sha256": "e3c4f6adb718949c9f9aa013fc49b3a0ac97233ed3d2f7c1337a143fa20b68b2"
+  },
+  "grid_profiles.npz": {
+    "path": "SCRATCH/\\q1_dense_recovery_formal_01\\grid_profiles.npz",
+    "sha256": "c2af54d5d7123bcb79de4fab9218913fb08582b5e7f3a85a034db8dc8d5ade91"
+  },
+  "water_balance.json": {
+    "path": "SCRATCH/\\q1_dense_recovery_formal_01\\water_balance.json",
+    "sha256": "d22275fda2b7957d4864054375640222efd595c635010e91e9b5b1296f48ff28"
+  },
+  "full_integer_fields/manifest.json": {
+    "path": "SCRATCH/\\q1_dense_recovery_formal_01\\full_integer_fields\\manifest.json",
+    "sha256": "060a8034a3ecef3ff0fe63279f51625c48977823475b671e2376f89fc8068fe5"
+  },
+  "span_000_manifest": {
+    "path": "SCRATCH/\\q1_dense_recovery_formal_01\\dense\\span_000\\manifest.json",
+    "sha256": "fe4d6632aae16239964794c15acb349329ffc49c61d40aa7521ecd5887e34b07"
+  },
+  "span_001_manifest": {
+    "path": "SCRATCH/\\q1_dense_recovery_formal_01\\dense\\span_001\\manifest.json",
+    "sha256": "3694dbc37d2bef50eca0e5afde2dc033adbf6b8704c3db6f1cb5aaac2cb3da8a"
+  },
+  "span_002_manifest": {
+    "path": "SCRATCH/\\q1_dense_recovery_formal_01\\dense\\span_002\\manifest.json",
+    "sha256": "400a33b69f4fd0c653181300de9e5a542cba6c35ff7ef89a5da3d04be4673ad8"
+  },
+  "span_003_manifest": {
+    "path": "SCRATCH/\\q1_dense_recovery_formal_01\\dense\\span_003\\manifest.json",
+    "sha256": "2924a27e181adc5868e9143ec3b1a714c7b9082e5454b4c930bdd38d2c189565"
+  },
+  "span_004_manifest": {
+    "path": "SCRATCH/\\q1_dense_recovery_formal_01\\dense\\span_004\\manifest.json",
+    "sha256": "ff53505e5ac3864bdb97e53320f13ca2a7ffc2e278ad21087efada887eaea5f6"
+  },
+  "span_005_manifest": {
+    "path": "SCRATCH/\\q1_dense_recovery_formal_01\\dense\\span_005\\manifest.json",
+    "sha256": "95c2113017ad2daa822a4f1dbbe27da2eb339d2e7af3ad6a15624e682e7587ef"
+  },
+  "span_006_manifest": {
+    "path": "SCRATCH/\\q1_dense_recovery_formal_01\\dense\\span_006\\manifest.json",
+    "sha256": "cd5011060ae44294f7ee4ef94dc0ba0112ba0d0dfa3c8d228b041efbeb36e614"
+  },
+  "span_007_manifest": {
+    "path": "SCRATCH/\\q1_dense_recovery_formal_01\\dense\\span_007\\manifest.json",
+    "sha256": "a3e2edf6753c793b5e9a1a4073dcc352a773a58852ddb25282be8fd6d1e9abc5"
+  },
+  "span_008_manifest": {
+    "path": "SCRATCH/\\q1_dense_recovery_formal_01\\dense\\span_008\\manifest.json",
+    "sha256": "7b3e329f3400938c48b74f9b332f12f16f582b29dd576657c242a40946fb10fb"
+  },
+  "span_009_manifest": {
+    "path": "SCRATCH/\\q1_dense_recovery_formal_01\\dense\\span_009\\manifest.json",
+    "sha256": "f6c9ef1ae8e6665511bcdd50f257b21a4746e645000781d97e8f20d0a1138ba7"
+  },
+  "span_010_manifest": {
+    "path": "SCRATCH/\\q1_dense_recovery_formal_01\\dense\\span_010\\manifest.json",
+    "sha256": "27d6f1981785121ae7f9c7a4838afb4ea53def81df4ffefce533ded5bf3a64f8"
+  },
+  "span_011_manifest": {
+    "path": "SCRATCH/\\q1_dense_recovery_formal_01\\dense\\span_011\\manifest.json",
+    "sha256": "ddca088ae64f962ca31afec4c72c3109845bfbf435f16fcfffcfc6bf6555d1fe"
+  },
+  "span_012_manifest": {
+    "path": "SCRATCH/\\q1_dense_recovery_formal_01\\dense\\span_012\\manifest.json",
+    "sha256": "8051228ca299eabd41cddaa4ec1ad169b4a7cad314a9e29fb50701dbfa9b2b6d"
+  },
+  "span_013_manifest": {
+    "path": "SCRATCH/\\q1_dense_recovery_formal_01\\dense\\span_013\\manifest.json",
+    "sha256": "11bf3f7782b765be22e1836225af19aad1c4f4b229351ccf1b2790ae9fb83b6e"
+  },
+  "span_014_manifest": {
+    "path": "SCRATCH/\\q1_dense_recovery_formal_01\\dense\\span_014\\manifest.json",
+    "sha256": "1d3be1ca0d17c96cf7e120af853ad89858301670b328e3b13c772919ccda49fc"
+  },
+  "span_015_manifest": {
+    "path": "SCRATCH/\\q1_dense_recovery_formal_01\\dense\\span_015\\manifest.json",
+    "sha256": "261decb79e864e29237243e832f9c360f741e3b87977e9e63e0cb016acbe73df"
+  },
+  "span_016_manifest": {
+    "path": "SCRATCH/\\q1_dense_recovery_formal_01\\dense\\span_016\\manifest.json",
+    "sha256": "0dc8465d5877436693c9f2922f535f48fd07138cfd074f45ff1b215da5605f20"
+  },
+  "span_017_manifest": {
+    "path": "SCRATCH/\\q1_dense_recovery_formal_01\\dense\\span_017\\manifest.json",
+    "sha256": "9187c11211b2c286874e6027aa679fbf5a42b666c19d1fdaeea5c32037d05095"
+  },
+  "span_018_manifest": {
+    "path": "SCRATCH/\\q1_dense_recovery_formal_01\\dense\\span_018\\manifest.json",
+    "sha256": "303984911db4050e58d6114a222f1349273801ff5f4257606016740e83ad90e6"
+  },
+  "span_019_manifest": {
+    "path": "SCRATCH/\\q1_dense_recovery_formal_01\\dense\\span_019\\manifest.json",
+    "sha256": "7b83706095027520c26b31eac94a7d9a7d57314b0bc53549c66582f86b564a99"
+  },
+  "span_020_manifest": {
+    "path": "SCRATCH/\\q1_dense_recovery_formal_01\\dense\\span_020\\manifest.json",
+    "sha256": "0420f7687933fec5fe684632972c0a04e5d6e5381dbb5ca0bc22f4b928cc600f"
+  },
+  "span_021_manifest": {
+    "path": "SCRATCH/\\q1_dense_recovery_formal_01\\dense\\span_021\\manifest.json",
+    "sha256": "97aa19981e5f00916321104486fde580e896cd2a185296950e54638fb7e9d28a"
+  },
+  "span_022_manifest": {
+    "path": "SCRATCH/\\q1_dense_recovery_formal_01\\dense\\span_022\\manifest.json",
+    "sha256": "987971ee8ac4ae3060c2dc1c3922f7af6447fe69f59927b57c69b2b62b64939b"
+  },
+  "span_023_manifest": {
+    "path": "SCRATCH/\\q1_dense_recovery_formal_01\\dense\\span_023\\manifest.json",
+    "sha256": "982854fb1c35f9e8ae266aa099a566036d973b878c8ff9bacb9f3e841e98d353"
+  },
+  "span_024_manifest": {
+    "path": "SCRATCH/\\q1_dense_recovery_formal_01\\dense\\span_024\\manifest.json",
+    "sha256": "97ce5193724aa420e7f182d612f5436f54ff35db70dc2ef542e553e81a8a6842"
+  },
+  "span_025_manifest": {
+    "path": "SCRATCH/\\q1_dense_recovery_formal_01\\dense\\span_025\\manifest.json",
+    "sha256": "0d51718608619d968b70213b96b898d494910d49f7c6ae64b7b9f2897c75981c"
+  },
+  "span_026_manifest": {
+    "path": "SCRATCH/\\q1_dense_recovery_formal_01\\dense\\span_026\\manifest.json",
+    "sha256": "53df833c7b7d3234e13aa71efbddbd857bac2d2209cc2bc822f0297341a38c35"
+  },
+  "span_027_manifest": {
+    "path": "SCRATCH/\\q1_dense_recovery_formal_01\\dense\\span_027\\manifest.json",
+    "sha256": "028e88b0e1d714dedbecbb6e26e38654ea297da7b94ded0e9506a3c677bb9c2d"
+  },
+  "span_028_manifest": {
+    "path": "SCRATCH/\\q1_dense_recovery_formal_01\\dense\\span_028\\manifest.json",
+    "sha256": "12b4d796bafd79691034054834887d3c8f9df6227a051d7c2626b643cad0e37e"
+  },
+  "span_029_manifest": {
+    "path": "SCRATCH/\\q1_dense_recovery_formal_01\\dense\\span_029\\manifest.json",
+    "sha256": "420c6e321c864b62269f7ef2b57dade9c48015bdfd4a75ad884e2c6faba5f973"
+  },
+  "localized_kernel": {
+    "path": "RESEARCH/\\extension_physics_audit\\pde_localized_C_01\\local_kernel.py",
+    "sha256": "d49858e07251cb525297a53532a5f25613154d65110cb34b8956aa0b03dffad7"
+  },
+  "localized_entry": {
+    "path": "RESEARCH/\\extension_physics_audit\\pde_localized_C_01\\run_native_local_v2.py",
+    "sha256": "6f73329c196cff88b6f66007c6946c71d72e832b1a094b9d1075768c4899aab4"
+  },
+  "Arb_kernel": {
+    "path": "RESEARCH/\\extension_physics_audit\\pde_arb_kirchhoff_01\\code\\arb_kirchhoff.py",
+    "sha256": "c24849b27a4edd902d3c82591e70de98f17e73eb1a80f5cac29c08f05aaec471"
+  },
+  "independent_native_review": {
+    "path": "RESEARCH/\\extension_physics_audit\\q1_native_independent_review_01\\actual_01\\review.json",
+    "sha256": "303cf9bd50d2f3213b1a327fd9537ac33ab9c2226eafa79ac638b05fd16099ab"
+  }
+}

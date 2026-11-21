@@ -1,0 +1,458 @@
+{
+  "completed": true,
+  "continuous_PDE_certified": false,
+  "cases": [
+    {
+      "case": "p23",
+      "completed": true,
+      "continuous_PDE_certified": false,
+      "runs": [
+        {
+          "directory": "p23_N1280_rtol1e-11",
+          "record_sha256": "9727b3d6ccc62f6c74a3978d684fa2f7ca2a75468e95236db54e7081c806e8b9",
+          "samples_sha256": "5451a0f8b0b4966b6f203bb77fadb5b88e395176b4ba9cadcc3a0cb9c4f23f31",
+          "checkpoints_sha256": "c60d55d5dee3deb842c76e428bade8816119e24abf521c13305e7ee4ead7eb82",
+          "N": 1280,
+          "settings": {
+            "method": "BDF",
+            "rtol": 1e-11,
+            "atol_temperature_K": 1e-11,
+            "atol_moisture_C": 9.999999999999999e-14,
+            "max_step_s": 75.0,
+            "limit_initial_step": true
+          },
+          "equality_root_s": 206926.3614341193,
+          "accepted_steps": 41188,
+          "local_steps_unresolvable_by_absolute_clock": 0
+        },
+        {
+          "directory": "p23_N2560_rtol1e-11",
+          "record_sha256": "b1675dac0c8bc82ba4f80ba4f287717edce0aeff409411a26755b0e80ce89c91",
+          "samples_sha256": "979ec9fc215fbe5edafaa38763694989139250e13f4135b64d3c5956f7944569",
+          "checkpoints_sha256": "0a6f2a3ab7281d198e58b6c8b593290b956b3566978d90fa0fb22ac926adea29",
+          "N": 2560,
+          "settings": {
+            "method": "BDF",
+            "rtol": 1e-11,
+            "atol_temperature_K": 1e-11,
+            "atol_moisture_C": 9.999999999999999e-14,
+            "max_step_s": 75.0,
+            "limit_initial_step": true
+          },
+          "equality_root_s": 206926.41503805664,
+          "accepted_steps": 41722,
+          "local_steps_unresolvable_by_absolute_clock": 2
+        },
+        {
+          "directory": "p23_N2560_rtol1e-12",
+          "record_sha256": "e75920b0408d05b209df0cd8e4048181c4488debcfdfb912d0781e09e83c6405",
+          "samples_sha256": "6a3911fd7e3ff62dc00c38d7999857187887c40eff2b0f6b9476e63adbde0de3",
+          "checkpoints_sha256": "baa4c011b66c823053d58c1abaf047cc4a8649ffd1c901334acb241dad8ce36c",
+          "N": 2560,
+          "settings": {
+            "method": "BDF",
+            "rtol": 1e-12,
+            "atol_temperature_K": 1e-12,
+            "atol_moisture_C": 1e-14,
+            "max_step_s": 75.0,
+            "limit_initial_step": true
+          },
+          "equality_root_s": 206926.41503769616,
+          "accepted_steps": 57316,
+          "local_steps_unresolvable_by_absolute_clock": 3
+        }
+      ],
+      "matched_tolerance_fine_minus_coarse_root_s": 0.05360393735463731,
+      "same_fine_grid_tighter_minus_main_root_s": -3.6048004403710365e-07,
+      "tight_fine_minus_formal_root_s": 0.05360402195947245,
+      "remaining_formal_report_delay_after_refined_root_s": 0.5049623038503341,
+      "matched_tolerance_spatial_samples": {
+        "time_rows": 14075,
+        "space_nodes": 21,
+        "values_per_field": 295575,
+        "time_interpolation_used": false,
+        "T_K": {
+          "maximum_absolute_difference": 1.4337576317302592e-06,
+          "at_time_s": 2612.0,
+          "at_xi": 0.05,
+          "four_decimal_changed_values": 515
+        },
+        "C": {
+          "maximum_absolute_difference": 8.034823970604066e-07,
+          "at_time_s": 1.0,
+          "at_xi": 1.0,
+          "four_decimal_changed_values": 315
+        }
+      },
+      "same_fine_grid_tolerance_samples": {
+        "time_rows": 14075,
+        "space_nodes": 21,
+        "values_per_field": 295575,
+        "time_interpolation_used": false,
+        "T_K": {
+          "maximum_absolute_difference": 9.799805411603302e-10,
+          "at_time_s": 305.0,
+          "at_xi": 1.0,
+          "four_decimal_changed_values": 0
+        },
+        "C": {
+          "maximum_absolute_difference": 1.7255796791459943e-10,
+          "at_time_s": 8.0,
+          "at_xi": 1.0,
+          "four_decimal_changed_values": 0
+        }
+      },
+      "tight_fine_vs_formal_common_minute_samples": {
+        "time_rows": 3449,
+        "space_nodes": 21,
+        "values_per_field": 72429,
+        "time_interpolation_used": false,
+        "T_K": {
+          "maximum_absolute_difference": 1.4327427493299183e-06,
+          "at_time_s": 2640.0,
+          "at_xi": 0.05,
+          "four_decimal_changed_values": 6
+        },
+        "C": {
+          "maximum_absolute_difference": 6.925539421942517e-07,
+          "at_time_s": 60.0,
+          "at_xi": 1.0,
+          "four_decimal_changed_values": 36
+        }
+      },
+      "formal_report_endpoint": {
+        "requested_report_time_s": 206926.92,
+        "stored_state_time_s": 206926.91999999998,
+        "stored_minus_report_s": -2.9103830456733704e-11,
+        "unrounded_full_nodal_max_C": 0.1499998529329068,
+        "strictly_dry_at_stored_time": true,
+        "scope": "Direct unrounded test at the explicitly recorded physical time; any nonzero timestamp displacement is reported, not silently time-interpolated."
+      },
+      "at_report_piecewise_linear_union_grid_difference": {
+        "T_K": 0.0,
+        "C": 1.1155714097627056e-06
+      },
+      "paper_table_comparisons": [
+        {
+          "file": "paper_first3h.npz",
+          "T_max_difference_K": 1.2351334248705825e-06,
+          "C_max_difference": 5.251851789012107e-07,
+          "T_four_decimal_changes": 1,
+          "C_four_decimal_changes": 0,
+          "changed_paper_cells": [
+            {
+              "field": "temperature_Celsius",
+              "row": 2,
+              "column": 4,
+              "time_s": 5400.0,
+              "formal_value": 47.140050121111585,
+              "fine_value": 47.14004996467662,
+              "formal_four_decimal": "47.1401",
+              "fine_four_decimal": "47.1400"
+            }
+          ],
+          "actual_sample_minus_original_time_s": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "physical_radius_columns_preserved": false,
+          "source_sha256": "f480222e21c599a0fc778d6aedb3f80b2b72209c9de17cd38d4f931961b234db"
+        },
+        {
+          "file": "paper_full.npz",
+          "T_max_difference_K": 1.1141310096718371e-11,
+          "C_max_difference": 1.8512494470712682e-07,
+          "T_four_decimal_changes": 0,
+          "C_four_decimal_changes": 0,
+          "changed_paper_cells": [],
+          "actual_sample_minus_original_time_s": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -2.9103830456733704e-11
+          ],
+          "physical_radius_columns_preserved": false,
+          "source_sha256": "bf7c59eccd6a08324bc1bc7e7d0386f0834951b21dfdab91f5b3ecd5e39b0db2"
+        }
+      ],
+      "formal_endpoint_sha256": "e617a61d8019baed0ec20bd430156fb5198e11191f0a2898a36ab43abf813a42",
+      "limitations": [
+        "All differences are observations between discretizations, not certified continuous spatial error bounds.",
+        "Full 0..10800 second samples are at 21 normalized material radii. Q4 moving physical-radius workbook columns are not all represented by these samples.",
+        "Full radial arrays are saved at six-hour snapshots, equality root and post-root report ticks. Timestamp differences are explicit; no silent temporal interpolation."
+      ],
+      "tight_fine_vs_formal_Q2_available_seconds_and_minutes": {
+        "time_rows": 14068,
+        "space_nodes": 21,
+        "values_per_field": 295428,
+        "time_interpolation_used": false,
+        "T_K": {
+          "maximum_absolute_difference": 1.4344416285894113e-06,
+          "at_time_s": 2612.0,
+          "at_xi": 0.05,
+          "four_decimal_changed_values": 515
+        },
+        "C": {
+          "maximum_absolute_difference": 8.04582900748585e-07,
+          "at_time_s": 1.0,
+          "at_xi": 1.0,
+          "four_decimal_changed_values": 315
+        },
+        "all_seconds_1_through_10800_included": true,
+        "original_chunk_sources": [
+          {
+            "file": "data/q2_fixed_grid_1s_chunks/q2_1s_000.npz",
+            "sha256": "3fcae2da0595574f694352065d703ba2391e11c912009c293b6b0ff08fe7fc72"
+          },
+          {
+            "file": "data/q2_fixed_grid_1s_chunks/q2_1s_001.npz",
+            "sha256": "a4328f9b3995c3992546814c387165746dcdb4bbc006767867cce761a8230e0d"
+          },
+          {
+            "file": "data/q2_fixed_grid_1s_chunks/q2_1s_002.npz",
+            "sha256": "1b025b64ad6f988b3e3ab4e44d391e9c388d905d8da7b00a7f01b77cff4ff8e8"
+          },
+          {
+            "file": "data/q2_fixed_grid_1s_chunks/q2_1s_003.npz",
+            "sha256": "f5511059f1f28f3bffb2b12133836e9d0d98d49afea93cd266a4b3ce2f938729"
+          },
+          {
+            "file": "data/q2_fixed_grid_1s_chunks/q2_1s_004.npz",
+            "sha256": "f6bbe440cbefa5149b0a31e85300cac7f6726431e3575a088b0080f2766b260e"
+          },
+          {
+            "file": "data/q2_fixed_grid_1s_chunks/q2_1s_005.npz",
+            "sha256": "f4535d116463157e6b0153505b7d94874aa40efabbaead54f466154d613a779c"
+          },
+          {
+            "file": "data/q2_fixed_grid_1s_chunks/q2_1s_006.npz",
+            "sha256": "98d6252f588bd5c2da0b3be1b0fd4f80f51d8af2abdad12d1dc661c51be9118e"
+          },
+          {
+            "file": "data/q2_fixed_grid_1s_chunks/q2_1s_007.npz",
+            "sha256": "c28efd4f8124bf3e86890d81087614c47efb8be836faa743754b156adb60f015"
+          },
+          {
+            "file": "data/q2_fixed_grid_1s_chunks/q2_1s_008.npz",
+            "sha256": "ea6d69a197ca678c230c4a3dd5947d5d74e02d395868661f8f8067eed0adb5b7"
+          },
+          {
+            "file": "data/q2_fixed_grid_1s_chunks/q2_1s_009.npz",
+            "sha256": "f490d546e849abfa0f81117e0942f235eb167544301ddc25a04bee9affe62890"
+          },
+          {
+            "file": "data/q2_fixed_grid_1s_chunks/q2_1s_010.npz",
+            "sha256": "49aee05453dfc47a15a007a3e59447509176b29d815022b2c62c4f254d0e6a5b"
+          },
+          {
+            "file": "data/q2_fixed_grid_1s_chunks/q2_1s_011.npz",
+            "sha256": "a6f555c0972701659d459afb35f9adddefbf29b60c35dc5e88d538ca437c79b1"
+          },
+          {
+            "file": "data/q2_fixed_grid_1s_chunks/q2_1s_012.npz",
+            "sha256": "caba7f7dbc6533aa43e931f9704675852b692f7be5e004bb896aedc7205bc246"
+          },
+          {
+            "file": "data/q2_fixed_grid_1s_chunks/q2_1s_013.npz",
+            "sha256": "d70dc21d48f2a1185ca1fda4bc46c8f38fee4add2ddfc21f4d07e00348ebfadd"
+          },
+          {
+            "file": "data/q2_fixed_grid_1s_chunks/q2_1s_014.npz",
+            "sha256": "b3f096bcc5fd46f28c82a12f8aa374f2a0e2e65565bac7b55ec31dc232ff9883"
+          },
+          {
+            "file": "data/q2_fixed_grid_1s_chunks/q2_1s_015.npz",
+            "sha256": "c94940ad9605b90c10ad68aa2284cdb674004256be03ef6dbec9eef8db350173"
+          },
+          {
+            "file": "data/q2_fixed_grid_1s_chunks/q2_1s_016.npz",
+            "sha256": "1068d992dafb45218d13153867cc743ccdeeb43d7f6f15d8a345d9b62829640f"
+          },
+          {
+            "file": "data/q2_fixed_grid_1s_chunks/q2_1s_017.npz",
+            "sha256": "5de4d2254baea814bb68c305d0b74cbef8f795ab61cd5cdc93855c46aba401ba"
+          },
+          {
+            "file": "data/q2_fixed_grid_1s_chunks/q2_1s_018.npz",
+            "sha256": "b3f8bb55261f3c509773493549590bee4604fb63694a639e4657b10103ee77f3"
+          },
+          {
+            "file": "data/q2_fixed_grid_1s_chunks/q2_1s_019.npz",
+            "sha256": "60ddc232668af362d4a35faac2003be76708fded49125d7ae9472562262fc6bb"
+          }
+        ]
+      }
+    },
+    {
+      "case": "q4",
+      "completed": true,
+      "continuous_PDE_certified": false,
+      "runs": [
+        {
+          "directory": "q4_N2560_rtol1e-11",
+          "record_sha256": "1b724891f30ae70c4f77c761e161767da7945ce951958a8084fdf3dc55529e5a",
+          "samples_sha256": "8c3540e0fa5916c77a43e4dd715317e42abffe3d4969af7fe75990b7e3182277",
+          "checkpoints_sha256": "8c9eb2f84c8de781c0895803274bcb32e69103007185b9e58356b266c0ba4349",
+          "N": 2560,
+          "settings": {
+            "method": "BDF",
+            "rtol": 1e-11,
+            "atol_temperature_K": 1e-10,
+            "atol_moisture_C": 9.999999999999999e-14,
+            "max_step_s": 600.0,
+            "limit_initial_step": true
+          },
+          "equality_root_s": 183948.84069311805,
+          "accepted_steps": 38105,
+          "local_steps_unresolvable_by_absolute_clock": 1
+        },
+        {
+          "directory": "q4_N5120_rtol1e-11",
+          "record_sha256": "17c88a56d6e78ebb6a8f092417a88c610e06f9dcf67c5af301ca4efcd4c4e50f",
+          "samples_sha256": "c691a9c04abd64e787c155059cde18e43127042c33107f3238b432dbffee63c9",
+          "checkpoints_sha256": "b0ff161a8ea519459f229fb0a3b50b1ac55a046aad25c118551676f50ff207e6",
+          "N": 5120,
+          "settings": {
+            "method": "BDF",
+            "rtol": 1e-11,
+            "atol_temperature_K": 1e-10,
+            "atol_moisture_C": 9.999999999999999e-14,
+            "max_step_s": 600.0,
+            "limit_initial_step": true
+          },
+          "equality_root_s": 183948.84116240268,
+          "accepted_steps": 38872,
+          "local_steps_unresolvable_by_absolute_clock": 2
+        },
+        {
+          "directory": "q4_N5120_rtol1e-12",
+          "record_sha256": "70b816989aab0cb30e69d46c89616b2c17642e6c1ebc76fccec20968d8845cf0",
+          "samples_sha256": "b6de18b7985ca7036b0b862d71dbff867553e1eee42479b4c729c3e718eacc6a",
+          "checkpoints_sha256": "2b8e4e158e7e99745cc707d6ab3e18dd7ad372651d59d17cd67e1e237a32db33",
+          "N": 5120,
+          "settings": {
+            "method": "BDF",
+            "rtol": 1e-12,
+            "atol_temperature_K": 1.0000000000000001e-11,
+            "atol_moisture_C": 1e-14,
+            "max_step_s": 600.0,
+            "limit_initial_step": true
+          },
+          "equality_root_s": 183948.8411061099,
+          "accepted_steps": 53380,
+          "local_steps_unresolvable_by_absolute_clock": 4
+        }
+      ],
+      "matched_tolerance_fine_minus_coarse_root_s": 0.00046928462688811123,
+      "same_fine_grid_tighter_minus_main_root_s": -5.629277438856661e-05,
+      "tight_fine_minus_formal_root_s": 0.004625187459168956,
+      "remaining_formal_report_delay_after_refined_root_s": 0.3588938901084475,
+      "matched_tolerance_spatial_samples": {
+        "time_rows": 13691,
+        "space_nodes": 21,
+        "values_per_field": 287511,
+        "time_interpolation_used": false,
+        "T_K": {
+          "maximum_absolute_difference": 4.662639980779204e-07,
+          "at_time_s": 2145.0,
+          "at_xi": 0.1,
+          "four_decimal_changed_values": 171
+        },
+        "C": {
+          "maximum_absolute_difference": 1.0498798874714055e-06,
+          "at_time_s": 1.0,
+          "at_xi": 1.0,
+          "four_decimal_changed_values": 146
+        }
+      },
+      "same_fine_grid_tolerance_samples": {
+        "time_rows": 13691,
+        "space_nodes": 21,
+        "values_per_field": 287511,
+        "time_interpolation_used": false,
+        "T_K": {
+          "maximum_absolute_difference": 1.4375132195709739e-09,
+          "at_time_s": 304.0,
+          "at_xi": 1.0,
+          "four_decimal_changed_values": 0
+        },
+        "C": {
+          "maximum_absolute_difference": 2.3451818265129987e-10,
+          "at_time_s": 4.0,
+          "at_xi": 1.0,
+          "four_decimal_changed_values": 0
+        }
+      },
+      "tight_fine_vs_formal_common_minute_samples": {
+        "time_rows": 3066,
+        "space_nodes": 21,
+        "values_per_field": 64386,
+        "time_interpolation_used": false,
+        "T_K": {
+          "maximum_absolute_difference": 4.6794463059995905e-07,
+          "at_time_s": 2100.0,
+          "at_xi": 0.1,
+          "four_decimal_changed_values": 3
+        },
+        "C": {
+          "maximum_absolute_difference": 7.426737411719841e-07,
+          "at_time_s": 60.0,
+          "at_xi": 1.0,
+          "four_decimal_changed_values": 11
+        }
+      },
+      "formal_report_endpoint": {
+        "requested_report_time_s": 183949.2,
+        "stored_state_time_s": 183949.19999999998,
+        "stored_minus_report_s": -2.9103830456733704e-11,
+        "unrounded_full_nodal_max_C": 0.14999981573442367,
+        "strictly_dry_at_stored_time": true,
+        "scope": "Direct unrounded test at the explicitly recorded physical time; any nonzero timestamp displacement is reported, not silently time-interpolated."
+      },
+      "at_report_piecewise_linear_union_grid_difference": {
+        "T_K": 0.0,
+        "C": 5.201111172997708e-08
+      },
+      "paper_table_comparisons": [
+        {
+          "file": "paper_full.npz",
+          "T_max_difference_K": 1.1368683772161603e-13,
+          "C_max_difference": 4.6802586028960036e-08,
+          "T_four_decimal_changes": 0,
+          "C_four_decimal_changes": 0,
+          "changed_paper_cells": [],
+          "actual_sample_minus_original_time_s": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -2.9103830456733704e-11
+          ],
+          "physical_radius_columns_preserved": true,
+          "source_sha256": "82a1846137f63b7b8984b1c11a44476554b3fcccc0f4964bfa8f32518c33816a"
+        }
+      ],
+      "formal_endpoint_sha256": "3f56e62b21feb6e4fdf70ef4efcf196a32addfbd06907a1696eabfd2256c3027",
+      "limitations": [
+        "All differences are observations between discretizations, not certified continuous spatial error bounds.",
+        "Full 0..10800 second samples are at 21 normalized material radii. Q4 moving physical-radius workbook columns are not all represented by these samples.",
+        "Full radial arrays are saved at six-hour snapshots, equality root and post-root report ticks. Timestamp differences are explicit; no silent temporal interpolation."
+      ]
+    }
+  ],
+  "source_sha256": "65e977f435f3e99a8bdf56a8e08393d396fce5d9d47419f70a1109fa032caa11"
+}

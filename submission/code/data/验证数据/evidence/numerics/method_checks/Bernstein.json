@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "checks": {
+    "exact_symbolic_restriction": true,
+    "exact_rational_coefficients_enclosed": true,
+    "known_quadratic_difference_max_contained": true,
+    "same_field_difference_enclosed": true
+  },
+  "known_polynomial_difference": {
+    "continuous_absolute_difference_lower": 6.056213378881347e-05,
+    "continuous_absolute_difference_upper": 6.583034992367621e-05,
+    "upper_bound_cell_radial": 3,
+    "upper_bound_cell_axial": 1,
+    "signed_coefficient_lower": -1.360023205165817e-15,
+    "signed_coefficient_upper": 6.583034992367621e-05
+  },
+  "known_maximum": 6.25e-05,
+  "identical_field_bound": {
+    "continuous_absolute_difference_lower": 0.0,
+    "continuous_absolute_difference_upper": 6.050715484207104e-15,
+    "upper_bound_cell_radial": 7,
+    "upper_bound_cell_axial": 0,
+    "signed_coefficient_lower": -6.050715484207104e-15,
+    "signed_coefficient_upper": 6.050715484207104e-15
+  },
+  "source_sha256": "5b7c59281754e880aa6c1e099fc8782dcf629ad869d302c25036bc895917bf1c"
+}

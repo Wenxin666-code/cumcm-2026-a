@@ -1,0 +1,302 @@
+{
+  "scope": "Conditional real semidiscrete IVPs from explicitly recorded late checkpoints only.",
+  "continuous_PDE_certified": false,
+  "global_t0_semidiscrete_error_certified": false,
+  "arithmetic": "44-digit outward Decimal intervals; all binary64 constants treated as exact reals; threshold exactly decimal 0.15",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1"
+  },
+  "source_sha256": {
+    "solvers/moving_model.py": "0d2b448345c228afb05c774aa50efbe0f2d9b303cefce13c184f18cd233d1019",
+    "solvers/_vendor_host2_model.py": "d834d3ddee0edb3740b378462f9b8250f01a03cb4f5754ba350264ded9b4f2dd",
+    "solvers/relative_temperature.py": "b94e109d31a2fb8ad55c2848ad3c30002199dd80a33e8de17da61c7e670dd535",
+    "extension_code/endpoint_study.py": "1e3eade30eba0dcda184731531103da72a400439fad1ae56254b380cc1316dd2",
+    "extension_code/decimal_bounds.py": "0f61e5f6442fe9f3721178d8de294c2e853763aa07041bb284c34727a4b2f4a8",
+    "extension_code/refine_local_tube.py": "74cf463a3ebc60cf8fac69f144e69f449f878d4d02b9379302b52fed2b48c95c",
+    "extension_code/weighted_local_certificate.py": "9af3fd154963600c5e8b1c7123111a832017f9545fb8d8cf400162e90de2d1ec",
+    "extension_code/verify_preloaded.py": "61f2915b84864d1552d517d2e0d352c0984b4db64958b50a051e90ea5228cb64",
+    "extension_code/run_refine_preloaded.py": "08c3598da48110e2d083f7d45241ed6e11f3435e932c5c5590f0bad609672007",
+    "extension_code/bind_certificate.py": "f44bd234617d18a9cdfe97dc72ed5b81ee7adcd532b9ec80c3e73b8a9cbc83c2"
+  },
+  "input_sha256": {
+    "附件1.xlsx": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+    "附件2.xlsx": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+    "model.json": "1650f64b8cc01788c21131b6bcadd052da30054dba67750ea84146759dd21afb"
+  },
+  "cases": {
+    "p23": {
+      "N": 1280,
+      "checkpoint_s": 206880.0,
+      "checkpoint_matches_production_bitwise": true,
+      "theta_zero_is_exact_in_defined_late_IVP": true,
+      "positive_weights_and_geometry": true,
+      "numeric_constants_binary64_hex": {
+        "rho_offset": "0x1.4500000000000p+9",
+        "rho_C_coefficient": "0x1.0000000000000p+7",
+        "cp_offset": "0x1.6a80000000000p+10",
+        "cp_fraction_coefficient": "0x1.5600000000000p+11",
+        "k_offset": "0x1.ae147ae147ae1p-3",
+        "k_fraction_coefficient": "0x1.851eb851eb852p-2",
+        "D_prefactor": "0x1.3a92a30553261p-9",
+        "D_moisture_exponent": "0x1.ccccccccccccdp-2",
+        "D_temperature_exponent_K": "0x1.e140000000000p+11",
+        "R_reference_m": "0x1.47ae147ae147bp-6",
+        "h": "0x1.9000000000000p+4",
+        "hm": "0x1.ad7f29abcaf48p-21",
+        "T_reference_K": "0x1.43255acb6f465p+8",
+        "Ceq": "0x1.998580964bbfap-5"
+      },
+      "proof_object_sha256": {
+        "local_radau.npz": "dfe06eff23d74111433bac4b1bf601713a44e7937d9446914169d43108f89c2a",
+        "proof_constants.npz": "d719db61bb43ef89805921bd71ad0bf99d2c0439aa30610915d9af6f9843119c",
+        "conditional_certificate.json": "3579a072a394bece730705c04b8365394fa77c9176aad30c909ab047bffbbfae",
+        "refined_conditional_certificate.json": "7b1385af16d9d0eafdb775a11f1c9e23f3ef1bd3de8c05c42c163940bd7a5822",
+        "weighted_conditional_certificate.json": "3d38ee6f540672c402b29b84ed53b957774df0c505e48f712c51cb4f7d91e7b8",
+        "certificate_weights.npz": "7457bc4abf766c202d9bc098a506573ca7528ececcf18057001e5abf32edcdb1"
+      },
+      "claims": [
+        {
+          "file": "conditional_certificate.json",
+          "row": 0,
+          "initial_C_error_bound": "0",
+          "initial_T_error_bound_K": "0",
+          "state_tube_closed": true,
+          "event_bracketed": true,
+          "original_report_strict_under_this_condition": true,
+          "no_inherited_checkpoint_error_proof": true,
+          "no_continuous_spatial_error_proof": true
+        },
+        {
+          "file": "conditional_certificate.json",
+          "row": 1,
+          "initial_C_error_bound": "1E-9",
+          "initial_T_error_bound_K": "0",
+          "state_tube_closed": true,
+          "event_bracketed": true,
+          "original_report_strict_under_this_condition": true,
+          "no_inherited_checkpoint_error_proof": true,
+          "no_continuous_spatial_error_proof": true
+        },
+        {
+          "file": "conditional_certificate.json",
+          "row": 2,
+          "initial_C_error_bound": "1E-8",
+          "initial_T_error_bound_K": "1E-12",
+          "state_tube_closed": true,
+          "event_bracketed": true,
+          "original_report_strict_under_this_condition": true,
+          "no_inherited_checkpoint_error_proof": true,
+          "no_continuous_spatial_error_proof": true
+        },
+        {
+          "file": "conditional_certificate.json",
+          "row": 3,
+          "initial_C_error_bound": "1E-7",
+          "initial_T_error_bound_K": "1E-9",
+          "state_tube_closed": true,
+          "event_bracketed": false,
+          "original_report_strict_under_this_condition": false,
+          "no_inherited_checkpoint_error_proof": true,
+          "no_continuous_spatial_error_proof": true
+        },
+        {
+          "file": "refined_conditional_certificate.json",
+          "row": 0,
+          "initial_C_error_bound": "0",
+          "initial_T_error_bound_K": "0",
+          "state_tube_closed": true,
+          "event_bracketed": true,
+          "original_report_strict_under_this_condition": true,
+          "no_inherited_checkpoint_error_proof": true,
+          "no_continuous_spatial_error_proof": true
+        },
+        {
+          "file": "refined_conditional_certificate.json",
+          "row": 1,
+          "initial_C_error_bound": "1E-9",
+          "initial_T_error_bound_K": "0",
+          "state_tube_closed": true,
+          "event_bracketed": true,
+          "original_report_strict_under_this_condition": true,
+          "no_inherited_checkpoint_error_proof": true,
+          "no_continuous_spatial_error_proof": true
+        },
+        {
+          "file": "refined_conditional_certificate.json",
+          "row": 2,
+          "initial_C_error_bound": "1E-8",
+          "initial_T_error_bound_K": "1E-12",
+          "state_tube_closed": true,
+          "event_bracketed": true,
+          "original_report_strict_under_this_condition": true,
+          "no_inherited_checkpoint_error_proof": true,
+          "no_continuous_spatial_error_proof": true
+        },
+        {
+          "file": "refined_conditional_certificate.json",
+          "row": 3,
+          "initial_C_error_bound": "1E-7",
+          "initial_T_error_bound_K": "1E-9",
+          "state_tube_closed": true,
+          "event_bracketed": true,
+          "original_report_strict_under_this_condition": true,
+          "no_inherited_checkpoint_error_proof": true,
+          "no_continuous_spatial_error_proof": true
+        },
+        {
+          "file": "weighted_conditional_certificate.json",
+          "row": 0,
+          "initial_C_error_bound": "0",
+          "initial_T_error_bound_K": "0",
+          "state_tube_closed": true,
+          "event_bracketed": true,
+          "original_report_strict_under_this_condition": true,
+          "no_inherited_checkpoint_error_proof": true,
+          "no_continuous_spatial_error_proof": true
+        }
+      ],
+      "production_input_sha256": {
+        "internal.npz": "4e80bba69f4816af969c68760b441d56dad442b3c1073c952a00873e88fab7fe",
+        "endpoint.json": "e617a61d8019baed0ec20bd430156fb5198e11191f0a2898a36ab43abf813a42"
+      }
+    },
+    "q4": {
+      "N": 2560,
+      "checkpoint_s": 183900.0,
+      "checkpoint_matches_production_bitwise": true,
+      "theta_zero_is_exact_in_defined_late_IVP": true,
+      "positive_weights_and_geometry": true,
+      "numeric_constants_binary64_hex": {
+        "rho_offset": "0x1.7c00000000000p+9",
+        "rho_C_coefficient": "0x1.6800000000000p+6",
+        "cp_offset": "0x1.ce80000000000p+10",
+        "cp_fraction_coefficient": "0x1.0cc0000000000p+11",
+        "k_offset": "0x1.eb851eb851eb8p-4",
+        "k_fraction_coefficient": "0x1.999999999999ap-3",
+        "D_prefactor": "0x1.b866e43aa79bcp-12",
+        "D_moisture_exponent": "0x1.3333333333333p-2",
+        "D_temperature_exponent_K": "0x1.e140000000000p+11",
+        "R_reference_m": "0x1.47ae147ae147bp-6",
+        "h": "0x1.9000000000000p+4",
+        "hm": "0x1.ad7f29abcaf48p-21",
+        "T_reference_K": "0x1.43255acb6f465p+8",
+        "Ceq": "0x1.998580964bbfap-5"
+      },
+      "proof_object_sha256": {
+        "local_radau.npz": "8c13912d4a5bd4977fa91df238ad4dc0cf5347843964cfb731c50bda96c9896e",
+        "proof_constants.npz": "cc765cf96a5a5d0332885f0ec8c339b3f2cb6e4ade770cf582d23f854685680d",
+        "conditional_certificate.json": "aef0e558d0b207871c4ad5e44d6d6bd8ebccafc91f896950cf3dc520fad1f55a",
+        "refined_conditional_certificate.json": "100218066e8264d7c9d5c29f333d98e6076f00bdc411b7927036ec8a74db5f6c",
+        "weighted_conditional_certificate.json": "a81bfa5c81e750d5061b55ca6c112543d31b1196bb2d48761868c909b4153b09",
+        "certificate_weights.npz": "286a8694b6e1b8866584d13313c00c35b408cd485378c01ec8b97b811e0ed116"
+      },
+      "claims": [
+        {
+          "file": "conditional_certificate.json",
+          "row": 0,
+          "initial_C_error_bound": "0",
+          "initial_T_error_bound_K": "0",
+          "state_tube_closed": false,
+          "event_bracketed": false,
+          "original_report_strict_under_this_condition": false,
+          "no_inherited_checkpoint_error_proof": true,
+          "no_continuous_spatial_error_proof": true
+        },
+        {
+          "file": "conditional_certificate.json",
+          "row": 1,
+          "initial_C_error_bound": "1E-9",
+          "initial_T_error_bound_K": "0",
+          "state_tube_closed": false,
+          "event_bracketed": false,
+          "original_report_strict_under_this_condition": false,
+          "no_inherited_checkpoint_error_proof": true,
+          "no_continuous_spatial_error_proof": true
+        },
+        {
+          "file": "conditional_certificate.json",
+          "row": 2,
+          "initial_C_error_bound": "1E-8",
+          "initial_T_error_bound_K": "1E-12",
+          "state_tube_closed": false,
+          "event_bracketed": false,
+          "original_report_strict_under_this_condition": false,
+          "no_inherited_checkpoint_error_proof": true,
+          "no_continuous_spatial_error_proof": true
+        },
+        {
+          "file": "conditional_certificate.json",
+          "row": 3,
+          "initial_C_error_bound": "1E-7",
+          "initial_T_error_bound_K": "1E-9",
+          "state_tube_closed": false,
+          "event_bracketed": false,
+          "original_report_strict_under_this_condition": false,
+          "no_inherited_checkpoint_error_proof": true,
+          "no_continuous_spatial_error_proof": true
+        },
+        {
+          "file": "refined_conditional_certificate.json",
+          "row": 0,
+          "initial_C_error_bound": "0",
+          "initial_T_error_bound_K": "0",
+          "state_tube_closed": true,
+          "event_bracketed": true,
+          "original_report_strict_under_this_condition": true,
+          "no_inherited_checkpoint_error_proof": true,
+          "no_continuous_spatial_error_proof": true
+        },
+        {
+          "file": "refined_conditional_certificate.json",
+          "row": 1,
+          "initial_C_error_bound": "1E-9",
+          "initial_T_error_bound_K": "0",
+          "state_tube_closed": true,
+          "event_bracketed": true,
+          "original_report_strict_under_this_condition": true,
+          "no_inherited_checkpoint_error_proof": true,
+          "no_continuous_spatial_error_proof": true
+        },
+        {
+          "file": "refined_conditional_certificate.json",
+          "row": 2,
+          "initial_C_error_bound": "1E-8",
+          "initial_T_error_bound_K": "1E-12",
+          "state_tube_closed": true,
+          "event_bracketed": true,
+          "original_report_strict_under_this_condition": true,
+          "no_inherited_checkpoint_error_proof": true,
+          "no_continuous_spatial_error_proof": true
+        },
+        {
+          "file": "refined_conditional_certificate.json",
+          "row": 3,
+          "initial_C_error_bound": "1E-7",
+          "initial_T_error_bound_K": "1E-9",
+          "state_tube_closed": true,
+          "event_bracketed": true,
+          "original_report_strict_under_this_condition": false,
+          "no_inherited_checkpoint_error_proof": true,
+          "no_continuous_spatial_error_proof": true
+        },
+        {
+          "file": "weighted_conditional_certificate.json",
+          "row": 0,
+          "initial_C_error_bound": "0",
+          "initial_T_error_bound_K": "0",
+          "state_tube_closed": true,
+          "event_bracketed": true,
+          "original_report_strict_under_this_condition": true,
+          "no_inherited_checkpoint_error_proof": true,
+          "no_continuous_spatial_error_proof": true
+        }
+      ],
+      "production_input_sha256": {
+        "internal.npz": "63b7e09bec467161417a1ba61902bbd30134b76b5bc0979eb5dfc7d543456ff2",
+        "endpoint.json": "3f56e62b21feb6e4fdf70ef4efcf196a32addfbd06907a1696eabfd2256c3027"
+      }
+    }
+  }
+}

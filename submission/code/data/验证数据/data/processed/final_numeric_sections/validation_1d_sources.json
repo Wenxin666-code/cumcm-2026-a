@@ -1,0 +1,1469 @@
+{
+  "completed_portion_source_checks_passed": true,
+  "section_complete": true,
+  "Q1_full_tolerance_accepted": true,
+  "Q1_full_tolerance": {
+    "accepted": true,
+    "record": {
+      "completed": true,
+      "passed": true,
+      "N": 10240,
+      "settings": {
+        "method": "Radau",
+        "rtol": 2e-12,
+        "atol_T": 1e-13,
+        "atol_C": 2e-14,
+        "quadrature_orders": [
+          48,
+          96
+        ],
+        "moisture_rtol": null
+      },
+      "reference_settings": {
+        "intervals": 10240,
+        "method": "Radau",
+        "rtol": 2e-10,
+        "moisture_rtol": 2e-10,
+        "atol_theta_K": 1e-11,
+        "atol_C": 2e-12,
+        "quadrature_orders": [
+          48,
+          96
+        ]
+      },
+      "comparison": {
+        "max_abs_temperature_difference_K": 6.649543138337322e-10,
+        "max_abs_moisture_difference": 5.050413420804034e-10,
+        "shared_time_rows": 1801,
+        "spatial_nodes": 21,
+        "formal_time_rows_excluding_initial": 1800,
+        "temperature_difference_location": {
+          "maximum_absolute_difference": 6.649543138337322e-10,
+          "time_s": 1683.0,
+          "radius_m": 0.02,
+          "rms": 4.3134895056518724e-11
+        },
+        "moisture_difference_location": {
+          "maximum_absolute_difference": 5.050413420804034e-10,
+          "time_s": 9.0,
+          "radius_m": 0.02,
+          "rms": 2.237860306886077e-11
+        },
+        "mean_differences": {
+          "mean_T_K": 1.892885848064907e-11,
+          "mean_C": 4.051869950671971e-12
+        },
+        "four_decimal_temperature_differences": 0,
+        "four_decimal_moisture_differences": 0
+      },
+      "full_grid_profiles_comparison": {
+        "time_rows": 7,
+        "spatial_nodes": 10241,
+        "temperature": {
+          "maximum_absolute_difference": 1.1880274541908875e-11,
+          "time_s": 1800.0,
+          "radius_m": 0.01665234375,
+          "rms": 3.116903949095636e-12
+        },
+        "moisture": {
+          "maximum_absolute_difference": 1.727289422603917e-10,
+          "time_s": 100.0,
+          "radius_m": 0.019984375000000002,
+          "rms": 1.176575948484273e-11
+        }
+      },
+      "bessel_reference": {
+        "modes": [
+          2048,
+          4096
+        ],
+        "mode_truncation_difference_K": 3.0524915928253904e-11,
+        "tight_max_abs_temperature_difference_K": 7.498272225348046e-09,
+        "production_max_abs_temperature_difference_K": 7.497703791159438e-09,
+        "tight_difference_location": {
+          "maximum_absolute_difference": 7.498272225348046e-09,
+          "time_s": 300.0,
+          "radius_m": 0.02,
+          "rms": 1.6772266876973018e-09
+        },
+        "method": "Existing independent continuous Robin Bessel eigenbasis, exact modal advancement under piecewise-affine forcing; same implemented 2048/4096-mode convergence reference rerun on all 1801 output times.",
+        "attachment": {
+          "filename": "附件1.xlsx",
+          "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+          "worksheet": "Sheet1",
+          "headers": [
+            "时间",
+            "温度",
+            "水分浓度"
+          ],
+          "rows": 241,
+          "time_start_s": 0.0,
+          "time_end_s": 14400.0,
+          "temperature_input_unit": "degree_Celsius",
+          "temperature_internal_unit": "K"
+        },
+        "existing_production_convergence": {
+          "meshes": [
+            {
+              "N": 2560,
+              "max_T_difference_to_next_K": 8.986336297311937e-08,
+              "max_C_difference_to_next": 1.8278388481896002e-05
+            },
+            {
+              "N": 5120,
+              "max_T_difference_to_next_K": 2.2459630599769298e-08,
+              "max_C_difference_to_next": 4.564453329525264e-06
+            },
+            {
+              "N": 10240,
+              "max_T_difference_to_next_K": 0.0,
+              "max_C_difference_to_next": 0.0
+            }
+          ],
+          "temperature_reference_max_difference_K": 7.497703791159438e-09,
+          "reference_mode_2048_to_4096_difference_K": 3.0524915928253904e-11,
+          "temperature_validation": "Independent converged Bessel reference; tight run changes moisture tolerances only.",
+          "time_tolerance_C_difference": 5.050413420804034e-10
+        }
+      },
+      "balance": {
+        "quadrature_orders": [
+          48,
+          96
+        ],
+        "complete_environment_breakpoints": true,
+        "segment_count": 30,
+        "expected_segment_count": 30,
+        "max_cumulative_temperature_residual_K": 2.814193322819847e-10,
+        "max_cumulative_moisture_residual": 1.108248392361899e-09,
+        "max_instant_weighted_balance_abs": [
+          2.332074403786589e-16,
+          6.617444900424222e-24
+        ],
+        "final_independent_quadrature_difference": [
+          1.270095140171179e-12,
+          9.613496110283393e-10
+        ],
+        "scope": "All original segments and both original 48/96-point flux quadratures are retained; thermal balance uses the P1 heat capacity, without adding latent heat or changing physical closure."
+      },
+      "existing_C_only_comparison": {
+        "available": true,
+        "max_abs_moisture_difference": 0.0,
+        "moisture_values_bitwise_identical": true
+      },
+      "checks": {
+        "full_requested_solver_settings": true,
+        "all_environment_segments": true,
+        "finite_outputs": true,
+        "nonnegative_full_nodal_sampled_moisture": true,
+        "temperature_difference_below_1e_7_K": true,
+        "moisture_difference_below_1e_7": true,
+        "independent_Bessel_difference_below_1e_7_K": true,
+        "Bessel_2048_4096_difference_below_1e_9_K": true,
+        "cumulative_heat_balance_below_1e_7_K": true,
+        "cumulative_moisture_balance_below_1e_7": true
+      },
+      "extrema": {
+        "minimum_C_on_grid": 1.5102346098676147,
+        "maximum_C_on_grid": 2.5500000000000003,
+        "minimum_T_K_on_grid": 301.15,
+        "maximum_T_K_on_grid": 309.9355603463757
+      },
+      "source_sha256": {
+        "inputs/附件/附件1.xlsx": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+        "inputs/附件/附件2.xlsx": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+        "package/config/model.json": "1650f64b8cc01788c21131b6bcadd052da30054dba67750ea84146759dd21afb",
+        "package/code/solvers/solve_q1.py": "a2a17eb5de0a965a2791e9cd0474f46f27b1b14d0dc7370ab0e74d5dec05cb4f",
+        "package/code/solvers/radial_core.py": "3348246a05aa74411dc334d95d07f338ac5273ee82556721b85a224aed4fb4bd",
+        "package/code/solvers/temperature_reference.py": "bea6c913fc3dfd2a7fcca98a86d8d688e9c9dafcb2cad4795c9c30a9a1024022",
+        "package/code/validation/q1_full_tolerance.py": "9b1f6ec5a55fa45e8249ac1aadf1a479570fbdb8814703b748c25b48854938ae"
+      },
+      "reference_sha256": {
+        "work/runs/production/q1/N10240/solution.npz": "eb2f0d02a09fab7c0cd270e1568b4386cdd6fe54d321a1e87e6aebeb5e5cb2b3",
+        "work/runs/production/q1/N10240/grid_profiles.npz": "93d5e84998ddeeff6ac8847993598da1e751949b0e7747a6b76cd38b0553285a",
+        "work/runs/production/q1/N10240/metadata.json": "7a0861dda9c989c417e7b7e02dd54d3438b6e9f1ebfcd0c4ccd80cd4db52b88b",
+        "work/runs/production/q1/convergence.json": "5a13efcb3d0a08fa7c685e767c01376c3abf173c0e512bd178bc9e394d2ce36b",
+        "work/runs/production/q1/tight/solution.npz": "f833f97dfd3e99c5d9bfc32b24745bb3504ec86ad04c263e30eed56c8f0fc605"
+      },
+      "output_sha256": {
+        "solution.npz": "829ce09365269a05f1a9303b2cc93b0d29489f754545a493b051407f9fc2ebf5",
+        "grid_profiles.npz": "435fe15eea0a98235dbe7f2028b5718a6dc181abf54e7e75bc7a0841c5ee91df",
+        "metadata.json": "b2231c02a60152b8cda20a742fe0f1fd478ec552149ce11e33fc8491aa7fcdff"
+      },
+      "solver_elapsed_seconds": 5719.585065399995,
+      "total_heat_steps": 188156,
+      "total_moisture_steps": 1270,
+      "total_heat_nfev": 3404346,
+      "total_moisture_nfev": 9114,
+      "direct_unchanged_solve_q1_call": true,
+      "all_original_integration_and_balance_checks_retained": true,
+      "inputs_and_sources_unchanged": true,
+      "timeout_or_cost_stop_used": false,
+      "replaces_production_or_prior_verification": false,
+      "interpretation": "Additional complete same-grid tolerance validation of both decoupled P1 fields; the existing C-only run and independent Bessel check remain. Numerical thresholds are declared engineering checks, not a certified continuous-PDE error bound or a guarantee of equal four-decimal rounding.",
+      "created_at_utc": "2026-09-11T08:00:31.043196+00:00",
+      "solver_completed": true,
+      "comparison_completed": true,
+      "original_frozen_comparator_sha256": "9b1f6ec5a55fa45e8249ac1aadf1a479570fbdb8814703b748c25b48854938ae",
+      "portable_comparison_entry_sha256": "73f122a44d6ada6ab9b0f0f78f106bd3ae0cc6d4594909a424cae9fe3e669cf0",
+      "isolated_comparison_layout": true,
+      "all_original_files_unchanged": true,
+      "storage_adapter_used": true,
+      "storage_adapter_source_sha256": "1abf23f56d8f3ef6aafca1d533484525edaeec105e72f5705260eac516c18a5d",
+      "equivalence_evidence_sha256": "00620bc3925aa653906f637bb8c4d58d847f79f0a30c947775ec922876cf7083",
+      "storage_audit_sha256": "df85ca150ad28a55982d5c21b5bd9d6103fc6dfcfe502ef642933bac8cea3abb",
+      "original_solver_status_sha256": "b2c968e48c6067f73c6cb7607c71354fcd97661860c7a752e5a18be4ec60559f",
+      "audit_hash_values_match": true,
+      "original_output_receipt_hashes_verified": true,
+      "executed_comparator_and_Bessel_identities_bound": true,
+      "actual_imported_sources_match_bound_files": true,
+      "source_layout": "All relative source/reference paths in this report refer to the retained isolated copied layout beside this summary.",
+      "quantization_rule": "T_K minus binary64 273.15, then Decimal(str(float(value))).quantize(0.0001,ROUND_HALF_UP); C directly. All formal 1800x21 cells per field."
+    },
+    "effective_settings": {
+      "rtol": 2e-12,
+      "moisture_rtol": 2e-12,
+      "atol_theta_K": 1e-13,
+      "atol_C": 2e-14
+    },
+    "required_fields": [
+      "completed=true",
+      "passed=true",
+      "N=10240",
+      "settings.method=Radau",
+      "effective heat/moisture rtol=2e-12 (moisture_rtol=None inherits rtol)",
+      "effective theta atol=1e-13 (atol_T or atol_theta_K)",
+      "settings.atol_C=2e-14",
+      "comparison.shared_time_rows=1801",
+      "comparison.spatial_nodes=21",
+      "full_grid_profiles_comparison (7 stored times, 10241 nodes)",
+      "bessel_reference (2048/4096 modes, truncation and tight-reference errors)",
+      "balance (48/96 quadrature, complete breakpoints and cumulative residuals)",
+      "all checks=true",
+      "output_sha256 and actual solution/grid_profiles/metadata files",
+      "reference_sha256 matching unchanged Q1 N10240 source files"
+    ]
+  },
+  "no_unfinished_run_reported_as_pass": true,
+  "all_claims_numerical_not_unconditional_PDE_bounds": true,
+  "Q1_formal_scope": {
+    "rows": 1801,
+    "radii": 21,
+    "first_s": 0.0,
+    "last_s": 1800.0,
+    "r_m": [
+      0.0,
+      0.001,
+      0.002,
+      0.003,
+      0.004,
+      0.005,
+      0.006,
+      0.007,
+      0.008,
+      0.009000000000000001,
+      0.01,
+      0.011,
+      0.012,
+      0.013000000000000001,
+      0.014,
+      0.015,
+      0.016,
+      0.017,
+      0.018000000000000002,
+      0.019,
+      0.02
+    ],
+    "grid_N": 10240
+  },
+  "Q1_added_stored_profile_comparison": {
+    "T_K": {
+      "max_abs_piecewise_linear_difference": 3.041327545361128e-08,
+      "time_s": 1800.0,
+      "r_m": 0.019998046875
+    },
+    "C": {
+      "max_abs_piecewise_linear_difference": 3.472509204627272e-07,
+      "time_s": 100.0,
+      "r_m": 0.0198671875
+    },
+    "times_s": [
+      100,
+      300,
+      600,
+      900,
+      1200,
+      1500,
+      1800
+    ],
+    "fine_nodes": 10241,
+    "comparison": "Exact spatial max of declared piecewise-linear reconstructions at their union nodes on seven saved profile times; no time interpolation."
+  },
+  "formal_Q1_selection": "complete N10240 two-field tight trajectory",
+  "Q1_spatial_comparison_retains_matched_main_settings": true,
+  "fine_main_and_tight_settings": {
+    "p23": {
+      "spatial_main": {
+        "method": "BDF",
+        "rtol": 1e-11,
+        "atol_temperature_K": 1e-11,
+        "atol_moisture_C": 9.999999999999999e-14,
+        "max_step_s": 75.0,
+        "limit_initial_step": true
+      },
+      "selected_tight": {
+        "method": "BDF",
+        "rtol": 1e-12,
+        "atol_temperature_K": 1e-12,
+        "atol_moisture_C": 1e-14,
+        "max_step_s": 75.0,
+        "limit_initial_step": true
+      },
+      "selected_N": 2560
+    },
+    "q4": {
+      "spatial_main": {
+        "method": "BDF",
+        "rtol": 1e-11,
+        "atol_temperature_K": 1e-10,
+        "atol_moisture_C": 9.999999999999999e-14,
+        "max_step_s": 600.0,
+        "limit_initial_step": true
+      },
+      "selected_tight": {
+        "method": "BDF",
+        "rtol": 1e-12,
+        "atol_temperature_K": 1.0000000000000001e-11,
+        "atol_moisture_C": 1e-14,
+        "max_step_s": 600.0,
+        "limit_initial_step": true
+      },
+      "selected_N": 5120
+    }
+  },
+  "recomputed_high_order_comparison": {
+    "passed": true,
+    "comparison_recomputed_from_actual_arrays": true,
+    "PDE_rerun": false,
+    "rows": [
+      {
+        "case": "P1",
+        "elements": 64,
+        "nodes": 193,
+        "selected_FV_N": 10240,
+        "selected_FV": "Q1 complete two-field tight Radau trajectory",
+        "old_reference_file_in_FE_record": "work/runs/production/q1/tight/solution.npz",
+        "old_reference_not_relabelled": true,
+        "common_time_rows": 10,
+        "first_time_s": 0.0,
+        "last_time_s": 1800.0,
+        "material_positions": [
+          0.0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.25,
+          0.3,
+          0.35,
+          0.4,
+          0.45000000000000007,
+          0.5,
+          0.5499999999999999,
+          0.6,
+          0.65,
+          0.7,
+          0.75,
+          0.8,
+          0.8500000000000001,
+          0.9000000000000001,
+          0.95,
+          1.0
+        ],
+        "spatial_positions": 21,
+        "unmatched_FE_times_s": [],
+        "time_interpolation_used": false,
+        "spatial_interpolation_added": false,
+        "same_radius_input_and_numeric_parameters_verified": true,
+        "maximum_R_map_difference_m": 0.0,
+        "maximum_physical_position_difference_m": 0.0,
+        "independent_event_reconstruction_check": null,
+        "scope": "All exactly common stored times, same 21 xi positions; physical r=xi*R(t). This is not every production second or every FV node.",
+        "differences": {
+          "T_K": {
+            "max_abs_difference": 4.880985216004774e-08,
+            "time_s": 1500.0,
+            "xi": 1.0,
+            "FE_value": 308.27026151531777,
+            "selected_FV_value": 308.2702614665079
+          },
+          "C": {
+            "max_abs_difference": 1.5198215610467969e-06,
+            "time_s": 1.0,
+            "xi": 1.0,
+            "FE_value": 2.517725769654246,
+            "selected_FV_value": 2.517727289475807
+          }
+        },
+        "FE_equality_root_s": null,
+        "selected_FV_equality_root_s": null,
+        "FE_minus_selected_FV_root_s": null,
+        "sampled_C_overshoot_above_initial": 1.8246547996980667e-05,
+        "passed": true
+      },
+      {
+        "case": "P1",
+        "elements": 128,
+        "nodes": 385,
+        "selected_FV_N": 10240,
+        "selected_FV": "Q1 complete two-field tight Radau trajectory",
+        "old_reference_file_in_FE_record": "work/runs/production/q1/tight/solution.npz",
+        "old_reference_not_relabelled": true,
+        "common_time_rows": 10,
+        "first_time_s": 0.0,
+        "last_time_s": 1800.0,
+        "material_positions": [
+          0.0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.25,
+          0.3,
+          0.35,
+          0.4,
+          0.45000000000000007,
+          0.5,
+          0.5499999999999999,
+          0.6,
+          0.65,
+          0.7,
+          0.75,
+          0.8,
+          0.8500000000000001,
+          0.9000000000000001,
+          0.95,
+          1.0
+        ],
+        "spatial_positions": 21,
+        "unmatched_FE_times_s": [],
+        "time_interpolation_used": false,
+        "spatial_interpolation_added": false,
+        "same_radius_input_and_numeric_parameters_verified": true,
+        "maximum_R_map_difference_m": 0.0,
+        "maximum_physical_position_difference_m": 0.0,
+        "independent_event_reconstruction_check": null,
+        "scope": "All exactly common stored times, same 21 xi positions; physical r=xi*R(t). This is not every production second or every FV node.",
+        "differences": {
+          "T_K": {
+            "max_abs_difference": 4.69444216832926e-08,
+            "time_s": 1500.0,
+            "xi": 1.0,
+            "FE_value": 308.27026151345234,
+            "selected_FV_value": 308.2702614665079
+          },
+          "C": {
+            "max_abs_difference": 1.519636112501388e-06,
+            "time_s": 1.0,
+            "xi": 1.0,
+            "FE_value": 2.5177257698396946,
+            "selected_FV_value": 2.517727289475807
+          }
+        },
+        "FE_equality_root_s": null,
+        "selected_FV_equality_root_s": null,
+        "FE_minus_selected_FV_root_s": null,
+        "sampled_C_overshoot_above_initial": 2.5296092731608155e-06,
+        "passed": true
+      },
+      {
+        "case": "P1",
+        "elements": 256,
+        "nodes": 769,
+        "selected_FV_N": 10240,
+        "selected_FV": "Q1 complete two-field tight Radau trajectory",
+        "old_reference_file_in_FE_record": "work/runs/production/q1/tight/solution.npz",
+        "old_reference_not_relabelled": true,
+        "common_time_rows": 10,
+        "first_time_s": 0.0,
+        "last_time_s": 1800.0,
+        "material_positions": [
+          0.0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.25,
+          0.3,
+          0.35,
+          0.4,
+          0.45000000000000007,
+          0.5,
+          0.5499999999999999,
+          0.6,
+          0.65,
+          0.7,
+          0.75,
+          0.8,
+          0.8500000000000001,
+          0.9000000000000001,
+          0.95,
+          1.0
+        ],
+        "spatial_positions": 21,
+        "unmatched_FE_times_s": [],
+        "time_interpolation_used": false,
+        "spatial_interpolation_added": false,
+        "same_radius_input_and_numeric_parameters_verified": true,
+        "maximum_R_map_difference_m": 0.0,
+        "maximum_physical_position_difference_m": 0.0,
+        "independent_event_reconstruction_check": null,
+        "scope": "All exactly common stored times, same 21 xi positions; physical r=xi*R(t). This is not every production second or every FV node.",
+        "differences": {
+          "T_K": {
+            "max_abs_difference": 4.405080744618317e-08,
+            "time_s": 300.0,
+            "xi": 0.75,
+            "FE_value": 301.51807029013725,
+            "selected_FV_value": 301.51807024608644
+          },
+          "C": {
+            "max_abs_difference": 1.5196609219891855e-06,
+            "time_s": 1.0,
+            "xi": 1.0,
+            "FE_value": 2.517725769814885,
+            "selected_FV_value": 2.517727289475807
+          }
+        },
+        "FE_equality_root_s": null,
+        "selected_FV_equality_root_s": null,
+        "FE_minus_selected_FV_root_s": null,
+        "sampled_C_overshoot_above_initial": 2.54799772392289e-08,
+        "passed": true
+      },
+      {
+        "case": "P23",
+        "elements": 64,
+        "nodes": 193,
+        "selected_FV_N": 2560,
+        "selected_FV": "new finest tight candidate",
+        "old_reference_file_in_FE_record": "work/runs/assumption_study/P23_ambient_mean_1h__n1280__main/samples.npz",
+        "old_reference_not_relabelled": true,
+        "common_time_rows": 693,
+        "first_time_s": 0.0,
+        "last_time_s": 206700.0,
+        "material_positions": [
+          0.0,
+          0.05,
+          0.1,
+          0.15000000000000002,
+          0.2,
+          0.25,
+          0.30000000000000004,
+          0.35000000000000003,
+          0.4,
+          0.45,
+          0.5,
+          0.55,
+          0.6000000000000001,
+          0.65,
+          0.7000000000000001,
+          0.75,
+          0.8,
+          0.8500000000000001,
+          0.9,
+          0.9500000000000001,
+          1.0
+        ],
+        "spatial_positions": 21,
+        "unmatched_FE_times_s": [
+          206926.3615326366
+        ],
+        "time_interpolation_used": false,
+        "spatial_interpolation_added": false,
+        "same_radius_input_and_numeric_parameters_verified": true,
+        "maximum_R_map_difference_m": 0.0,
+        "maximum_physical_position_difference_m": 0.0,
+        "independent_event_reconstruction_check": {
+          "method": "independent per-element numpy Polynomial.fit and derivative.roots on stored event_state",
+          "maximum_C": 0.15,
+          "nodal_maximum_C": 0.15,
+          "interior_stationary_points": 0,
+          "difference_to_recorded_polynomial_maximum": 0.0,
+          "event_uses_full_cubic_reconstruction": true,
+          "rigorous_interval_bound": false
+        },
+        "scope": "All exactly common stored times, same 21 xi positions; physical r=xi*R(t). This is not every production second or every FV node.",
+        "differences": {
+          "T_K": {
+            "max_abs_difference": 3.725893975570216e-07,
+            "time_s": 2700.0,
+            "xi": 0.1,
+            "FE_value": 309.597142917216,
+            "selected_FV_value": 309.5971432898054
+          },
+          "C": {
+            "max_abs_difference": 2.667256238098048e-07,
+            "time_s": 1.0,
+            "xi": 1.0,
+            "FE_value": 2.519805233251197,
+            "selected_FV_value": 2.5198054999768207
+          }
+        },
+        "FE_equality_root_s": 206926.43000515748,
+        "selected_FV_equality_root_s": 206926.41503769616,
+        "FE_minus_selected_FV_root_s": 0.01496746132033877,
+        "sampled_C_overshoot_above_initial": 1.4730746934699113e-05,
+        "passed": true
+      },
+      {
+        "case": "P23",
+        "elements": 128,
+        "nodes": 385,
+        "selected_FV_N": 2560,
+        "selected_FV": "new finest tight candidate",
+        "old_reference_file_in_FE_record": "work/runs/assumption_study/P23_ambient_mean_1h__n1280__main/samples.npz",
+        "old_reference_not_relabelled": true,
+        "common_time_rows": 693,
+        "first_time_s": 0.0,
+        "last_time_s": 206700.0,
+        "material_positions": [
+          0.0,
+          0.05,
+          0.1,
+          0.15000000000000002,
+          0.2,
+          0.25,
+          0.30000000000000004,
+          0.35000000000000003,
+          0.4,
+          0.45,
+          0.5,
+          0.55,
+          0.6000000000000001,
+          0.65,
+          0.7000000000000001,
+          0.75,
+          0.8,
+          0.8500000000000001,
+          0.9,
+          0.9500000000000001,
+          1.0
+        ],
+        "spatial_positions": 21,
+        "unmatched_FE_times_s": [
+          206926.3615326366
+        ],
+        "time_interpolation_used": false,
+        "spatial_interpolation_added": false,
+        "same_radius_input_and_numeric_parameters_verified": true,
+        "maximum_R_map_difference_m": 0.0,
+        "maximum_physical_position_difference_m": 0.0,
+        "independent_event_reconstruction_check": {
+          "method": "independent per-element numpy Polynomial.fit and derivative.roots on stored event_state",
+          "maximum_C": 0.15,
+          "nodal_maximum_C": 0.15,
+          "interior_stationary_points": 0,
+          "difference_to_recorded_polynomial_maximum": 0.0,
+          "event_uses_full_cubic_reconstruction": true,
+          "rigorous_interval_bound": false
+        },
+        "scope": "All exactly common stored times, same 21 xi positions; physical r=xi*R(t). This is not every production second or every FV node.",
+        "differences": {
+          "T_K": {
+            "max_abs_difference": 3.6583151086233556e-07,
+            "time_s": 2700.0,
+            "xi": 0.1,
+            "FE_value": 309.5971429239739,
+            "selected_FV_value": 309.5971432898054
+          },
+          "C": {
+            "max_abs_difference": 2.666444878229868e-07,
+            "time_s": 1.0,
+            "xi": 1.0,
+            "FE_value": 2.519805233332333,
+            "selected_FV_value": 2.5198054999768207
+          }
+        },
+        "FE_equality_root_s": 206926.4328596701,
+        "selected_FV_equality_root_s": 206926.41503769616,
+        "FE_minus_selected_FV_root_s": 0.017821973946411163,
+        "sampled_C_overshoot_above_initial": 2.332914614378012e-06,
+        "passed": true
+      },
+      {
+        "case": "P23",
+        "elements": 256,
+        "nodes": 769,
+        "selected_FV_N": 2560,
+        "selected_FV": "new finest tight candidate",
+        "old_reference_file_in_FE_record": "work/runs/assumption_study/P23_ambient_mean_1h__n1280__main/samples.npz",
+        "old_reference_not_relabelled": true,
+        "common_time_rows": 693,
+        "first_time_s": 0.0,
+        "last_time_s": 206700.0,
+        "material_positions": [
+          0.0,
+          0.05,
+          0.1,
+          0.15000000000000002,
+          0.2,
+          0.25,
+          0.30000000000000004,
+          0.35000000000000003,
+          0.4,
+          0.45,
+          0.5,
+          0.55,
+          0.6000000000000001,
+          0.65,
+          0.7000000000000001,
+          0.75,
+          0.8,
+          0.8500000000000001,
+          0.9,
+          0.9500000000000001,
+          1.0
+        ],
+        "spatial_positions": 21,
+        "unmatched_FE_times_s": [
+          206926.3615326366
+        ],
+        "time_interpolation_used": false,
+        "spatial_interpolation_added": false,
+        "same_radius_input_and_numeric_parameters_verified": true,
+        "maximum_R_map_difference_m": 0.0,
+        "maximum_physical_position_difference_m": 0.0,
+        "independent_event_reconstruction_check": {
+          "method": "independent per-element numpy Polynomial.fit and derivative.roots on stored event_state",
+          "maximum_C": 0.15,
+          "nodal_maximum_C": 0.15,
+          "interior_stationary_points": 0,
+          "difference_to_recorded_polynomial_maximum": 0.0,
+          "event_uses_full_cubic_reconstruction": true,
+          "rigorous_interval_bound": false
+        },
+        "scope": "All exactly common stored times, same 21 xi positions; physical r=xi*R(t). This is not every production second or every FV node.",
+        "differences": {
+          "T_K": {
+            "max_abs_difference": 3.681756766127364e-07,
+            "time_s": 2700.0,
+            "xi": 0.1,
+            "FE_value": 309.5971429216297,
+            "selected_FV_value": 309.5971432898054
+          },
+          "C": {
+            "max_abs_difference": 2.666952330088179e-07,
+            "time_s": 1.0,
+            "xi": 1.0,
+            "FE_value": 2.5198052332815877,
+            "selected_FV_value": 2.5198054999768207
+          }
+        },
+        "FE_equality_root_s": 206926.43291431648,
+        "selected_FV_equality_root_s": 206926.41503769616,
+        "FE_minus_selected_FV_root_s": 0.017876620317110792,
+        "sampled_C_overshoot_above_initial": 2.896107620387056e-08,
+        "passed": true
+      },
+      {
+        "case": "P4",
+        "elements": 64,
+        "nodes": 193,
+        "selected_FV_N": 5120,
+        "selected_FV": "new finest tight candidate",
+        "old_reference_file_in_FE_record": "work/runs/assumption_study/P4_ambient_mean_1h__n1280__time_tight/samples.npz",
+        "old_reference_not_relabelled": true,
+        "common_time_rows": 617,
+        "first_time_s": 0.0,
+        "last_time_s": 183900.0,
+        "material_positions": [
+          0.0,
+          0.05,
+          0.1,
+          0.15000000000000002,
+          0.2,
+          0.25,
+          0.30000000000000004,
+          0.35000000000000003,
+          0.4,
+          0.45,
+          0.5,
+          0.55,
+          0.6000000000000001,
+          0.65,
+          0.7000000000000001,
+          0.75,
+          0.8,
+          0.8500000000000001,
+          0.9,
+          0.9500000000000001,
+          1.0
+        ],
+        "spatial_positions": 21,
+        "unmatched_FE_times_s": [
+          183948.83517168785
+        ],
+        "time_interpolation_used": false,
+        "spatial_interpolation_added": false,
+        "same_radius_input_and_numeric_parameters_verified": true,
+        "maximum_R_map_difference_m": 3.469446951953614e-18,
+        "maximum_physical_position_difference_m": 3.469446951953614e-18,
+        "independent_event_reconstruction_check": {
+          "method": "independent per-element numpy Polynomial.fit and derivative.roots on stored event_state",
+          "maximum_C": 0.15,
+          "nodal_maximum_C": 0.15,
+          "interior_stationary_points": 0,
+          "difference_to_recorded_polynomial_maximum": 0.0,
+          "event_uses_full_cubic_reconstruction": true,
+          "rigorous_interval_bound": false
+        },
+        "scope": "All exactly common stored times, same 21 xi positions; physical r=xi*R(t). This is not every production second or every FV node.",
+        "differences": {
+          "T_K": {
+            "max_abs_difference": 1.463110947952373e-07,
+            "time_s": 2700.0,
+            "xi": 0.05,
+            "FE_value": 308.1782127334521,
+            "selected_FV_value": 308.1782128797632
+          },
+          "C": {
+            "max_abs_difference": 3.73136522124895e-07,
+            "time_s": 1.0,
+            "xi": 1.0,
+            "FE_value": 2.480814781771587,
+            "selected_FV_value": 2.480815154908109
+          }
+        },
+        "FE_equality_root_s": 183948.83739322462,
+        "selected_FV_equality_root_s": 183948.8411061099,
+        "FE_minus_selected_FV_root_s": -0.003712885285494849,
+        "sampled_C_overshoot_above_initial": 5.072851838372472e-05,
+        "passed": true
+      },
+      {
+        "case": "P4",
+        "elements": 128,
+        "nodes": 385,
+        "selected_FV_N": 5120,
+        "selected_FV": "new finest tight candidate",
+        "old_reference_file_in_FE_record": "work/runs/assumption_study/P4_ambient_mean_1h__n1280__time_tight/samples.npz",
+        "old_reference_not_relabelled": true,
+        "common_time_rows": 617,
+        "first_time_s": 0.0,
+        "last_time_s": 183900.0,
+        "material_positions": [
+          0.0,
+          0.05,
+          0.1,
+          0.15000000000000002,
+          0.2,
+          0.25,
+          0.30000000000000004,
+          0.35000000000000003,
+          0.4,
+          0.45,
+          0.5,
+          0.55,
+          0.6000000000000001,
+          0.65,
+          0.7000000000000001,
+          0.75,
+          0.8,
+          0.8500000000000001,
+          0.9,
+          0.9500000000000001,
+          1.0
+        ],
+        "spatial_positions": 21,
+        "unmatched_FE_times_s": [
+          183948.83517168785
+        ],
+        "time_interpolation_used": false,
+        "spatial_interpolation_added": false,
+        "same_radius_input_and_numeric_parameters_verified": true,
+        "maximum_R_map_difference_m": 3.469446951953614e-18,
+        "maximum_physical_position_difference_m": 3.469446951953614e-18,
+        "independent_event_reconstruction_check": {
+          "method": "independent per-element numpy Polynomial.fit and derivative.roots on stored event_state",
+          "maximum_C": 0.15,
+          "nodal_maximum_C": 0.15,
+          "interior_stationary_points": 0,
+          "difference_to_recorded_polynomial_maximum": 0.0,
+          "event_uses_full_cubic_reconstruction": true,
+          "rigorous_interval_bound": false
+        },
+        "scope": "All exactly common stored times, same 21 xi positions; physical r=xi*R(t). This is not every production second or every FV node.",
+        "differences": {
+          "T_K": {
+            "max_abs_difference": 1.4660338365501957e-07,
+            "time_s": 2700.0,
+            "xi": 0.05,
+            "FE_value": 308.1782127331598,
+            "selected_FV_value": 308.1782128797632
+          },
+          "C": {
+            "max_abs_difference": 3.4833738737916065e-07,
+            "time_s": 1.0,
+            "xi": 1.0,
+            "FE_value": 2.480814806570722,
+            "selected_FV_value": 2.480815154908109
+          }
+        },
+        "FE_equality_root_s": 183948.8374581593,
+        "selected_FV_equality_root_s": 183948.8411061099,
+        "FE_minus_selected_FV_root_s": -0.0036479505943134427,
+        "sampled_C_overshoot_above_initial": 2.5013990101463435e-06,
+        "passed": true
+      },
+      {
+        "case": "P4",
+        "elements": 256,
+        "nodes": 769,
+        "selected_FV_N": 5120,
+        "selected_FV": "new finest tight candidate",
+        "old_reference_file_in_FE_record": "work/runs/assumption_study/P4_ambient_mean_1h__n1280__time_tight/samples.npz",
+        "old_reference_not_relabelled": true,
+        "common_time_rows": 617,
+        "first_time_s": 0.0,
+        "last_time_s": 183900.0,
+        "material_positions": [
+          0.0,
+          0.05,
+          0.1,
+          0.15000000000000002,
+          0.2,
+          0.25,
+          0.30000000000000004,
+          0.35000000000000003,
+          0.4,
+          0.45,
+          0.5,
+          0.55,
+          0.6000000000000001,
+          0.65,
+          0.7000000000000001,
+          0.75,
+          0.8,
+          0.8500000000000001,
+          0.9,
+          0.9500000000000001,
+          1.0
+        ],
+        "spatial_positions": 21,
+        "unmatched_FE_times_s": [
+          183948.83517168785
+        ],
+        "time_interpolation_used": false,
+        "spatial_interpolation_added": false,
+        "same_radius_input_and_numeric_parameters_verified": true,
+        "maximum_R_map_difference_m": 3.469446951953614e-18,
+        "maximum_physical_position_difference_m": 3.469446951953614e-18,
+        "independent_event_reconstruction_check": {
+          "method": "independent per-element numpy Polynomial.fit and derivative.roots on stored event_state",
+          "maximum_C": 0.15,
+          "nodal_maximum_C": 0.15,
+          "interior_stationary_points": 0,
+          "difference_to_recorded_polynomial_maximum": 0.0,
+          "event_uses_full_cubic_reconstruction": true,
+          "rigorous_interval_bound": false
+        },
+        "scope": "All exactly common stored times, same 21 xi positions; physical r=xi*R(t). This is not every production second or every FV node.",
+        "differences": {
+          "T_K": {
+            "max_abs_difference": 1.4494963807010208e-07,
+            "time_s": 2700.0,
+            "xi": 0.05,
+            "FE_value": 308.17821273481354,
+            "selected_FV_value": 308.1782128797632
+          },
+          "C": {
+            "max_abs_difference": 3.4824718619930195e-07,
+            "time_s": 1.0,
+            "xi": 1.0,
+            "FE_value": 2.480814806660923,
+            "selected_FV_value": 2.480815154908109
+          }
+        },
+        "FE_equality_root_s": 183948.8374572158,
+        "selected_FV_equality_root_s": 183948.8411061099,
+        "FE_minus_selected_FV_root_s": -0.0036488941113930196,
+        "sampled_C_overshoot_above_initial": 5.41808068410532e-06,
+        "passed": true
+      }
+    ],
+    "old_summary_final_production_comparison": {
+      "passed": true,
+      "rows": [
+        {
+          "case": "P1",
+          "FE_elements": 256,
+          "FE_source_run": "P1_E256",
+          "FV_file": "work/runs/production/q1/tight/solution.npz",
+          "FV_sha256": "f833f97dfd3e99c5d9bfc32b24745bb3504ec86ad04c263e30eed56c8f0fc605",
+          "FV_coordinate_nodes": 21,
+          "endpoint_file_sha256": null,
+          "FV_equality_root_s": null,
+          "FE_equality_root_s": null,
+          "FE_minus_FV_equality_root_s": null,
+          "exactly_shared_time_rows": 10,
+          "first_shared_time_s": 0.0,
+          "last_shared_time_s": 1800.0,
+          "comparison_radii": 21,
+          "max_abs_T_difference_K": 4.4051034819858614e-08,
+          "max_abs_C_difference": 1.5196609219891855e-06,
+          "time_interpolation_used": false,
+          "FV_spatial_reconstruction": "Linear in r/R, matching FV representation",
+          "coordinate_interpretation": "Common r/R material-relative positions; FE values were independently reconstructed as cubics in s=(r/R)^2."
+        },
+        {
+          "case": "P23",
+          "FE_elements": 256,
+          "FE_source_run": "P23_E256",
+          "FV_file": "work/runs/production/p23/internal.npz",
+          "FV_sha256": "4e80bba69f4816af969c68760b441d56dad442b3c1073c952a00873e88fab7fe",
+          "FV_coordinate_nodes": 1281,
+          "endpoint_file_sha256": "e617a61d8019baed0ec20bd430156fb5198e11191f0a2898a36ab43abf813a42",
+          "FV_equality_root_s": 206926.3614336742,
+          "FE_equality_root_s": 206926.43291431648,
+          "FE_minus_FV_equality_root_s": 0.07148064227658324,
+          "exactly_shared_time_rows": 691,
+          "first_shared_time_s": 0.0,
+          "last_shared_time_s": 206700.0,
+          "comparison_radii": 21,
+          "max_abs_T_difference_K": 1.6504672544215282e-06,
+          "max_abs_C_difference": 9.219060594922723e-07,
+          "time_interpolation_used": false,
+          "FV_spatial_reconstruction": "Linear in r/R, matching FV representation",
+          "coordinate_interpretation": "Common r/R material-relative positions; FE values were independently reconstructed as cubics in s=(r/R)^2."
+        },
+        {
+          "case": "P4",
+          "FE_elements": 256,
+          "FE_source_run": "P4_E256",
+          "FV_file": "work/runs/production/q4/internal.npz",
+          "FV_sha256": "63b7e09bec467161417a1ba61902bbd30134b76b5bc0979eb5dfc7d543456ff2",
+          "FV_coordinate_nodes": 2561,
+          "endpoint_file_sha256": "3f56e62b21feb6e4fdf70ef4efcf196a32addfbd06907a1696eabfd2256c3027",
+          "FV_equality_root_s": 183948.83648092244,
+          "FE_equality_root_s": 183948.8374572158,
+          "FE_minus_FV_equality_root_s": 0.0009762933477759361,
+          "exactly_shared_time_rows": 615,
+          "first_shared_time_s": 0.0,
+          "last_shared_time_s": 183900.0,
+          "comparison_radii": 21,
+          "max_abs_T_difference_K": 5.7626618854556e-07,
+          "max_abs_C_difference": 9.882929798976647e-07,
+          "time_interpolation_used": false,
+          "FV_spatial_reconstruction": "Linear in r/R, matching FV representation",
+          "coordinate_interpretation": "Common r/R material-relative positions; FE values were independently reconstructed as cubics in s=(r/R)^2."
+        }
+      ],
+      "scope": "Final-production FV comparison at exactly shared saved times only. Absolute half-of-last-display-unit checks do not imply identical decimal rounding or a continuous-PDE error bound."
+    },
+    "old_reference_descriptions": [
+      {
+        "case": "P1",
+        "file": "work/runs/production/q1/tight/solution.npz",
+        "sha256": "f833f97dfd3e99c5d9bfc32b24745bb3504ec86ad04c263e30eed56c8f0fc605",
+        "FV_grid_intervals": 10240,
+        "FV_settings": "Q1 fine tight solution; see sibling metadata.json.",
+        "source_scope": "New ver2 final-production Q1 N10240 tight solve."
+      },
+      {
+        "case": "P23",
+        "file": "work/runs/assumption_study/P23_ambient_mean_1h__n1280__main/samples.npz",
+        "sha256": "0a8a7d80127457c5facf6747c358cf19248075bd44d31e32875b8a70b7f873db",
+        "FV_grid_intervals": 1280,
+        "FV_settings": {
+          "method": "BDF",
+          "rtol": 1e-09,
+          "atol_temperature_K": 1e-09,
+          "atol_moisture_C": 1e-11,
+          "max_step_s": 150.0,
+          "limit_initial_step": true
+        },
+        "source_scope": "Newly integrated ver2 assumption study baseline, not ver1 and not assumed to be the later final production arrays."
+      },
+      {
+        "case": "P4",
+        "file": "work/runs/assumption_study/P4_ambient_mean_1h__n1280__time_tight/samples.npz",
+        "sha256": "7ae74d97917dfa276d73fbad09f2d614b032f4d8ec116ab9fdf4c6764feda028",
+        "FV_grid_intervals": 1280,
+        "FV_settings": {
+          "method": "BDF",
+          "rtol": 1e-10,
+          "atol_temperature_K": 1e-10,
+          "atol_moisture_C": 1e-12,
+          "max_step_s": 75.0,
+          "limit_initial_step": true
+        },
+        "source_scope": "Newly integrated ver2 assumption study baseline, not ver1 and not assumed to be the later final production arrays."
+      }
+    ],
+    "general_DMP_claimed": false,
+    "historical_configuration_numeric_leaf_count": 103,
+    "original_method_checks_passed": true,
+    "FE_executed_source_sha256": "64a989c65ab9c7acc5ab37be2875621d60fd6f40ca2d090abd0e1540aaad64e7",
+    "FE_executed_config_sha256": "1650f64b8cc01788c21131b6bcadd052da30054dba67750ea84146759dd21afb",
+    "explicit_FE_execution_identity_supplied": true
+  },
+  "absolute_temperature_reference_is_historical_N2560": true,
+  "source_files": {
+    "primary:finest_primary_metrics.json": {
+      "sha256": "55fadf401d0352feef51e325408a5082a3b0448dc8593a82267b479c70ad6741",
+      "bytes": 55429
+    },
+    "operator:operator_validation.json": {
+      "sha256": "8c50d2414842e3ac5631491062d1bb4894b2cc7b834f36974d48d58e87c774b6",
+      "bytes": 17872
+    },
+    "observer:finest_balance_observer_review.json": {
+      "sha256": "8b47bff45c71b313acb8a606d0a46ab7138b36a6ef512e5caa917006e1c5e134",
+      "bytes": 1127
+    },
+    "code:validation/validate_operators.py": {
+      "sha256": "30ef5dec673e92117018742bc26bc7ceae9eaba9a27ce1b2606e6e2f9a64ccb7",
+      "bytes": 22943
+    },
+    "code:solvers/temperature_reference.py": {
+      "sha256": "bea6c913fc3dfd2a7fcca98a86d8d688e9c9dafcb2cad4795c9c30a9a1024022",
+      "bytes": 16895
+    },
+    "code:solvers/solve_all.py": {
+      "sha256": "f9057106563b7722433c7e97fd642c59f9fdaa3aaff37223112dbf73b6e358d7",
+      "bytes": 14320
+    },
+    "code:validation/temperature_representation.py": {
+      "sha256": "f4ddf731c0fa87c2c6e290293b9fcb60b0139e0b6648cf7fdcada94072f46a41",
+      "bytes": 2503
+    },
+    "code:solvers/relative_temperature.py": {
+      "sha256": "b94e109d31a2fb8ad55c2848ad3c30002199dd80a33e8de17da61c7e670dd535",
+      "bytes": 3477
+    },
+    "code:validation/independent_fem.py": {
+      "sha256": "64a989c65ab9c7acc5ab37be2875621d60fd6f40ca2d090abd0e1540aaad64e7",
+      "bytes": 20984
+    },
+    "baseline:q1/convergence.json": {
+      "sha256": "5a13efcb3d0a08fa7c685e767c01376c3abf173c0e512bd178bc9e394d2ce36b",
+      "bytes": 752
+    },
+    "baseline:q1/N10240/metadata.json": {
+      "sha256": "7a0861dda9c989c417e7b7e02dd54d3438b6e9f1ebfcd0c4ccd80cd4db52b88b",
+      "bytes": 19029
+    },
+    "baseline:q1/tight/metadata.json": {
+      "sha256": "9cda09de95fa58f478fc7e54c060f041ccc2f4207a1ec16b4ff4add4b4ef68c6",
+      "bytes": 19070
+    },
+    "baseline:q1/N10240/solution.npz": {
+      "sha256": "eb2f0d02a09fab7c0cd270e1568b4386cdd6fe54d321a1e87e6aebeb5e5cb2b3",
+      "bytes": 475048
+    },
+    "baseline:q1/N5120/grid_profiles.npz": {
+      "sha256": "44f9638248e56327373a9f555f98802669b122a98264cde3fc668502651b9120",
+      "bytes": 391060
+    },
+    "baseline:q1/N10240/grid_profiles.npz": {
+      "sha256": "93d5e84998ddeeff6ac8847993598da1e751949b0e7747a6b76cd38b0553285a",
+      "bytes": 746536
+    },
+    "finest:p23/metadata.json": {
+      "sha256": "990346bc1d73964a7cba8d1a708947eb4b05e41533ab8aca697df11e67f04c30",
+      "bytes": 2005
+    },
+    "finest:p23/endpoint.json": {
+      "sha256": "d659a70931563b8a917e400b2ebbfb1940969cb12b4241cb0f09e1a388b3d70f",
+      "bytes": 765
+    },
+    "validation:p23/convergence.json": {
+      "sha256": "0130f7d9e69bbdac4b4cf65972ac7b190f61ad09beeb7af7b5547d1e4eb2f8b2",
+      "bytes": 10606
+    },
+    "balance:p23/balance.json": {
+      "sha256": "99843ff1f79b1e3c09a0d0d5eb6d5326c393880fec3690388fe9896fe006b30c",
+      "bytes": 2497
+    },
+    "finest:p23/record.json": {
+      "sha256": "8b6ccde25b20c08d6a7ef2d5d4ea6d08e5b521cf0bced3d6444011e45514fd98",
+      "bytes": 93149
+    },
+    "replay:p23_N1280_rtol1e-11/record.json": {
+      "sha256": "bef76e2be728fd2cd2172cc77b1bea55df7c52d6b58f6f62652da9e78dddd01b",
+      "bytes": 94573
+    },
+    "replay:p23_N1280_rtol1e-11/physical_samples.npz": {
+      "sha256": "9bcd267c271ca2803bef0d7dfb220711cab8e280654ff268022dbec2043c51f9",
+      "bytes": 3542175
+    },
+    "replay:p23_N1280_rtol1e-11/radial_profiles.npz": {
+      "sha256": "86d4dc563e99926e06d21cb98cf595b669ee760838338d9191e6f7acd4efa2b5",
+      "bytes": 35781892
+    },
+    "replay:p23_N2560_rtol1e-11/record.json": {
+      "sha256": "3c90f8f30d6159eaf3447d89a495a7eb5faca75201169b7c4207cc1cf02b0c4c",
+      "bytes": 94573
+    },
+    "replay:p23_N2560_rtol1e-11/physical_samples.npz": {
+      "sha256": "508705c423c83510e6a4311bd961347d374b5cdba2f1fd3241527490eb24a8d9",
+      "bytes": 3542021
+    },
+    "replay:p23_N2560_rtol1e-11/radial_profiles.npz": {
+      "sha256": "0d49cf3a5806aa0d55aed38cdbefe620e862efb3696a3b41525256aacb4a6ba3",
+      "bytes": 70330429
+    },
+    "replay:p23_N2560_rtol1e-12/record.json": {
+      "sha256": "409999758425c291b08bd828c68018f3a6152e54dcc54b627ebbd95d360c50f4",
+      "bytes": 94561
+    },
+    "replay:p23_N2560_rtol1e-12/physical_samples.npz": {
+      "sha256": "7c2196e43c3a604745fdc29014fc1aad23f1c2d48926c2ea98fc98c434292721",
+      "bytes": 3543054
+    },
+    "replay:p23_N2560_rtol1e-12/radial_profiles.npz": {
+      "sha256": "1158d150d57b505086366994b5b85bad86115e882464e6ad2fc653eb203d81d9",
+      "bytes": 70334635
+    },
+    "finest:q4/metadata.json": {
+      "sha256": "1b8ea62ba0edd61e2eb861d0b08a5f7c2e9c98f0966f20a4baa93f0ef3c320e6",
+      "bytes": 2023
+    },
+    "finest:q4/endpoint.json": {
+      "sha256": "79051253923c41fe53651ba95375a172190940af2f9d7de2e127dabd81a9a80a",
+      "bytes": 766
+    },
+    "validation:q4/convergence.json": {
+      "sha256": "9df6e55373d64bd766790c24e193a0be28667495c54d6b20e1e0adc65d9abadb",
+      "bytes": 10675
+    },
+    "balance:q4/balance.json": {
+      "sha256": "d62deb1953cf62d3468451aff64cd3a603398a3cbf54c07375ab4c3e8e6400c6",
+      "bytes": 2510
+    },
+    "finest:q4/record.json": {
+      "sha256": "680eb6a3a8fbe8078ec7aeb0afb5aee33beaa77316dbb0ca9ff41fafa15c5ea0",
+      "bytes": 129298
+    },
+    "replay:q4_N2560_rtol1e-11/record.json": {
+      "sha256": "cbba88557c9023ee55ae5adc49ffd37b13560fe93fa7143b5bf044c9cb0e840d",
+      "bytes": 130735
+    },
+    "replay:q4_N2560_rtol1e-11/physical_samples.npz": {
+      "sha256": "f99e05f0beb0c98c432df702e6417daf25a9e97de1074d30a528a8d6bdb08400",
+      "bytes": 2949573
+    },
+    "replay:q4_N2560_rtol1e-11/radial_profiles.npz": {
+      "sha256": "0b9541370220ae6ff6eed2893abeb40d5771c400f83b7d6557cf068b19dce24d",
+      "bytes": 63550631
+    },
+    "replay:q4_N5120_rtol1e-11/record.json": {
+      "sha256": "9607d3c02421c12481da358eba66a593499402963fc58f3db63be49ef3a3f59e",
+      "bytes": 130698
+    },
+    "replay:q4_N5120_rtol1e-11/physical_samples.npz": {
+      "sha256": "3775b89628d786400a7189a6c5e98b82328e599b19fdd7cba753dce6abe30e16",
+      "bytes": 2950151
+    },
+    "replay:q4_N5120_rtol1e-11/radial_profiles.npz": {
+      "sha256": "4ac4dbc2afe55e490576921fc23a9f05bbbd6480afe88df266064112cfdf6d8e",
+      "bytes": 122937147
+    },
+    "replay:q4_N5120_rtol1e-12/record.json": {
+      "sha256": "28dcbefe9e9daa51ccdc1e426e7297ff3de886a2995f22ee14c16d389b812eb5",
+      "bytes": 130726
+    },
+    "replay:q4_N5120_rtol1e-12/physical_samples.npz": {
+      "sha256": "1ecf4d293089d515de7cfdafe840ffde37d8fe484ec288ed6a13f6fa596bc8ae",
+      "bytes": 2952323
+    },
+    "replay:q4_N5120_rtol1e-12/radial_profiles.npz": {
+      "sha256": "4a07d94b299c7f42e1e9c2fd39f0e40de14ce9e8c412bf8dd40a4c57d8e8bf05",
+      "bytes": 122939870
+    },
+    "representation:representation.json": {
+      "sha256": "3043f3227e0d7ef38a75153c450c6f716341d9b680afa86b8643152aff8b7564",
+      "bytes": 1014
+    },
+    "absolute:summary.json": {
+      "sha256": "fba24e0c6ebde5f24fc40d207fd8dae0bf6e7cd6be62b0e0ffabeb56d8d9a6e6",
+      "bytes": 8332
+    },
+    "baseline:q4/result4_candidate_data.npz": {
+      "sha256": "e5ff6aebb3e88f5df6baee8b7ae6ae4233d1df1812be3e8582ce2c3abe1ae6c6",
+      "bytes": 393707
+    },
+    "baseline:q4/endpoint.json": {
+      "sha256": "3f56e62b21feb6e4fdf70ef4efcf196a32addfbd06907a1696eabfd2256c3027",
+      "bytes": 708
+    },
+    "baseline:q4/metadata.json": {
+      "sha256": "f72e473c8f4dc566e83106d487ba06ff418261ece04d4d452df0413259b12bc4",
+      "bytes": 1495
+    },
+    "baseline:q4/convergence.json": {
+      "sha256": "3c2fcae7cfd6b3e91b21c94fa65b3ac9eb03e2bf09d6bce982d0d30d29c717ba",
+      "bytes": 1219
+    },
+    "absolute:N2560_tight/run_metadata.json": {
+      "sha256": "d6ac66e377f06049e603582355dc8c9339ded50def270868c10b4f1461339d04",
+      "bytes": 92584
+    },
+    "absolute:executed_absolute_temperature_check.py": {
+      "sha256": "87b3ec583cc582fa6c2e94473fcb781497994eac9c6b06c5ea567200b0e231e4",
+      "bytes": 16381
+    },
+    "q1summary:summary.json": {
+      "sha256": "bb5c1dfef9faea44e1a395292e8b4884b34224c2649f8911332d5a1c2fe1173a",
+      "bytes": 9239
+    },
+    "q1full:solution.npz": {
+      "sha256": "829ce09365269a05f1a9303b2cc93b0d29489f754545a493b051407f9fc2ebf5",
+      "bytes": 475020
+    },
+    "q1full:grid_profiles.npz": {
+      "sha256": "435fe15eea0a98235dbe7f2028b5718a6dc181abf54e7e75bc7a0841c5ee91df",
+      "bytes": 746563
+    },
+    "q1full:metadata.json": {
+      "sha256": "b2231c02a60152b8cda20a742fe0f1fd478ec552149ce11e33fc8491aa7fcdff",
+      "bytes": 19238
+    },
+    "inputs:附件1.xlsx": {
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "bytes": 16586
+    },
+    "inputs:附件2.xlsx": {
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+      "bytes": 11485
+    },
+    "config:model.json": {
+      "sha256": "1650f64b8cc01788c21131b6bcadd052da30054dba67750ea84146759dd21afb",
+      "bytes": 10038
+    },
+    "code:solvers/solve_q1.py": {
+      "sha256": "a2a17eb5de0a965a2791e9cd0474f46f27b1b14d0dc7370ab0e74d5dec05cb4f",
+      "bytes": 10471
+    },
+    "code:solvers/radial_core.py": {
+      "sha256": "3348246a05aa74411dc334d95d07f338ac5273ee82556721b85a224aed4fb4bd",
+      "bytes": 7288
+    },
+    "code:validation/q1_full_tolerance.py": {
+      "sha256": "9b1f6ec5a55fa45e8249ac1aadf1a479570fbdb8814703b748c25b48854938ae",
+      "bytes": 15983
+    },
+    "q1full:storage_audit.json": {
+      "sha256": "df85ca150ad28a55982d5c21b5bd9d6103fc6dfcfe502ef642933bac8cea3abb",
+      "bytes": 38540
+    },
+    "q1equivalence:equivalence.json": {
+      "sha256": "00620bc3925aa653906f637bb8c4d58d847f79f0a30c947775ec922876cf7083",
+      "bytes": 89512
+    },
+    "q1adapter:q1_disk_history_frozen.py": {
+      "sha256": "1abf23f56d8f3ef6aafca1d533484525edaeec105e72f5705260eac516c18a5d",
+      "bytes": 15541
+    },
+    "fem:summary.json": {
+      "sha256": "167cbca0fe665d6c99c3ae076c335747ac538cf1fbd52deb28b724f23df2da7d",
+      "bytes": 47485
+    },
+    "fe_executed_source:independent_fem.py": {
+      "sha256": "64a989c65ab9c7acc5ab37be2875621d60fd6f40ca2d090abd0e1540aaad64e7",
+      "bytes": 20984
+    },
+    "fe_executed_config:model.json": {
+      "sha256": "1650f64b8cc01788c21131b6bcadd052da30054dba67750ea84146759dd21afb",
+      "bytes": 10038
+    },
+    "fem:P1_E64/record.json": {
+      "sha256": "9a3a9060c325f5c964c961c1ce46e76ee9df28a6a0eb526af220e5ff122f9941",
+      "bytes": 2725
+    },
+    "fem:P1_E64/samples.npz": {
+      "sha256": "7f17b882767f7cee1724d0eb995b0ba518f3d077329ca42a5a0035cb5e75654a",
+      "bytes": 11757
+    },
+    "fem:P1_E128/record.json": {
+      "sha256": "951856c02436915892c928bbb8375be4e90aaa4afda76852cdaec009ca3fad28",
+      "bytes": 2727
+    },
+    "fem:P1_E128/samples.npz": {
+      "sha256": "311aa8f02c955197945c7854a29ae6ec1aa4acba6d1127d9d194b3ca64da2a22",
+      "bytes": 16205
+    },
+    "fem:P1_E256/record.json": {
+      "sha256": "0c4f97c999de1d3ba9066602ef1314ab6b405626bafa86f4e4d90f85441100df",
+      "bytes": 2727
+    },
+    "fem:P1_E256/samples.npz": {
+      "sha256": "76d668848be7ad43e354f3c1d25933cfe701ed51a26d40f007078063ef440b95",
+      "bytes": 25072
+    },
+    "finest:p23/samples.npz": {
+      "sha256": "79a2ec229faf3468865b8758a5c8bbf1aef2e2e401c26015b24514615e255ce8",
+      "bytes": 32142137
+    },
+    "fem:P23_E64/record.json": {
+      "sha256": "5afffb15870415658f2bce8d841273391df551f56a3fca77091b6d01caff8730",
+      "bytes": 2817
+    },
+    "fem:P23_E64/samples.npz": {
+      "sha256": "8ffa89a038957ad02a4a69e804ce96e60865397a02df9cde45ec7a30ed408581",
+      "bytes": 279154
+    },
+    "fem:P23_E128/record.json": {
+      "sha256": "a0fdad2fe8cf61e4256d997866ba89be4505af3261a2bb01001095e925a9a67d",
+      "bytes": 2816
+    },
+    "fem:P23_E128/samples.npz": {
+      "sha256": "fded3f508c5a612266afee90c43f02ed535a82556cbcb969478855b73bed367d",
+      "bytes": 281477
+    },
+    "fem:P23_E256/record.json": {
+      "sha256": "84cf74ee23a05d44f9072dbbd674bec02ff5a00125aa82c30ef8c371cbe61aba",
+      "bytes": 2817
+    },
+    "fem:P23_E256/samples.npz": {
+      "sha256": "e164f58834338761d0bf3eb756c1e0444422da5291ec3ee0b89d2a4e83f001e7",
+      "bytes": 289258
+    },
+    "finest:q4/samples.npz": {
+      "sha256": "672ac1f8c79cae4f1bc57348c9856b81d6afaef30026f3fa7126bd7551e665dd",
+      "bytes": 3393530
+    },
+    "fem:P4_E64/record.json": {
+      "sha256": "97e79d1e861d556ccb66e2d4caef761d9b51bc8fb305290eba5d82242730fea8",
+      "bytes": 2822
+    },
+    "fem:P4_E64/samples.npz": {
+      "sha256": "6af8ace840baaa29ee4fa72dc33b43f1440090e89dbd4234dcbc410c48dfec1b",
+      "bytes": 239214
+    },
+    "fem:P4_E128/record.json": {
+      "sha256": "a7d5f54b3a1ea4d1f4b282889cd2b76978623c38c82e48152224dc93933475e1",
+      "bytes": 2821
+    },
+    "fem:P4_E128/samples.npz": {
+      "sha256": "c31a9593d90ec0de7071ad40587efcd27de6e8e442a4b427e042a94385e6d047",
+      "bytes": 242557
+    },
+    "fem:P4_E256/record.json": {
+      "sha256": "be4883f4ef18fa80079c29d6aa7481099d953efb64d3b74763c2190d691f7506",
+      "bytes": 2820
+    },
+    "fem:P4_E256/samples.npz": {
+      "sha256": "1e7ecfd3e005ff43ef665a5eddf4685cff1701245cd7183b4f7de65587225933",
+      "bytes": 249399
+    }
+  },
+  "generator_sha256": "6945f2e86771983a3b2e87ee2087313ff3060bf4c2d0e6cecdd16a46829dfa9a",
+  "generated_files": {
+    "validation_1d_extension.tex": "a0fe36a720a86e2404f7ca129a70aa90b14624f372d46f87c13e546b119efe44",
+    "validation_1d_layout_check.tex": "d94c86c16c5604aa8b889085740af4cd53b705ba2694d71dd07455f35e55dd80"
+  },
+  "source_scope": "No PDE solve. New FE/FV comparison uses stored raw common arrays only; all previous references retained explicitly.",
+  "pending_requirements": []
+}

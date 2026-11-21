@@ -1,0 +1,30 @@
+{
+  "completed": true,
+  "all_required_Q1_temperature_intervals_evaluated": true,
+  "temperature_value_count": 37800,
+  "unique_bins": 37800,
+  "ambiguous_bins": 0,
+  "selected_source_bins_differing": 0,
+  "all_Q1_T_bins_unique": true,
+  "selected_Q1_T_four_decimal_bins_all_match": true,
+  "analytic_tail_included": true,
+  "ball_arithmetic_included": true,
+  "input_semantics_hull_included": true,
+  "minimum_positive_rounding_margin": {
+    "C": "159025223576324536903133245307087417641020737481553719835145506469031/113078212145816597093331040047546785012958969400039613319782796882727665664000",
+    "time_s": 736,
+    "radius_index": 5
+  },
+  "maximum_interval_width_C": "811773021/36893488147419103232",
+  "uniform_tail_K": [
+    "37377166100920272918882219728348018091397248482376798504189033081397920472603/1386334847060407429789207092071541851718218537687908287585239790307310653902812811519987203052069789048695605480701785914487078912",
+    "37377166100920272918882219728348018091397248482376798504189033081397920472603/1386334847060407429789207092071541851718218537687908287585239790307310653902812811519987203052069789048695605480701785914487078912"
+  ],
+  "all_source_sha256_unchanged": true,
+  "independent_mathematical_review_completed": false,
+  "all_questions_correct_rounding_certified": false,
+  "nonlinear_moisture_certified": false,
+  "original_solver_or_workbooks_modified": false,
+  "elapsed_s": 5.131179899999552,
+  "scope": "Q1 B0 linear radial heat equation, all required integer times and radii; formal mathematical acceptance requires independent review of theory, root identity, tail and records."
+}

@@ -1,0 +1,43 @@
+{
+  "scope": "Historical failures and mathematically unsuccessful reconstruction attempts. These entries are not successful PDE computations or continuous-error certificates.",
+  "entries": [
+    {
+      "id": "first_output_disk_full",
+      "observed_outcome": "The first P23 N1280 reference reached numerical output, but NPZ writing failed because the C volume was full.",
+      "retained_partial_artifact_group": "results/global_refinement/p23_N1280_rtol1e-11",
+      "counted_as_passed": false,
+      "recovery": "Complete same-setting computation was rerun in the authorized separate data volume; original partial files were retained."
+    },
+    {
+      "id": "absolute_clock_fine_step_spacing",
+      "observed_outcome": "P23 N2560 BDF failed at the 14400 s input knot with Required step size is less than spacing between numbers.",
+      "retained_artifact_group": "scratch/global_refinement",
+      "counted_as_passed": false,
+      "recovery": "Use local time tau=t-segment_start with the same physical RHS, grid, tolerances and every original breakpoint; successful local-clock references and complete output replays are separately recorded."
+    },
+    {
+      "id": "uncached_interval_memory_failures",
+      "observed_outcome": "Early Q4 proof attempts encountered real NumPy allocation failures during repeated archive decompression; the reported requests were approximately 3.4 MiB and 1.58 MiB.",
+      "retained_artifact_group": "results/q4 and scratch/preloaded historical progress",
+      "counted_as_passed": false,
+      "recovery": "Preload each small NPZ once, retaining the same interval mathematical kernel and proof constants; completed replacement certificates have independent completion flags."
+    },
+    {
+      "id": "q4_n5120_superlu_allocation_failure",
+      "observed_outcome": "The original Q4 N5120 local-clock attempt encountered a real SuperLU malloc failure while other large processes were active.",
+      "retained_artifact_group": "scratch/global_local_clock/q4_N5120_rtol1e-11",
+      "counted_as_passed": false,
+      "recovery": "Waited for available memory and performed one complete same-setting replay in global_local_clock_retry_01. No mesh, tolerance, input knot or output requirement was reduced."
+    },
+    {
+      "id": "c1_hermite_residual_target_impossible",
+      "observed_outcome": "A point enclosure for the P23 C1 Hermite reconstruction gave weighted residual approximately 1.1733e-5 per s, already above the attempted 1e-7 target. Subdividing intervals could not make this reconstruction meet that target.",
+      "retained_artifact_group": "results/hermite_point_diagnostic.json and scratch/continuous_adaptive",
+      "counted_as_passed": false,
+      "stopped_reason": "Mathematical target disproved for this reconstruction by the point residual lower bound; the adaptive diagnostic was stopped for that reason, not to reduce a PDE computation's precision or cost.",
+      "replacement": "Unique C2 clamped spline with exact Robin slope, followed by outward direct/mean-value residual intersections. These new proof objects are independently defined and verified."
+    }
+  ],
+  "failure_message_provenance": "Failures were observed in actual execution tool output; retained partial arrays and progress files are diagnostic context, not substitutes for a complete transcript or completion report.",
+  "unrelated_original_q1_or_2d_runs": "Not evaluated by this endpoint ledger; their failure/recovery statuses are maintained by the parent task."
+}

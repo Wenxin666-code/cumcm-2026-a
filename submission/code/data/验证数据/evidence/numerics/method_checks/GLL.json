@@ -1,0 +1,110 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "check": "variable_coefficient_moving_MMS",
+      "elements": 8,
+      "nodes": 25,
+      "max_abs_error": 7.239733956776462e-07,
+      "mass_L2_error": 2.982785880135229e-07,
+      "wall_seconds": 0.023722900019492954
+    },
+    {
+      "check": "variable_coefficient_moving_MMS",
+      "elements": 16,
+      "nodes": 49,
+      "max_abs_error": 2.197220094757313e-08,
+      "mass_L2_error": 9.200487114441203e-09,
+      "wall_seconds": 0.0185539000085555,
+      "observed_max_error_order": 5.042185386264693
+    },
+    {
+      "check": "variable_coefficient_moving_MMS",
+      "elements": 32,
+      "nodes": 97,
+      "max_abs_error": 6.335656443923199e-10,
+      "mass_L2_error": 2.8714559583004763e-10,
+      "wall_seconds": 0.018614300002809614,
+      "observed_max_error_order": 5.11604147478753
+    },
+    {
+      "check": "Robin_Bessel_eigenmode",
+      "elements": 8,
+      "nodes": 25,
+      "max_abs_error": 5.798848068394591e-10,
+      "mass_L2_error": 2.9332305107302496e-10,
+      "wall_seconds": 0.010339900036342442
+    },
+    {
+      "check": "Robin_Bessel_eigenmode",
+      "elements": 16,
+      "nodes": 49,
+      "max_abs_error": 1.900968271684178e-11,
+      "mass_L2_error": 9.946978235678107e-12,
+      "wall_seconds": 0.01084389997413382,
+      "observed_max_error_order": 4.930959981868075
+    },
+    {
+      "check": "Robin_Bessel_eigenmode",
+      "elements": 32,
+      "nodes": 97,
+      "max_abs_error": 3.68594044175552e-12,
+      "mass_L2_error": 2.6092902972866705e-12,
+      "wall_seconds": 0.012125300010666251,
+      "observed_max_error_order": 2.3666297878477063
+    }
+  ],
+  "algebra_checks": [
+    {
+      "case": "variable_coefficient_moving_MMS",
+      "elements": 8,
+      "mass_sum": 1.0,
+      "minimum_mass": 0.002583821614583333,
+      "constant_action_max": 0.0,
+      "weak_internal_flux_sum_abs": 2.220446049250313e-16
+    },
+    {
+      "case": "variable_coefficient_moving_MMS",
+      "elements": 16,
+      "mass_sum": 1.0,
+      "minimum_mass": 0.0006497701009114583,
+      "constant_action_max": 0.0,
+      "weak_internal_flux_sum_abs": 6.661338147750939e-16
+    },
+    {
+      "case": "variable_coefficient_moving_MMS",
+      "elements": 32,
+      "mass_sum": 1.0,
+      "minimum_mass": 0.00016268094380696613,
+      "constant_action_max": 0.0,
+      "weak_internal_flux_sum_abs": 4.440892098500626e-16
+    },
+    {
+      "case": "Robin_Bessel_eigenmode",
+      "elements": 8,
+      "mass_sum": 1.0,
+      "minimum_mass": 0.002583821614583333,
+      "constant_action_max": 0.0,
+      "weak_internal_flux_sum_abs": 2.220446049250313e-16
+    },
+    {
+      "case": "Robin_Bessel_eigenmode",
+      "elements": 16,
+      "mass_sum": 1.0,
+      "minimum_mass": 0.0006497701009114583,
+      "constant_action_max": 0.0,
+      "weak_internal_flux_sum_abs": 6.661338147750939e-16
+    },
+    {
+      "case": "Robin_Bessel_eigenmode",
+      "elements": 32,
+      "mass_sum": 1.0,
+      "minimum_mass": 0.00016268094380696613,
+      "constant_action_max": 0.0,
+      "weak_internal_flux_sum_abs": 4.440892098500626e-16
+    }
+  ],
+  "MMS_definition": "u=1+0.1 exp(-t) cos(pi s), R=1-0.1t, D=.05(1+.2s)(1+.1t), b=1+.2u_exact; forcing=b*u_t-4/R^2*d_s(s D u_s), zero outer derivative.",
+  "analytic_definition": "u=.4+exp(-.1 lambda^2 t) J0(lambda sqrt(s)); lambda J1(lambda)=2 J0(lambda), R=1, diffusivity=.1, Robin h=.2.",
+  "interpretation": "Checks test independent weak assembly, moving-radius factor, variable-coefficient divergence, and Robin boundary sign/scaling. They do not validate physical assumptions."
+}

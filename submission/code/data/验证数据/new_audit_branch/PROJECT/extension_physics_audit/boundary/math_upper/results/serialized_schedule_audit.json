@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "scope": "serialized exact-rational schedule audit, not a separate PDE computation or proof of existence",
+  "PDE_started": false,
+  "independent_full_theorem_review_passed": false,
+  "summary_sha256": "dcf4930935b0874a70fae4f99e4f5ff4d013fe15fbc01c57681849c3b727dc02",
+  "verifier_sha256": "c420509bab054f348fa76b3d3bbce3af8ccb39db5881ab70f65e70fe396958ad",
+  "rational_arithmetic_sha256": "dfaa87da337029e8047391e4de06ffed566d9cc0d6c3ae0cab9bc156b98a0189",
+  "models": [
+    {
+      "material": "P23",
+      "all_bins_read": 65536,
+      "exported_node_bounds_verified": true,
+      "exported_positive_rates_obey_both_recorded_bounds": true,
+      "every_duration_times_rate_above_outward_log_ratio": true,
+      "all_cumulative_and_final_sums_exact": true,
+      "scalar_gap_passed": true,
+      "integer_hour_rounding_safe": true,
+      "passed": true
+    },
+    {
+      "material": "P4",
+      "all_bins_read": 32768,
+      "exported_node_bounds_verified": true,
+      "exported_positive_rates_obey_both_recorded_bounds": true,
+      "every_duration_times_rate_above_outward_log_ratio": true,
+      "all_cumulative_and_final_sums_exact": true,
+      "scalar_gap_passed": true,
+      "integer_hour_rounding_safe": true,
+      "passed": true
+    }
+  ]
+}

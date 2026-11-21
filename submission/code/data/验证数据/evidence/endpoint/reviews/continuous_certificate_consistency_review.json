@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "case": "p23",
+      "passed": true,
+      "slabs": 27,
+      "exact_node_derivative_extrema_checks": 34587,
+      "all_constant_and_source_hashes_match": true,
+      "all_interfaces_exactly_match": true,
+      "minimum_amplitude_outward_slack_decimal": "5.473745930986467239688744498796147549E-52",
+      "exact_maximum_node_time_derivative_decimal": "-2.3711938278269942933216426677302352682270280763157221539526108736150667314478966E-8",
+      "root_lower_endpoint_above_threshold_decimal": "1.101596986280902252397258991530750580237421822793055284696512697E-17",
+      "root_upper_endpoint_below_threshold_decimal": "6.63045062562909734268737367121057634403802556276577674700288427E-18",
+      "original_and_candidate_report_bounds_contain_independent_80_digit_evaluation": true,
+      "certificate_sha256": "2eefa48f4c67392b4227b885d0f34bfb29fa594b4cb0ccd2619fc06e66caa670",
+      "local_radau_sha256": "dfe06eff23d74111433bac4b1bf601713a44e7937d9446914169d43108f89c2a",
+      "query_sha256": "7d4d1e2f65b7662c753d6546d9bb6a070b771da91a2396f4141ad76e8da13422"
+    },
+    {
+      "case": "q4",
+      "passed": true,
+      "slabs": 29,
+      "exact_node_derivative_extrema_checks": 74269,
+      "all_constant_and_source_hashes_match": true,
+      "all_interfaces_exactly_match": true,
+      "minimum_amplitude_outward_slack_decimal": "6.530691422663848365403937378040287624E-54",
+      "exact_maximum_node_time_derivative_decimal": "-3.1724811252876375133244578069039157493599075083300729973256697723095934728475131E-8",
+      "root_lower_endpoint_above_threshold_decimal": "1.644431394197991794927448261602086410575049266832969624957962549E-17",
+      "root_upper_endpoint_below_threshold_decimal": "1.001538203209869014863953084308169792784874916107321491115477885E-17",
+      "original_and_candidate_report_bounds_contain_independent_80_digit_evaluation": true,
+      "certificate_sha256": "cdc73fc0965e46c1e0bd11273647f595f2329fc42441a5f66fe231a6f73df436",
+      "local_radau_sha256": "8c13912d4a5bd4977fa91df238ad4dc0cf5347843964cfb731c50bda96c9896e",
+      "query_sha256": "fc0bdcd427b49dba483ef5c463472a106189a9346d4bc35acef751a1d9287733"
+    }
+  ],
+  "source_sha256": "d4c575f8a16f1b2af47b00df32c00556418c3381dbe0902c73909e12bae742ef",
+  "scope": "Independent exact rational temporal polynomial extrema and 80-digit consistency checks of the recorded 44-digit outward certificate arithmetic, input hashes, slab links, event signs and reported bounds.",
+  "limitations": "Not an independent rerun of the full spatial residual enclosures, not a new interval proof, and not a certification of the original full-time coupled PDE."
+}

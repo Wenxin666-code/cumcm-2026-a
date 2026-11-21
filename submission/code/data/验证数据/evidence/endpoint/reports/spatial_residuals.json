@@ -1,0 +1,184 @@
+{
+  "completed": true,
+  "continuous_PDE_certified": false,
+  "source_sha256": {
+    "spatial_residuals.py": "44da94f035a921e96648f28f9af2917fbb1dc4332d2410e0a2f1f38896bc61e1",
+    "model.json": "1650f64b8cc01788c21131b6bcadd052da30054dba67750ea84146759dd21afb"
+  },
+  "rows": [
+    {
+      "case": "p23",
+      "N": 1280,
+      "time_s": 206820.0,
+      "quadrature": [
+        {
+          "Gauss_order": 8,
+          "sampled_max_abs_strong_moisture_residual_per_s": 8.860692490431744e-08,
+          "radially_weighted_L2_residual_per_s": 1.6735556180503585e-09,
+          "signed_weighted_residual_per_s": -7.796741764993697e-14,
+          "max_residual_xi": 0.9999993532927153
+        },
+        {
+          "Gauss_order": 16,
+          "sampled_max_abs_strong_moisture_residual_per_s": 8.862056579268983e-08,
+          "radially_weighted_L2_residual_per_s": 1.673555618050416e-09,
+          "signed_weighted_residual_per_s": -7.796741765511016e-14,
+          "max_residual_xi": 0.9999993799447036
+        }
+      ],
+      "Robin_residual_moisture_m_per_s": 0.0,
+      "center_slope": 0.0,
+      "minimum_cross_T_to_C_jacobian_entry_per_s_K": -0.0016067119124956982,
+      "joint_T_C_system_cooperative": false,
+      "event_scale_C_error_1e_7_seconds": 0.34301704459005744,
+      "minimum_C": 0.05265204735717645,
+      "maximum_C": 0.15003099240482531
+    },
+    {
+      "case": "p23",
+      "N": 1280,
+      "time_s": 206880.0,
+      "quadrature": [
+        {
+          "Gauss_order": 8,
+          "sampled_max_abs_strong_moisture_residual_per_s": 8.851633474179029e-08,
+          "radially_weighted_L2_residual_per_s": 1.6720384919333017e-09,
+          "signed_weighted_residual_per_s": -7.792913191431004e-14,
+          "max_residual_xi": 0.9999993532927153
+        },
+        {
+          "Gauss_order": 16,
+          "sampled_max_abs_strong_moisture_residual_per_s": 8.852999638389756e-08,
+          "radially_weighted_L2_residual_per_s": 1.6720384919335862e-09,
+          "signed_weighted_residual_per_s": -7.792913191152214e-14,
+          "max_residual_xi": 0.9999993799447036
+        }
+      ],
+      "Robin_residual_moisture_m_per_s": 4.1359030627651384e-25,
+      "center_slope": 0.0,
+      "minimum_cross_T_to_C_jacobian_entry_per_s_K": -0.001605852343688472,
+      "joint_T_C_system_cooperative": false,
+      "event_scale_C_error_1e_7_seconds": 0.3432071073785366,
+      "minimum_C": 0.05265062297217209,
+      "maximum_C": 0.15001350540676936
+    },
+    {
+      "case": "p23",
+      "N": 1280,
+      "time_s": 206926.92,
+      "quadrature": [
+        {
+          "Gauss_order": 8,
+          "sampled_max_abs_strong_moisture_residual_per_s": 8.844527178525984e-08,
+          "radially_weighted_L2_residual_per_s": 1.6708532298613982e-09,
+          "signed_weighted_residual_per_s": -7.7898282162666e-14,
+          "max_residual_xi": 0.9999993532927153
+        },
+        {
+          "Gauss_order": 16,
+          "sampled_max_abs_strong_moisture_residual_per_s": 8.845885526770099e-08,
+          "radially_weighted_L2_residual_per_s": 1.6708532298614094e-09,
+          "signed_weighted_residual_per_s": -7.78982821608359e-14,
+          "max_residual_xi": 0.9999993799447036
+        }
+      ],
+      "Robin_residual_moisture_m_per_s": 4.1359030627651384e-25,
+      "center_slope": 0.0,
+      "minimum_cross_T_to_C_jacobian_entry_per_s_K": -0.0016051806944416688,
+      "joint_T_C_system_cooperative": false,
+      "event_scale_C_error_1e_7_seconds": 0.34335576206031343,
+      "minimum_C": 0.05264950998734308,
+      "maximum_C": 0.14999983732159672
+    },
+    {
+      "case": "q4",
+      "N": 2560,
+      "time_s": 183840.0,
+      "quadrature": [
+        {
+          "Gauss_order": 8,
+          "sampled_max_abs_strong_moisture_residual_per_s": 1.2475521858238367e-09,
+          "radially_weighted_L2_residual_per_s": 3.066487511449187e-11,
+          "signed_weighted_residual_per_s": -3.276083164368267e-14,
+          "max_residual_xi": 0.9999999969703565
+        },
+        {
+          "Gauss_order": 16,
+          "sampled_max_abs_strong_moisture_residual_per_s": 1.2874766403428491e-09,
+          "radially_weighted_L2_residual_per_s": 3.06648751144906e-11,
+          "signed_weighted_residual_per_s": -3.27608316406663e-14,
+          "max_residual_xi": 0.9999999991913555
+        }
+      ],
+      "Robin_residual_moisture_m_per_s": 0.0,
+      "center_slope": 0.0,
+      "minimum_cross_T_to_C_jacobian_entry_per_s_K": -0.010563314255702252,
+      "joint_T_C_system_cooperative": false,
+      "event_scale_C_error_1e_7_seconds": 0.1945016666450298,
+      "minimum_C": 0.05261353372117411,
+      "maximum_C": 0.15005591814089683
+    },
+    {
+      "case": "q4",
+      "N": 2560,
+      "time_s": 183900.0,
+      "quadrature": [
+        {
+          "Gauss_order": 8,
+          "sampled_max_abs_strong_moisture_residual_per_s": 1.1148031298817297e-09,
+          "radially_weighted_L2_residual_per_s": 3.06224441730182e-11,
+          "signed_weighted_residual_per_s": -3.2705964135557026e-14,
+          "max_residual_xi": 0.9999999969703565
+        },
+        {
+          "Gauss_order": 16,
+          "sampled_max_abs_strong_moisture_residual_per_s": 1.148730313935708e-09,
+          "radially_weighted_L2_residual_per_s": 3.062244417302631e-11,
+          "signed_weighted_residual_per_s": -3.2705964134353243e-14,
+          "max_residual_xi": 0.9999999991913555
+        }
+      ],
+      "Robin_residual_moisture_m_per_s": 0.0,
+      "center_slope": 0.0,
+      "minimum_cross_T_to_C_jacobian_entry_per_s_K": -0.010555637080653484,
+      "joint_T_C_system_cooperative": false,
+      "event_scale_C_error_1e_7_seconds": 0.1946492073690495,
+      "minimum_C": 0.052611627273971236,
+      "maximum_C": 0.15002508176196536
+    },
+    {
+      "case": "q4",
+      "N": 2560,
+      "time_s": 183949.2,
+      "quadrature": [
+        {
+          "Gauss_order": 8,
+          "sampled_max_abs_strong_moisture_residual_per_s": 1.050442298778724e-09,
+          "radially_weighted_L2_residual_per_s": 3.058773125781223e-11,
+          "signed_weighted_residual_per_s": -3.267251710497725e-14,
+          "max_residual_xi": 0.9999999969703565
+        },
+        {
+          "Gauss_order": 16,
+          "sampled_max_abs_strong_moisture_residual_per_s": 1.0814624505919446e-09,
+          "radially_weighted_L2_residual_per_s": 3.058773125779472e-11,
+          "signed_weighted_residual_per_s": -3.26725171038247e-14,
+          "max_residual_xi": 0.9999999991913555
+        }
+      ],
+      "Robin_residual_moisture_m_per_s": -4.1359030627651384e-25,
+      "center_slope": 0.0,
+      "minimum_cross_T_to_C_jacobian_entry_per_s_K": -0.010549348363495428,
+      "joint_T_C_system_cooperative": false,
+      "event_scale_C_error_1e_7_seconds": 0.1947702274714259,
+      "minimum_C": 0.05261006561778553,
+      "maximum_C": 0.1499998133600209
+    }
+  ],
+  "reconstruction": "C2 cubic spline, regular center, nonlinear Robin derivative, exact derivative of reconstruction boundary data; face flux is continuous mathematically.",
+  "limitations": [
+    "Gauss-point maxima are not bounds over all space.",
+    "No verified nonlinear continuous stability constant or max-norm estimator connects these residuals to a PDE error tube.",
+    "No inherited early-time/spatial error has been enclosed."
+  ]
+}

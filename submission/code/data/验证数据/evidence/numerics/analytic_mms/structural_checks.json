@@ -1,0 +1,186 @@
+{
+  "passed": true,
+  "checks": {
+    "positive_mass": true,
+    "constants_exactly_annihilated": true,
+    "internal_weak_fluxes_cancel": true,
+    "boundary_mean_rate_identity": true,
+    "one_dimensional_physical_rhs_reduction": true,
+    "zero_exchange_transient_reference_mass": true,
+    "continuous_peak_contains_true_maximum": true,
+    "continuous_peak_bounds_converged": true,
+    "float_bounds_are_outward": true,
+    "continuous_peak_exceeds_nodal_maximum": true
+  },
+  "algebra": [
+    {
+      "Er": 4,
+      "Ez": 2,
+      "mass_sum": 1.0,
+      "minimum_mass": 0.00021023220486111107,
+      "constant_stiffness_max": 0.0,
+      "radial_internal_action_sum": -1.5504091066542713e-17,
+      "axial_internal_action_sum": -1.5959455978986625e-16,
+      "boundary_rate_balance_abs": 2.710505431213761e-20,
+      "boundary_rate_balance_scaled": 2.1640347239753325e-16
+    },
+    {
+      "Er": 8,
+      "Ez": 4,
+      "mass_sum": 1.0,
+      "minimum_mass": 1.3457404242621526e-05,
+      "constant_stiffness_max": 0.0,
+      "radial_internal_action_sum": -5.551115123125783e-17,
+      "axial_internal_action_sum": -1.43982048506075e-16,
+      "boundary_rate_balance_abs": 2.710505431213761e-20,
+      "boundary_rate_balance_scaled": 2.1640333636187558e-16
+    },
+    {
+      "Er": 16,
+      "Ez": 8,
+      "mass_sum": 1.0,
+      "minimum_mass": 8.460548188951279e-07,
+      "constant_stiffness_max": 0.0,
+      "radial_internal_action_sum": -2.7755575615628914e-17,
+      "axial_internal_action_sum": -2.1163626406917047e-16,
+      "boundary_rate_balance_abs": 0.0,
+      "boundary_rate_balance_scaled": 0.0
+    },
+    {
+      "Er": 32,
+      "Ez": 16,
+      "mass_sum": 1.0,
+      "minimum_mass": 5.295603639549678e-08,
+      "constant_stiffness_max": 0.0,
+      "radial_internal_action_sum": 0.0,
+      "axial_internal_action_sum": -1.5439038936193583e-16,
+      "boundary_rate_balance_abs": 0.0,
+      "boundary_rate_balance_scaled": 0.0
+    }
+  ],
+  "one_dimensional_reduction": [
+    {
+      "material": "P1",
+      "t_s": 0.0,
+      "max_T_rhs_difference": 1.1102230246251565e-16,
+      "max_C_rhs_difference": 6.938893903907228e-18,
+      "max_scaled_difference": 8.675410436415804e-17
+    },
+    {
+      "material": "P1",
+      "t_s": 1234.0,
+      "max_T_rhs_difference": 8.881784197001252e-16,
+      "max_C_rhs_difference": 6.938893903907228e-18,
+      "max_scaled_difference": 1.5236555643208873e-16
+    },
+    {
+      "material": "P1",
+      "t_s": 14400.0,
+      "max_T_rhs_difference": 1.7763568394002505e-15,
+      "max_C_rhs_difference": 6.938893903907228e-18,
+      "max_scaled_difference": 1.577290870897285e-16
+    },
+    {
+      "material": "P1",
+      "t_s": 200000.0,
+      "max_T_rhs_difference": 1.7763568394002505e-15,
+      "max_C_rhs_difference": 6.938893903907228e-18,
+      "max_scaled_difference": 1.577290870897285e-16
+    },
+    {
+      "material": "P23",
+      "t_s": 0.0,
+      "max_T_rhs_difference": 1.1102230246251565e-16,
+      "max_C_rhs_difference": 6.938893903907228e-18,
+      "max_scaled_difference": 8.578209229442672e-17
+    },
+    {
+      "material": "P23",
+      "t_s": 1234.0,
+      "max_T_rhs_difference": 4.440892098500626e-16,
+      "max_C_rhs_difference": 1.3877787807814457e-17,
+      "max_scaled_difference": 9.005379307982265e-17
+    },
+    {
+      "material": "P23",
+      "t_s": 14400.0,
+      "max_T_rhs_difference": 1.7763568394002505e-15,
+      "max_C_rhs_difference": 6.938893903907228e-18,
+      "max_scaled_difference": 1.9152778240083963e-16
+    },
+    {
+      "material": "P23",
+      "t_s": 200000.0,
+      "max_T_rhs_difference": 1.7763568394002505e-15,
+      "max_C_rhs_difference": 6.938893903907228e-18,
+      "max_scaled_difference": 1.9152778240083963e-16
+    },
+    {
+      "material": "P4",
+      "t_s": 0.0,
+      "max_T_rhs_difference": 9.71445146547012e-17,
+      "max_C_rhs_difference": 6.938893903907228e-18,
+      "max_scaled_difference": 8.709582408689365e-17
+    },
+    {
+      "material": "P4",
+      "t_s": 1234.0,
+      "max_T_rhs_difference": 4.440892098500626e-16,
+      "max_C_rhs_difference": 1.3877787807814457e-17,
+      "max_scaled_difference": 9.49636329222276e-17
+    },
+    {
+      "material": "P4",
+      "t_s": 14400.0,
+      "max_T_rhs_difference": 1.7763568394002505e-15,
+      "max_C_rhs_difference": 1.3877787807814457e-17,
+      "max_scaled_difference": 1.5682235608697447e-16
+    },
+    {
+      "material": "P4",
+      "t_s": 200000.0,
+      "max_T_rhs_difference": 3.552713678800501e-15,
+      "max_C_rhs_difference": 1.3877787807814457e-17,
+      "max_scaled_difference": 2.572307940611919e-16
+    }
+  ],
+  "zero_exchange": {
+    "max_reference_mass_drift": 2.4424906541753444e-15,
+    "minimum_saved_state": 0.9667082530762287,
+    "nfev": 758,
+    "nlu": 68,
+    "scope": "State-dependent scalar diffusion with radial and axial motion; no source or exchange; no clipping."
+  },
+  "off_node_extremum_check": {
+    "minimum_lower": -0.14110000000000003,
+    "minimum_upper": -0.1411,
+    "maximum_lower": 0.9999999999754131,
+    "maximum_upper": 1.0000000000375013,
+    "maximum": {
+      "lower_decimal": "0.99999999997541314443783261606038036763998155705524",
+      "upper_decimal": "1.0000000000375013160798611711386797132450211329402",
+      "lower": 0.9999999999754131,
+      "upper": 1.0000000000375013,
+      "width": 6.208817164202856e-11,
+      "converged": true,
+      "subdivisions": 31,
+      "tolerance": 1e-10,
+      "arithmetic": "50-digit outward Decimal interval Bernstein; exact rational transform of binary64 GLL coordinates"
+    },
+    "negative_minimum": {
+      "lower_decimal": "0.1411000000000000031974423109204508364200592041015625",
+      "upper_decimal": "0.14110000000000000319744231092045083642005920410166",
+      "lower": 0.1411,
+      "upper": 0.14110000000000003,
+      "width": 9.75e-50,
+      "converged": true,
+      "subdivisions": 0,
+      "tolerance": 1e-10,
+      "arithmetic": "50-digit outward Decimal interval Bernstein; exact rational transform of binary64 GLL coordinates"
+    },
+    "scope": "Exact polynomial through stored binary64 nodal data, not exact PDE solution; nodal extrema are separate diagnostics.",
+    "nodal_maximum": 0.9654247584249853,
+    "known_polynomial_maximum": 1.0,
+    "note": "Nodal float evaluation induces at most roundoff discrepancy from the intended quadratic; comparison allows 1e-12."
+  }
+}

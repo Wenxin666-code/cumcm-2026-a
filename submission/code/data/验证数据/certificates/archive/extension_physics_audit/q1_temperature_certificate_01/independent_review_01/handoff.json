@@ -1,0 +1,24 @@
+{
+  "completed": true,
+  "passed": true,
+  "scope": "Q1 B0 linear temperature only; assistant independent review, no nonlinear moisture or full-problem release",
+  "original_source_and_actual_01_unchanged": true,
+  "files": {
+    "verify.py": {
+      "sha256": "0e9aa8546ffd7ae20fef70c793e64360ffe58736cbdc2b6bfc6a74399878814b",
+      "bytes": 15923
+    },
+    "独立复核报告.md": {
+      "sha256": "2a8e8336790d7d4e5510269a3f8a5ac606354db68e9dbee153f2ff96387b55f4",
+      "bytes": 5597
+    },
+    "computed_01/summary.json": {
+      "sha256": "968064c388163a19bf36dfd03a9e001e51c4608915de9cc77a1482acf23bbdae",
+      "bytes": 5592
+    },
+    "computed_01/direct_history_profiles.json": {
+      "sha256": "342697ae6b2997087402016e7081b86faf063182ebd7a399bc78821c4b179630",
+      "bytes": 698496
+    }
+  }
+}

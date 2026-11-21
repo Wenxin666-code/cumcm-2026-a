@@ -1,0 +1,33 @@
+{
+  "accepted": true,
+  "recorded_utc": "2026-09-12T03:18:55.655676+00:00",
+  "Q1_B0_temperature_required_values_correct_rounding_certified": true,
+  "certified_values": 37800,
+  "numerical_intervals_and_analytic_infinite_tail_included": true,
+  "independent_mathematical_and_program_review_passed": true,
+  "minimum_rounding_margin_exact": {
+    "C": "159025223576324536903133245307087417641020737481553719835145506469031/113078212145816597093331040047546785012958969400039613319782796882727665664000",
+    "time_s": 736,
+    "radius_index": 5
+  },
+  "maximum_interval_width_C_exact": "811773021/36893488147419103232",
+  "all_match_selected_Q1_temperature_bins": true,
+  "trusted_computing_base": "Bound Python/Fraction and FLINT/Arb libraries; no formal software proof of the runtime itself.",
+  "scope": "Explicit Q1 B0 radial constant-property heat PDE, declared input/parameter/position hulls; all required integer-time/radius temperature values.",
+  "Q1_moisture_correct_rounding_certified": false,
+  "all_questions_correct_rounding_certified": false,
+  "physical_truth_certified": false,
+  "raw_candidate_summary_preserved": true,
+  "original_solver_or_workbooks_modified": false,
+  "bindings_sha256": {
+    "RESEARCH/\\extension_physics_audit\\q1_temperature_certificate_01\\actual_01\\products_sha256.json": "91eb0fb6ae8af977e3d252ed5051dc3097e1c3bfea0b8834789fc286ba1d202d",
+    "RESEARCH/\\extension_physics_audit\\q1_temperature_certificate_01\\actual_01\\source_bindings.json": "a7ea1d71dd098c8ea722d58c1e853fa184f56e8d70396de834eadcd342b22c48",
+    "RESEARCH/\\extension_physics_audit\\q1_temperature_certificate_01\\actual_01\\summary.json": "2b780ecff055df8ca2e11995d0762f1ea582035c3d9b18db11e1feea593c8e1b",
+    "RESEARCH/\\extension_physics_audit\\q1_temperature_certificate_01\\independent_review_01\\handoff.json": "6f7254847bff90522f5fb0169aec0b5eee174a8065d444c36bad4d7f1860e5fe",
+    "RESEARCH/\\extension_physics_audit\\q1_temperature_certificate_01\\independent_review_01\\computed_01\\summary.json": "968064c388163a19bf36dfd03a9e001e51c4608915de9cc77a1482acf23bbdae",
+    "RESEARCH/\\extension_physics_audit\\q1_temperature_certificate_01\\independent_review_01\\独立复核报告.md": "2a8e8336790d7d4e5510269a3f8a5ac606354db68e9dbee153f2ff96387b55f4",
+    "RESEARCH/\\extension_physics_audit\\q1_temperature_spectral_review_01\\独立数学审查.md": "6401ff934fc332ad469600f621a2f6be35f793fad633d524b042f81228d07c8b",
+    "RESEARCH/\\work\\reconnect_20260912_1030\\record_strict_acceptance.py": "941aa7f34257fc87e147d63f2657437a739a13a985a3cc4a3d6199fbaa8d58b1",
+    "WORKSPACE/\\A题研究\\work\\host1\\.venv\\Scripts\\python.exe": "2204195cec25879507d958a8b6949add67091244b8b4da9cf3672f993548fa49"
+  }
+}

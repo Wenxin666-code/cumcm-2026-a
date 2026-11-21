@@ -1,0 +1,302 @@
+{
+  "scope": "Conditional analytic lower barrier constants for original no-latent fixed/affine 1D effective PDE; no PDE solved",
+  "sources_sha256": {
+    "contract": "1650f64b8cc01788c21131b6bcadd052da30054dba67750ea84146759dd21afb",
+    "ambient": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+    "radius": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+    "executed_script": "0fae81d73bcd6a084ce0eac35598cae8a627061f8ae0a240e162028279a349ca",
+    "frozen_model/_vendor_host2_model.py": "d834d3ddee0edb3740b378462f9b8250f01a03cb4f5754ba350264ded9b4f2dd",
+    "frozen_model/moving_model.py": "0d2b448345c228afb05c774aa50efbe0f2d9b303cefce13c184f18cd233d1019",
+    "frozen_model/relative_temperature.py": "b94e109d31a2fb8ad55c2848ad3c30002199dd80a33e8de17da61c7e670dd535"
+  },
+  "sources_unchanged": true,
+  "argv": [
+    "ver2/extension_physics_audit/boundary/code/certify_mass_lower_barrier.py",
+    "--inputs",
+    "ver2/inputs/附件",
+    "--contract",
+    "ver2/package/config/model.json",
+    "--model-code",
+    "ver2/package/code/solvers",
+    "--out",
+    "ver2/extension_physics_audit/boundary/math/results"
+  ],
+  "python_version": "3.12.14",
+  "arithmetic": "Exact Fraction operations; explicit two-sided Taylor remainder; only final interval endpoints rounded outward by integer floor/ceil",
+  "parameter_interpretations_enclosed": [
+    "decimal rendering of JSON parameters",
+    "exact binary64 JSON values"
+  ],
+  "PDE_started": false,
+  "PDE_existence_proved": false,
+  "independent_complete_theorem_review_passed": false,
+  "formal_drying_time_error_certified": false,
+  "new_latent_model_covered": false,
+  "hypotheses": [
+    "continuous initial trace; continuous axis C; classical derivatives for t>0, y>0 and one-sided dynamic boundary",
+    "original heat maximum principle with no added latent or volumetric source; b(C)>0,k(C)>0",
+    "positive prescribed radius and fixed-length affine material mapping",
+    "positive C and original positive-D law; piecewise forcing handled by continuous-time restart",
+    "mathematical alpha>=0.15/base_tail; actual floating tail separately checked before applying to a computed parameterization"
+  ],
+  "barrier_parameters": {
+    "shape_a": "0.5",
+    "H_initial": "0.05",
+    "U_initial": "2.49",
+    "handover_time_s": 14400,
+    "T_upper_K": "323.4",
+    "C_subsolution_slope_upper": "2.55",
+    "target_exact": "0.15"
+  },
+  "input_bounds": {
+    "max_environment_plus_offset_K": {
+      "lower": "323.396000000000002216893335571512579917907714843750000000000000",
+      "upper": "323.396000000000002216893335571512579917907714843750000000000000",
+      "outward_decimal_places": 60
+    },
+    "min_room_column": {
+      "lower": "0.019630000000000000000000000000000000000000000000000000000000",
+      "upper": "0.019630000000000000000000000000000000000000000000000000000000",
+      "outward_decimal_places": 60
+    },
+    "critical_alpha_strictly_above_3": true,
+    "early_boundary_lower_greater_than": "147/2500",
+    "initial_radius_lower": {
+      "lower": "0.020000000000000000000000000000000000000000000000000000000000",
+      "upper": "0.020000000000000000000000000000000000000000000000000000000000",
+      "outward_decimal_places": 60
+    },
+    "early_radius_lower_from_nodes": {
+      "lower": "0.014770000000000000000000000000000000000000000000000000000000",
+      "upper": "0.014770000000000000000000000000000000000000000000000000000000",
+      "outward_decimal_places": 60
+    },
+    "global_radius_lower_from_nodes_and_tail": {
+      "lower": "0.011979999999999999329980404638718027854338288307189941406250",
+      "upper": "0.011979999999999999329980404638718027854338288307189941406250",
+      "outward_decimal_places": 60
+    }
+  },
+  "critical_tail_implementations": [
+    {
+      "q_exact": "1",
+      "alpha_binary64": 3.000575110229461,
+      "mathematical_tail_exact": "3/20",
+      "tail_product_binary64": 0.15000000000000002,
+      "actual_binary64_tail_minus_exact_threshold": {
+        "lower": "0.000000000000000022204460492503130808472633361816406250000000",
+        "upper": "0.000000000000000022204460492503130808472633361816406250000000",
+        "outward_decimal_places": 60
+      },
+      "tail_not_below_exact_threshold": true
+    },
+    {
+      "q_exact": "1001/1000",
+      "alpha_binary64": 3.0035756853396904,
+      "mathematical_tail_exact": "3003/20000",
+      "tail_product_binary64": 0.15015,
+      "actual_binary64_tail_minus_exact_threshold": {
+        "lower": "0.000150000000000005684341886080801486968994140625000000000000",
+        "upper": "0.000150000000000005684341886080801486968994140625000000000000",
+        "outward_decimal_places": 60
+      },
+      "tail_not_below_exact_threshold": true
+    },
+    {
+      "q_exact": "101/100",
+      "alpha_binary64": 3.0305808613317553,
+      "mathematical_tail_exact": "303/2000",
+      "tail_product_binary64": 0.1515,
+      "actual_binary64_tail_minus_exact_threshold": {
+        "lower": "0.001499999999999995781152506424405146390199661254882812500000",
+        "upper": "0.001499999999999995781152506424405146390199661254882812500000",
+        "outward_decimal_places": 60
+      },
+      "tail_not_below_exact_threshold": true
+    }
+  ],
+  "results": [
+    {
+      "material": "P23",
+      "D_bound_scope": "D evaluated at the positive subsolution slope <=2.55 and actual T<=323.4K",
+      "D_conservative_upper_interval": {
+        "lower": "0.000000013595608039592728518906812158914386522185886684644304",
+        "upper": "0.000000013595608039592728518906812158914386522185886684644305",
+        "outward_decimal_places": 60
+      },
+      "D_used_upper_m2_s": "0.000000013595608100000000000000000000000000000000000000000000",
+      "D_exponential_enclosure": {
+        "x_exact": [
+          "4313",
+          "357"
+        ],
+        "range_halvings": 5,
+        "Taylor_order": 48,
+        "method": "positive Taylor + geometric remainder, reciprocal and power",
+        "alternating_Taylor_crosscheck": {
+          "lower": "0.000005664836683163636882877838399547661050910786118601793434",
+          "upper": "0.000005664836683163636882877838399547661050910786118601793435",
+          "outward_decimal_places": 60
+        },
+        "intervals_overlap": true
+      },
+      "phases": [
+        {
+          "R_lower_m": "0.02",
+          "lambda_s_inverse": "0.000090637388000000000000000000000000000000000000000000000000",
+          "required_diffusion": {
+            "lower": "0.000090637387333333333333333333333333333333333333333333333333",
+            "upper": "0.000090637387333333333333333333333333333333333333333333333334",
+            "outward_decimal_places": 60
+          },
+          "required_boundary": {
+            "lower": "0.000053333333333333333333333333333333333333333333333333333333",
+            "upper": "0.000053333333333333333333333333333333333333333333333333333334",
+            "outward_decimal_places": 60
+          },
+          "both_inequalities_passed": true
+        },
+        {
+          "R_lower_m": "0.02",
+          "lambda_s_inverse": "0.000090637388000000000000000000000000000000000000000000000000",
+          "required_diffusion": {
+            "lower": "0.000090637387333333333333333333333333333333333333333333333333",
+            "upper": "0.000090637387333333333333333333333333333333333333333333333334",
+            "outward_decimal_places": 60
+          },
+          "required_boundary": {
+            "lower": "0.000053333333333333333333333333333333333333333333333333333333",
+            "upper": "0.000053333333333333333333333333333333333333333333333333333334",
+            "outward_decimal_places": 60
+          },
+          "both_inequalities_passed": true
+        }
+      ],
+      "exp_minus_lambda_4h": {
+        "lower": "0.271124165650724907726263156788712916904561048164864907942024",
+        "upper": "0.271124165650724907726263156788712916904561048164864907942025",
+        "outward_decimal_places": 60
+      },
+      "four_hour_exponential_enclosure": {
+        "x_exact": [
+          "203934123",
+          "156250000"
+        ],
+        "range_halvings": 2,
+        "Taylor_order": 48,
+        "method": "positive Taylor + geometric remainder, reciprocal and power",
+        "alternating_Taylor_crosscheck": {
+          "lower": "0.271124165650724907726263156788712916904561048164864907942024",
+          "upper": "0.271124165650724907726263156788712916904561048164864907942025",
+          "outward_decimal_places": 60
+        },
+        "intervals_overlap": true
+      },
+      "U_at4h": {
+        "lower": "0.675099172470305020238395260403895163092357009930513620775639",
+        "upper": "0.675099172470305020238395260403895163092357009930513620775643",
+        "outward_decimal_places": 60
+      },
+      "center_C_at4h_lower": "0.725099172470305020238395260403895163092357009930513620775639",
+      "all_y_M_over_y_at4h_lower": "0.556324379352728765178796445302921372319267757447885215581729",
+      "tail_positive_amplitude_V0": "0.406324379300000000000000000000000000000000000000000000000000",
+      "finite_time_tail_center_lower_formula": "0.15 + V0 * exp(-lambda_tail*(t-14400))",
+      "numerical_constant_inequalities_passed": true
+    },
+    {
+      "material": "P4",
+      "D_bound_scope": "D evaluated at the positive subsolution slope <=2.55 and actual T<=323.4K",
+      "D_conservative_upper_interval": {
+        "lower": "0.000000002523384426033597956272799575717799843295645129844337",
+        "upper": "0.000000002523384426033597956272799575717799843295645129844338",
+        "outward_decimal_places": 60
+      },
+      "D_used_upper_m2_s": "0.000000002523384500000000000000000000000000000000000000000000",
+      "D_exponential_enclosure": {
+        "x_exact": [
+          "19329449600674168825",
+          "1607785066971267072"
+        ],
+        "range_halvings": 5,
+        "Taylor_order": 48,
+        "method": "positive Taylor + geometric remainder, reciprocal and power",
+        "alternating_Taylor_crosscheck": {
+          "lower": "0.000006008058157222852027696932120996909276561500046494214278",
+          "upper": "0.000006008058157222852027696932120996909276561500046494214279",
+          "outward_decimal_places": 60
+        },
+        "intervals_overlap": true
+      },
+      "phases": [
+        {
+          "R_lower_m": "0.0147",
+          "lambda_s_inverse": "0.000072562359000000000000000000000000000000000000000000000000",
+          "required_diffusion": {
+            "lower": "0.000031139920095022135838462369074613972573156246625634380736",
+            "upper": "0.000031139920095022135838462369074613972573156246625634380737",
+            "outward_decimal_places": 60
+          },
+          "required_boundary": {
+            "lower": "0.000072562358276643990929705215419501133786848072562358276643",
+            "upper": "0.000072562358276643990929705215419501133786848072562358276644",
+            "outward_decimal_places": 60
+          },
+          "both_inequalities_passed": true
+        },
+        {
+          "R_lower_m": "0.0119",
+          "lambda_s_inverse": "0.000089635855000000000000000000000000000000000000000000000000",
+          "required_diffusion": {
+            "lower": "0.000047518009556763882023397594331850387213709013016971494480",
+            "upper": "0.000047518009556763882023397594331850387213709013016971494481",
+            "outward_decimal_places": 60
+          },
+          "required_boundary": {
+            "lower": "0.000089635854341736694677871148459383753501400560224089635854",
+            "upper": "0.000089635854341736694677871148459383753501400560224089635855",
+            "outward_decimal_places": 60
+          },
+          "both_inequalities_passed": true
+        }
+      ],
+      "exp_minus_lambda_4h": {
+        "lower": "0.351727704465728541887246833892986305970989359358281808747877",
+        "upper": "0.351727704465728541887246833892986305970989359358281808747878",
+        "outward_decimal_places": 60
+      },
+      "four_hour_exponential_enclosure": {
+        "x_exact": [
+          "653061231",
+          "625000000"
+        ],
+        "range_halvings": 2,
+        "Taylor_order": 48,
+        "method": "positive Taylor + geometric remainder, reciprocal and power",
+        "alternating_Taylor_crosscheck": {
+          "lower": "0.351727704465728541887246833892986305970989359358281808747877",
+          "upper": "0.351727704465728541887246833892986305970989359358281808747878",
+          "outward_decimal_places": 60
+        },
+        "intervals_overlap": true
+      },
+      "U_at4h": {
+        "lower": "0.875801984119664069299244616393535901867763504802121703782213",
+        "upper": "0.875801984119664069299244616393535901867763504802121703782217",
+        "outward_decimal_places": 60
+      },
+      "center_C_at4h_lower": "0.925801984119664069299244616393535901867763504802121703782213",
+      "all_y_M_over_y_at4h_lower": "0.706851488089748051974433462295151926400822628601591277836660",
+      "tail_positive_amplitude_V0": "0.556851488000000000000000000000000000000000000000000000000000",
+      "finite_time_tail_center_lower_formula": "0.15 + V0 * exp(-lambda_tail*(t-14400))",
+      "numerical_constant_inequalities_passed": true
+    }
+  ],
+  "numerical_constant_inequalities_passed": true,
+  "mathematical_conclusion_if_hypotheses_hold": "For every finite time the center exceeds 0.15 when alpha>=critical; hence whole-domain strict drying never occurs in that effective model.",
+  "not_claimed": [
+    "existence theorem for the coupled PDE",
+    "proof for surface latent models",
+    "radius behavior without stated tail extrapolation",
+    "error interval around alpha=1 formal times"
+  ]
+}

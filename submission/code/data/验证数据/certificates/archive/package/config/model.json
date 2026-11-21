@@ -1,0 +1,344 @@
+{
+  "schema_version": "1.0",
+  "model_version": "2.0",
+  "title": "A题药材烘干：有效模型与输入输出约定",
+  "stage": "final_model_contract",
+  "status": "implemented_effective_model",
+  "source_of_interpretation": "论文LaTeX源码/models.tex",
+  "units": {
+    "internal_time": "s",
+    "internal_length": "m",
+    "internal_temperature": "K",
+    "output_radius": "cm",
+    "output_temperature": "degC",
+    "moisture_C": "kg_water_per_kg_dry_solid",
+    "ambient_moisture": "kg/kg_denominator_unspecified",
+    "density_parameter": "kg/m3",
+    "specific_heat": "J/(kg*K)",
+    "conductivity": "W/(m*K)",
+    "diffusivity": "m2/s"
+  },
+  "initial_state": {
+    "length_m": 0.25,
+    "radius_m": 0.02,
+    "temperature_K": 301.15,
+    "moisture_C": 2.55,
+    "spatially_uniform": true,
+    "independent_start_for_each_problem": true
+  },
+  "property_forms": {
+    "rho": "rho_offset + rho_C_coefficient*C",
+    "cp": "cp_offset + cp_fraction_coefficient*C/(1+C)",
+    "k": "k_offset + k_fraction_coefficient*C/(1+C)",
+    "D": "D_prefactor*exp(-D_moisture_exponent/C)*exp(-D_temperature_exponent_K/T_K)",
+    "D_at_C_zero": 0,
+    "negative_C_policy": "flag_and_investigate_no_silent_clipping"
+  },
+  "property_sets": {
+    "P1": {
+      "rho_offset": 820,
+      "rho_C_coefficient": 0,
+      "cp_offset": 2600,
+      "cp_fraction_coefficient": 0,
+      "k_offset": 0.36,
+      "k_fraction_coefficient": 0,
+      "D_prefactor": 7e-09,
+      "D_moisture_exponent": 0.89,
+      "D_temperature_exponent_K": 0
+    },
+    "P23": {
+      "rho_offset": 650,
+      "rho_C_coefficient": 128,
+      "cp_offset": 1450,
+      "cp_fraction_coefficient": 2736,
+      "k_offset": 0.21,
+      "k_fraction_coefficient": 0.38,
+      "D_prefactor": 0.0024,
+      "D_moisture_exponent": 0.45,
+      "D_temperature_exponent_K": 3850
+    },
+    "P4": {
+      "rho_offset": 760,
+      "rho_C_coefficient": 90,
+      "cp_offset": 1850,
+      "cp_fraction_coefficient": 2150,
+      "k_offset": 0.12,
+      "k_fraction_coefficient": 0.2,
+      "D_prefactor": 0.00042,
+      "D_moisture_exponent": 0.3,
+      "D_temperature_exponent_K": 3850
+    }
+  },
+  "problem_bindings": {
+    "q1": {
+      "properties": "P1",
+      "geometry": "fixed_radial",
+      "duration_s": 1800
+    },
+    "q2": {
+      "properties": "P23",
+      "geometry": "fixed_radial",
+      "duration": "fixed_domain_drying_event"
+    },
+    "q3": {
+      "properties": "P23",
+      "geometry": "fixed_radial",
+      "reuse_q2_trajectory": true
+    },
+    "q4": {
+      "properties": "P4",
+      "geometry": "shrinking_radial",
+      "moving_pde_status": "material_coordinate_dry_mass_conservation"
+    }
+  },
+  "fixed_domain_model": {
+    "moisture_equation": "C_t = (1/r)*d_r(r*D(C,T)*C_r)",
+    "heat_equation": "rho(C)*cp(C)*T_t = (1/r)*d_r(r*k(C)*T_r)",
+    "center": "C_r = T_r = 0 with regularity",
+    "moisture_boundary": "-D(C_s,T_s)*C_r = h_m*(C_s-C_eq)",
+    "heat_boundary": "-k(C_s)*T_r = h*(T_s-T_inf)",
+    "h_W_m2_K": 25,
+    "h_m_m_s": 8e-07,
+    "coefficient_extension_to_q2_q3_q4_is_assumption": true,
+    "dry_mass_measure": "fixed_uniform_reference_measure",
+    "rho_interpretation": "empirical_heat_coefficient_not_simultaneous_actual_wet_density",
+    "heat_audit": "integral(rho*cp*T_t,dV) + integral(h*(T_s-T_inf),dA) = 0",
+    "moisture_audit": "d_t(integral(C,dV)) + integral(h_m*(C_s-C_eq),dA) = 0",
+    "omitted_heat_terms": [
+      "latent_heat",
+      "moisture_enthalpy_transport",
+      "radiation",
+      "deformation_work"
+    ],
+    "omission_proven_negligible": false
+  },
+  "input_environment": {
+    "file": "附件1.xlsx",
+    "sheet": "Sheet1",
+    "columns": {
+      "time_s": "A",
+      "temperature_degC": "B",
+      "ambient_moisture": "C"
+    },
+    "observed_interval_s": [
+      0,
+      14400
+    ],
+    "interpolation": "piecewise_linear_through_all_observed_nodes",
+    "temperature_to_K_offset": 273.15,
+    "C_eq_mapping": "identity_effective_boundary_potential_assumption",
+    "post_observation": {
+      "applies_when": "t_s > 14400",
+      "method": "constant_piecewise_linear_time_mean",
+      "averaging_interval_s": [
+        10800,
+        14400
+      ],
+      "temperature_degC": 49.995916666666666,
+      "ambient_moisture": 0.04999041666666666,
+      "is_extrapolation_assumption": true,
+      "at_14400_s": "retain_observed_endpoint",
+      "breakpoint_handling_required": true,
+      "tested_alternatives": [
+        "last_observed_value",
+        "nominal_50C_0.05",
+        "automatic_tail_platform"
+      ]
+    }
+  },
+  "input_radius": {
+    "file": "附件2.xlsx",
+    "sheet": "Sheet1",
+    "columns": {
+      "time_s": "A",
+      "radius_cm": "B"
+    },
+    "observed_interval_s": [
+      0,
+      259200
+    ],
+    "interpolation": "piecewise_linear_through_all_observed_nodes",
+    "cm_to_m_factor": 0.01,
+    "post_observation": {
+      "applies_when": "t_s > 259200",
+      "radius_m": 0.01198,
+      "is_extrapolation_assumption": true,
+      "observed_terminal_plateau_s": [
+        241200,
+        259200
+      ]
+    }
+  },
+  "moving_domain_contract": {
+    "length": "constant_at_initial_value",
+    "motion": "homogeneous_radial_shrinkage",
+    "material_coordinate": "xi=r/R(t)",
+    "motion_is_assumption": true,
+    "full_transport_and_jacobian_derivation": "documented_in_models_tex",
+    "constant_radius_limit_comparator_properties": "P4"
+  },
+  "drying_event": {
+    "criterion": "maximum_C_over_current_model_domain < threshold",
+    "threshold": 0.15,
+    "locate_between_output_samples": true,
+    "retain_crossing_bracket": true,
+    "reported_time": "verified_dry_side_time_with_error_checks",
+    "reported_time_unit": "h",
+    "reported_time_decimal_places": 4,
+    "rounding_policy": "verify_dry_side_after_rounding_adjust_upward_if_needed",
+    "error_tolerances": null,
+    "error_tolerances_status": "explicit_in_code/solvers/solve_all.py_and_validated_in_tables"
+  },
+  "outputs": {
+    "status": "generated_and_independently_read_back",
+    "time_unit": "s",
+    "first_header": "时间\\到药材中心的距离",
+    "value_format": "0.0000",
+    "internal_values": "unrounded",
+    "t_zero": "internal_initial_state_record_only",
+    "fixed_grid_cm": {
+      "start": 0,
+      "step": 0.1,
+      "stop_inclusive": 2,
+      "count": 21
+    },
+    "result1.xlsx": {
+      "sheets": [
+        "温度",
+        "水分浓度"
+      ],
+      "start_s": 1,
+      "step_s": 1,
+      "end_s": 1800,
+      "sheet_range": "A1:V1801"
+    },
+    "result2.xlsx": {
+      "sheets": [
+        "温度",
+        "水分浓度"
+      ],
+      "start_s": 1,
+      "step_s": 1,
+      "end": "fixed_domain_verified_drying_time",
+      "append_off_grid_final_time_without_duplicate": true,
+      "scope_is_working_interpretation": true,
+      "scope": "full_process_to_shared_p23_strict_report_time"
+    },
+    "result3.xlsx": {
+      "sheets": [
+        "Sheet1"
+      ],
+      "quantity": "moisture_C",
+      "start_s": 60,
+      "step_s": 60,
+      "end": "fixed_domain_verified_drying_time",
+      "append_off_grid_final_time_without_duplicate": true
+    },
+    "result4.xlsx": {
+      "sheets": [
+        "Sheet1"
+      ],
+      "quantity": "moisture_C",
+      "start_s": 60,
+      "step_s": 60,
+      "end": "moving_domain_verified_drying_time",
+      "append_off_grid_final_time_without_duplicate": true,
+      "fixed_grid_cm": {
+        "start": 0,
+        "step": 0.1,
+        "stop_inclusive": 1.9,
+        "count": 20
+      },
+      "fixed_column_mask": "r < R(t)",
+      "invalid_fixed_positions": "blank_not_zero_with_separate_internal_validity_mask",
+      "surface_column": "V",
+      "surface_header": "药材表面",
+      "surface_position": "R(t)",
+      "sidecar_file": "tables/surface_radius.csv",
+      "sidecar_fields": [
+        "t_s",
+        "R_cm"
+      ]
+    },
+    "paper_tables": {
+      "tables_1_2": {
+        "time_s": [
+          100,
+          300,
+          600,
+          900,
+          1200,
+          1500,
+          1800
+        ],
+        "radius_cm": [
+          0,
+          0.5,
+          1,
+          1.5,
+          2
+        ]
+      },
+      "tables_3_4": {
+        "time_h": [
+          0.5,
+          1,
+          1.5,
+          2,
+          2.5,
+          3
+        ],
+        "radius_cm": [
+          0,
+          0.5,
+          1,
+          1.5,
+          2
+        ]
+      },
+      "table_5": {
+        "start_h": 6,
+        "step_h": 6,
+        "append_final": true,
+        "radius_cm": [
+          0,
+          0.5,
+          1,
+          1.5,
+          2
+        ]
+      },
+      "table_6": {
+        "start_h": 6,
+        "step_h": 6,
+        "append_final": true,
+        "fixed_radius_cm": [
+          0,
+          0.5,
+          1,
+          1.5
+        ],
+        "fixed_column_mask": "r < R(t)",
+        "include_dynamic_surface": true
+      }
+    }
+  },
+  "verification_status": {
+    "input_workbook_audit": "completed",
+    "physical_contract_AI_cross_review": "completed",
+    "human_team_review": "pending_record",
+    "solver_implemented": true,
+    "numerical_validation": "actual_evidence_in_tables_and_reproducible_validation_programs",
+    "experimental_validation": "not_available_from_supplied_internal_measurements",
+    "submission": "not_performed"
+  },
+  "assumptions_and_scope_limits": [
+    "long_cylinder_midsection_radial_approximation",
+    "fixed_dry_mass_reference_and_empirical_thermal_density_interpretation",
+    "ambient_to_equilibrium_moisture_effective_identity_mapping",
+    "reduced_sensible_heat_closure",
+    "extension_of_h_and_h_m_to_q2_q3_q4",
+    "environment_after_4h_and_radius_after_72h",
+    "homogeneous_radial_motion_with_fixed_length"
+  ]
+}

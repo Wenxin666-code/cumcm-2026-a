@@ -1,0 +1,19 @@
+{
+  "created_utc": "2026-09-12T03:42:56.328742+00:00",
+  "passed": true,
+  "original_actual_03_manifest_omitted_this_transitive_module": true,
+  "omitted_module": "RESEARCH/\\extension_physics_audit\\q1_C_interior_certificate_01\\code\\certify_interior.py",
+  "sha256": "4c386c83514a0777fbd9cf6e685d3fa58fc640d27ac665777ffa5929a60ef053",
+  "original_before_03_binding": "RESEARCH/\\extension_physics_audit\\q1_C_interior_certificate_01\\actual_01\\source_bindings.json",
+  "original_before_03_binding_sha256": "f89f53986a069d5a2f888ad9470059fc9d74b4f41cfce23f51656c508a2d03f5",
+  "source_now_matches_original_before_03_hash": true,
+  "original_manifest_or_source_modified": false,
+  "candidate_review_still_required": true,
+  "actual_03_process_session": 86883,
+  "actual_exit_code": 0,
+  "actual_final_chunk": "5fd87f",
+  "main_entry_sha256": "a96d4052e0e83c864ecf2a6a1b0825636cdfc18cfee133aecaf620da89689fbe",
+  "import_bridge_sha256": "6187fcc848c12d7da9d74bfa82d76a321172f6d58b404580c5c4c545d0104115",
+  "actual_03_products_manifest_sha256": "a882379d697b72aaafa6494c2529ae5279f977ac935e2d612766247ac3df03b2",
+  "producer_of_supplement_sha256": "6d85dd12e15807afb8328e5afdb6e0dc5fa69887f2a6016f5de8d9acde332a81"
+}

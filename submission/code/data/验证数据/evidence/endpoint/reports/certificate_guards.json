@@ -1,0 +1,113 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "passed": true,
+      "case": "p23",
+      "N": 1280,
+      "window_s_decimal": [
+        "206880",
+        "206928.92000000001280568540096282958984375"
+      ],
+      "report_time_s_decimal": "206926.92",
+      "report_inside_covered_window": true,
+      "all_time_interfaces_same_binary_time_and_full_state": true,
+      "thermal_theta_zero_at_all_stored_interfaces": true,
+      "ambient_constants_identical_across_slabs": true,
+      "centre_polynomial_time_derivative_upper_per_s": "-2.9123773466019402692972163385297326419668872E-7",
+      "all_nodal_polynomial_time_derivative_upper_per_s": "-2.3711938270662625035642877061065283193305705E-8",
+      "lower_barrier_maximum_nonincreasing": true,
+      "continuous_spline_interface_identity": {
+        "verified": true,
+        "reason": "The right endpoint polynomial equals y_new by its exact algebraic definition; this is bitwise the next y_old. At each shared exact time the affine radius, Ce, T and material constants coincide. The fixed strictly diagonally dominant clamped spline matrix and exact Robin slope therefore have identical defining right-hand sides. Uniqueness gives equality of the entire spatial spline, its first and second spatial derivatives; this is stronger than equality only at nodes.",
+        "shared_exact_radius_fraction": [
+          "5764607523034235/288230376151711744",
+          "5764607523034235/288230376151711744",
+          "5764607523034235/288230376151711744",
+          "5764607523034235/288230376151711744",
+          "5764607523034235/288230376151711744",
+          "5764607523034235/288230376151711744",
+          "5764607523034235/288230376151711744",
+          "5764607523034235/288230376151711744",
+          "5764607523034235/288230376151711744",
+          "5764607523034235/288230376151711744",
+          "5764607523034235/288230376151711744",
+          "5764607523034235/288230376151711744",
+          "5764607523034235/288230376151711744",
+          "5764607523034235/288230376151711744",
+          "5764607523034235/288230376151711744",
+          "5764607523034235/288230376151711744",
+          "5764607523034235/288230376151711744",
+          "5764607523034235/288230376151711744",
+          "5764607523034235/288230376151711744",
+          "5764607523034235/288230376151711744",
+          "5764607523034235/288230376151711744",
+          "5764607523034235/288230376151711744",
+          "5764607523034235/288230376151711744",
+          "5764607523034235/288230376151711744",
+          "5764607523034235/288230376151711744",
+          "5764607523034235/288230376151711744"
+        ]
+      },
+      "parameter_scope": "Frozen binary64 input, derived tail mean, grid and material constants treated as exact reals. Decimal problem inputs and tail-mean computation roundoff are not enclosed.",
+      "local_radau_sha256": "dfe06eff23d74111433bac4b1bf601713a44e7937d9446914169d43108f89c2a",
+      "endpoint_sha256": "e617a61d8019baed0ec20bd430156fb5198e11191f0a2898a36ab43abf813a42",
+      "guard_source_sha256": "6a142b847e18958109ab4c7f423d51a01f03d0b66cb5c7fcbf9694e00c7ab4f4"
+    },
+    {
+      "passed": true,
+      "case": "q4",
+      "N": 2560,
+      "window_s_decimal": [
+        "183900",
+        "183951.2000000000116415321826934814453125"
+      ],
+      "report_time_s_decimal": "183949.2",
+      "report_inside_covered_window": true,
+      "all_time_interfaces_same_binary_time_and_full_state": true,
+      "thermal_theta_zero_at_all_stored_interfaces": true,
+      "ambient_constants_identical_across_slabs": true,
+      "centre_polynomial_time_derivative_upper_per_s": "-5.1341252385199878731311617012214781272123898E-7",
+      "all_nodal_polynomial_time_derivative_upper_per_s": "-3.1724811021140117227542239337180432290402268E-8",
+      "lower_barrier_maximum_nonincreasing": true,
+      "continuous_spline_interface_identity": {
+        "verified": true,
+        "reason": "The right endpoint polynomial equals y_new by its exact algebraic definition; this is bitwise the next y_old. At each shared exact time the affine radius, Ce, T and material constants coincide. The fixed strictly diagonally dominant clamped spline matrix and exact Robin slope therefore have identical defining right-hand sides. Uniqueness gives equality of the entire spatial spline, its first and second spatial derivatives; this is stronger than equality only at nodes.",
+        "shared_exact_radius_fraction": [
+          "3458764513820541/288230376151711744",
+          "3458764513820541/288230376151711744",
+          "3458764513820541/288230376151711744",
+          "3458764513820541/288230376151711744",
+          "3458764513820541/288230376151711744",
+          "3458764513820541/288230376151711744",
+          "3458764513820541/288230376151711744",
+          "3458764513820541/288230376151711744",
+          "3458764513820541/288230376151711744",
+          "3458764513820541/288230376151711744",
+          "3458764513820541/288230376151711744",
+          "3458764513820541/288230376151711744",
+          "3458764513820541/288230376151711744",
+          "3458764513820541/288230376151711744",
+          "3458764513820541/288230376151711744",
+          "3458764513820541/288230376151711744",
+          "3458764513820541/288230376151711744",
+          "3458764513820541/288230376151711744",
+          "3458764513820541/288230376151711744",
+          "3458764513820541/288230376151711744",
+          "3458764513820541/288230376151711744",
+          "3458764513820541/288230376151711744",
+          "3458764513820541/288230376151711744",
+          "3458764513820541/288230376151711744",
+          "3458764513820541/288230376151711744",
+          "3458764513820541/288230376151711744",
+          "3458764513820541/288230376151711744",
+          "3458764513820541/288230376151711744"
+        ]
+      },
+      "parameter_scope": "Frozen binary64 input, derived tail mean, grid and material constants treated as exact reals. Decimal problem inputs and tail-mean computation roundoff are not enclosed.",
+      "local_radau_sha256": "8c13912d4a5bd4977fa91df238ad4dc0cf5347843964cfb731c50bda96c9896e",
+      "endpoint_sha256": "3f56e62b21feb6e4fdf70ef4efcf196a32addfbd06907a1696eabfd2256c3027",
+      "guard_source_sha256": "6a142b847e18958109ab4c7f423d51a01f03d0b66cb5c7fcbf9694e00c7ab4f4"
+    }
+  ]
+}

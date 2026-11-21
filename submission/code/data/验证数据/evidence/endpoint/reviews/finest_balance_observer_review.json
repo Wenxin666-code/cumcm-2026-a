@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "observer_source_sha256": "8d7fc457d4c0b99d50a4cb4bec32dc86cf2b20feefd0fc31031967f4a6c69d77",
+  "review_source_sha256": "e95472fed2b84ac17b8db332d306526c87c711f1543a3bb6717a6bbb1013d5ca",
+  "checks": [
+    {
+      "quadrature_order": 8,
+      "absolute_errors_against_exact_fraction_integrals": {
+        "moisture_flux": 0.0,
+        "heat_flux": 2.7755575615628914e-17,
+        "heat_store": 5.551115123125783e-17
+      }
+    },
+    {
+      "quadrature_order": 16,
+      "absolute_errors_against_exact_fraction_integrals": {
+        "moisture_flux": 0.0,
+        "heat_flux": 2.7755575615628914e-17,
+        "heat_store": 5.551115123125783e-17
+      }
+    }
+  ],
+  "exact_integrals": {
+    "moisture_flux": "103288551/536870912",
+    "heat_flux": "202605957/1342177280",
+    "heat_store": "6774060201/21474836480"
+  },
+  "scope": "Independent Fraction power-basis derivative and integral of synthetic Newton polynomials, moving geometry heat weights, and root/report interval truncation. This is a kernel check, not a full candidate replay or continuous PDE certificate."
+}

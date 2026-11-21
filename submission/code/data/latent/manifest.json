@@ -1,0 +1,17 @@
+{
+  "completed": true,
+  "rows": 101,
+  "temperature_range_C": [
+    0.01,
+    100.0
+  ],
+  "source_url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir5078.pdf",
+  "original_pdf_sha256": "b48928ace1e5a902fe69f3e674537e12cddd23af127483ddcd9543a54d845bf4",
+  "csv_sha256": "8bb2b882c62cbb308622ac920690a1f99a439cd57fca4c1b85123fd6d6d0113d",
+  "builder_sha256": "fdc92f8c97134f3023e2b92f62c456d978b5ce584f6daa6355ca012c5fc6fc56",
+  "unit": "J per kg evaporated water",
+  "table_precision_J_kg": 100.0,
+  "interpolation": "piecewise linear in temperature, inside table only; knots use right derivative except final left",
+  "interpolation_error_certified": false,
+  "scope": "Pure saturated-water enthalpy difference, not material desorption enthalpy or an exact experimental value"
+}
