@@ -52,6 +52,13 @@
 
 ## 快速核验
 
+先克隆仓库：
+
+```bash
+git clone https://github.com/Wenxin666-code/cumcm-2026-a.git
+cd cumcm-2026-a
+```
+
 Python 3.11及以上即可执行归档核验，无需安装科学计算依赖：
 
 ```bash
@@ -78,6 +85,6 @@ python -B code/问题1.py --mode plan --work ../work
 
 ## 材料与使用说明
 
-这是团队参赛项目的整理归档，论文、结果和AI工具使用说明均按本地材料保存，未在此次归档中重新计算或改写科研结论。赛题附件来自赛事提供的材料，潜热参考表的来源记录保存在其[清单](submission/code/data/latent/manifest.json)中。
+这是团队参赛项目的整理归档，论文、结果和AI工具使用说明均按本地材料保存，归档核验不代表已重新计算或独立确认全部科研结论。赛题附件来自赛事提供的材料，潜热参考表的来源记录保存在其[清单](submission/code/data/latent/manifest.json)中。
 
 仓库公开供阅读与交流，暂未指定统一开源许可证；公开可访问不代表对论文、团队代码和第三方材料统一授予再分发或其他使用许可。
